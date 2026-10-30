@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Cinco tipos de ciudadanía electoral</title>
+<style>
+@page { size: letter; margin: 2.5cm; }
+html { font-family: Arial, "Liberation Sans", sans-serif; font-size: 11pt; line-height: 1.5; color: #111; }
+body { margin: 0; }
+h1 { font-size: 18pt; line-height: 1.2; margin: 0 0 4pt; }
+.sub { font-size: 11pt; color: #444; margin: 0 0 14pt; }
+h2 { font-size: 13pt; margin: 16pt 0 4pt; break-after: avoid; }
+h3 { font-size: 11pt; margin: 10pt 0 2pt; break-after: avoid; }
+p { margin: 0 0 6pt; text-align: left; }
+ul { margin: 0 0 6pt; padding-left: 18pt; }
+li { margin: 0 0 2pt; }
+table { border-collapse: collapse; width: 100%; font-size: 9pt; line-height: 1.3; margin: 6pt 0 8pt; break-inside: avoid; }
+th, td { border: 0.5pt solid #999; padding: 3pt 4pt; text-align: left; vertical-align: top; }
+th { background: #eee; }
+td.n, th.n { text-align: right; }
+figure { margin: 8pt 0; break-inside: avoid; }
+figure img { width: 100%; display: block; }
+figcaption { font-size: 9pt; line-height: 1.3; color: #444; margin-top: 2pt; }
+.box { border-left: 3pt solid #2a6fdb; padding: 2pt 0 2pt 8pt; margin: 6pt 0 8pt; background: #f4f7fd; break-inside: avoid; }
+.small { font-size: 9pt; line-height: 1.35; }
+</style></head><body>
+
+<h1>Cinco tipos de ciudadanía electoral</h1>
+<p class="sub">Perfiles ciudadanos de participación a partir de los Conteos Censales de Participación Ciudadana 2009-2024 · Hackea la participación, Reto 1</p>
+
+<h2>1. Resumen</h2>
+<p>Segmentamos 64,096 secciones electorales (92% de la lista nominal) en <b>cinco perfiles</b> con tres rasgos de su participación en 2009-2024: cuánto votan (nivel), cuánto menos votan los hombres que las mujeres de 18 a 54 años (brecha de género) y cuánto menos votan los jóvenes de 18 a 34 años que los de 55 a 74 (brecha de jóvenes). Cada perfil tiene nombre, una descripción por edad, sexo, región e historial, y una estrategia de fomento con mensaje, canal e indicador.</p>
+<ul>
+<li><b>Los perfiles son estables.</b> Los tres rasgos se repiten entre elecciones separadas por una década (correlación de 0.5 a 0.7). Grupos construidos solo con 2009-2018 explican 32% de la varianza del nivel de participación de 2024 y 27% de la brecha de género, frente a cerca de 0% para grupos al azar.</li>
+<li><b>El faltante es el mismo en todo el país.</b> En los cinco perfiles, los hombres de 25 a 34 años son el grupo con más personas que no votan. Lo que cambia entre perfiles es dónde se concentra el resto: en todos los grupos de edad (norte urbano), en los jóvenes (ciudades del centro), en los hombres (el campo) o en las mujeres jóvenes (ciudades consolidadas).</li>
+<li><b>La caída en elecciones intermedias no es territorial.</b> Ocurre en todos los perfiles y no se repite por territorio. Para 2027, una elección intermedia, la movilización debe ser nacional; los perfiles dicen a quién y cómo dirigirse dentro de ella.</li>
+<li><b>Dónde está el potencial.</b> Si cada sección alcanzara la participación del cuarto superior de secciones comparables, se sumarían 7.7 millones de votos por elección (IC95% 6.5-8.9). Solo 61 municipios (2.5%) reúnen la mitad de ese potencial.</li>
+<li><b>Honestidad sobre los límites.</b> Los datos forman un continuo y no grupos naturales, y las estrategias son hipótesis que proponemos probar con un piloto en 2027, no efectos estimados.</li>
+</ul>
+
+<h2>2. Pregunta, datos y definiciones</h2>
+<p>La pregunta del reto es qué tipos de ciudadanía existen según su participación. Usamos exclusivamente la Plataforma CCPC: personas con marca de voto en la lista nominal de cada sección, por sexo y grupo de edad, en las seis elecciones federales de 2009 a 2024. La <b>participación</b> es la proporción de personas con marca de voto entre las que tienen registro de captura; no incluye casillas especiales ni voto en el extranjero. Se analizan las secciones presentes en 2015, 2018, 2021 y 2024 con al menos 800 registros (8% de la lista nominal queda fuera).</p>
+<p>La escolaridad no viene en la CCPC. Para describir los perfiles usamos descriptores del Censo 2020 por sección (escolaridad, lengua indígena, internet, celular, radio, televisión, migración), publicados por el INE. Son <b>descriptivos y ecológicos</b>: caracterizan la sección, no a quien vota o no vota, y no se usan para formar los perfiles. No se emplea ningún dato personal ni resultado por partido: el INE es imparcial y la segmentación no debe depender de preferencias políticas.</p>
+
+<h2>3. Método</h2>
+<p><b>Rasgos.</b> Partimos de ocho rasgos candidatos y conservamos solo los que se repiten en una sección entre dos ventanas de elecciones sin elecciones en común (2009-2015 y 2018-2024). Un rasgo que no se repite describe una elección, no un territorio. Quedaron tres: nivel de participación relativo al nacional, brecha de género de 18 a 54 años y brecha de jóvenes. La <i>intermitencia</i> (votar en presidenciales y no en intermedias) está bien medida pero casi no se repite por territorio (correlación de 0.28 entre secciones y 0.07 entre municipios), por lo que la usamos solo para describir. Para evitar que las secciones con pocos registros muevan los resultados, cada tasa se acerca ligeramente a la tasa nacional del mismo subconjunto.</p>
+<p><b>Segmentación.</b> K-means con cinco grupos sobre los tres rasgos estandarizados. La convocatoria pide de cuatro a seis perfiles; con cinco, la solución es la más estable entre ventanas de tiempo y predice mejor el resultado de 2024 que con cuatro en el 100% de las réplicas de remuestreo de municipios.</p>
+<p><b>Alternativas que probamos.</b> Un árbol de decisión supervisado rinde igual que K-means; una mezcla gaussiana y el método de Ward dibujan fronteras distintas; un agrupamiento por municipio rinde mucho peor porque dentro de un municipio hay secciones de perfiles diferentes. Conservamos K-means por ser el más fácil de comunicar y le añadimos ocho reglas explícitas (un árbol sustituto con 78% de coincidencia validado por entidad) para clasificar cualquier sección o municipio con umbrales transparentes.</p>
+<p><b>Lo que enseña el continuo.</b> Un agrupamiento sobre datos sin grupos reales con la misma covarianza obtiene una silueta casi igual (0.221 frente a 0.231), y HDBSCAN no halla ningún grupo. Los datos son un continuo. Eso no invalida los perfiles; fija cómo usarlos. Los grupos duros pierden cerca de la mitad de lo que predicen los rasgos continuos (R² de 0.21 frente a 0.40), así que ofrecemos <b>dos niveles</b>: perfiles para comunicar y decidir mensajes, y los tres rasgos continuos (o pertenencias suaves a cinco arquetipos) para priorizar secciones.</p>
+
+<h2>4. Los cinco perfiles</h2>
+<table>
+<tr><th>Perfil</th><th class="n">Secciones</th><th class="n">Lista nominal</th><th class="n">Participación 2015-2024</th><th class="n">Brecha de género 18-54 (M−H)</th><th class="n">Jóvenes frente a 55-74</th><th>Región principal</th></tr>
+<tr><td>1. Baja participación del norte urbano</td><td class="n">11,330</td><td class="n">19.3 M (21%)</td><td class="n">44%</td><td class="n">8 pp</td><td class="n">−20 pp</td><td>Norte</td></tr>
+<tr><td>2. Rezago juvenil urbano</td><td class="n">17,349</td><td class="n">26.3 M (29%)</td><td class="n">52%</td><td class="n">11 pp</td><td class="n"><b>−26 pp</b></td><td>Centro</td></tr>
+<tr><td>3. Rural con brecha masculina</td><td class="n">8,434</td><td class="n">10.4 M (12%)</td><td class="n">60%</td><td class="n"><b>19 pp</b></td><td class="n">−22 pp</td><td>Centro, Sur y Sureste</td></tr>
+<tr><td>4. Urbano de participación media-alta</td><td class="n">18,829</td><td class="n">24.6 M (27%)</td><td class="n">62%</td><td class="n">8 pp</td><td class="n">−20 pp</td><td>Centro</td></tr>
+<tr><td>5. Alta participación comunitaria</td><td class="n">8,154</td><td class="n">9.6 M (11%)</td><td class="n">67%</td><td class="n">11 pp</td><td class="n"><b>−10 pp</b></td><td>Occidente, Bajío, Sur y Sureste</td></tr>
+</table>
+<figure><img src="../../reto1_perfiles/reports/fig/fig2_perfil_grupos.png" alt="Perfil de cada grupo"><figcaption>Figura 1. Rasgos de cada perfil. Azul: más que el promedio de los cinco grupos; rojo: menos. Los tres primeros renglones forman los perfiles; el resto los describe.</figcaption></figure>
+
+<figure><img src="../../reto1_perfiles/reports/fig/fig1_curvas_edad_sexo.png" alt="Participación por edad y sexo"><figcaption>Figura 2. Participación 2024 por edad y sexo en cada perfil. La brecha de género es la distancia entre las dos líneas; la brecha de jóvenes, la pendiente de los 18 a los 54 años.</figcaption></figure>
+
+<h3>Perfil 1. Baja participación del norte urbano: «Nadie vota mucho»</h3>
+<p>Ciudades del norte (Baja California, Chihuahua, Durango, Quintana Roo, Sonora), 77% urbano y 20% de población nacida en otra entidad. Es el perfil con menor participación en todas las elecciones y en todas las edades (hombres de 25 a 34 años, 35%; mujeres, 45%). Cuenta con 91% de hogares con celular y 55% con internet. <b>Estrategia:</b> reducir la fricción práctica para votar. Mensaje «tu voto cuenta donde vives» con información sobre dónde votar y cómo actualizar el domicilio de la credencial; canal celular y redes, centros de trabajo y universidades. <b>Indicador:</b> participación de 18 a 34 años y actualizaciones de domicilio. <b>Por verificar con la DERFE:</b> que el domicilio desactualizado sea la causa; el censo solo muestra mucha población nacida en otra entidad.</p>
+
+<h3>Perfil 2. Rezago juvenil urbano: «Votan los padres, no los hijos»</h3>
+<p>El más numeroso (29% de la lista nominal): Veracruz, Estado de México, Aguascalientes, Sinaloa e Hidalgo, y gran parte de León, Puebla y Culiacán. Tiene la mayor distancia entre jóvenes y adultos mayores: los hombres de 25 a 34 años votan 39% y las mujeres 53%, frente a más de 77% de las personas de 65 a 74 años. <b>Estrategia:</b> sumar a quienes tienen de 18 a 34 años (1.3 millones de votos recuperables) con información sobre el primer voto y la relevancia local de los cargos, mediante pares y organizaciones juveniles, escuelas y espacios laborales, y apoyándose en los adultos mayores, que sí votan, como multiplicadores en el hogar. <b>Indicador:</b> brecha entre jóvenes y adultos en las secciones del perfil. Es el perfil con asignaciones menos firmes: su lista debe recalcularse con cada CCPC.</p>
+
+<h3>Perfil 3. Rural con brecha masculina: «Votan ellas, no ellos»</h3>
+<p>Zacatecas, San Luis Potosí, Puebla, Querétaro y Guerrero; 63% de secciones rurales, 7.6 años de escolaridad, 13% con lengua indígena y solo 23% de hogares con internet. Los hombres de 25 a 34 años votan 37% y las mujeres 63%, y la brecha de 19 puntos se cierra desde los 65 años. Probamos que la causa fuera la emigración de hombres que siguen en la lista nominal y <b>no se sostiene</b>: la razón entre lista nominal y población residente es igual para hombres y mujeres (1.17 en ambos), y ajustarla explicaría solo 10% de la brecha. La actividad económica de los hombres (77%) tampoco difiere de los otros perfiles. La causa queda abierta y por eso la estrategia empieza por <b>entender antes de actuar</b>: un estudio cualitativo breve de las Juntas Distritales (horarios de trabajo del domingo, trabajo fuera de la comunidad, distancia a la casilla). Después, mensajes prácticos por televisión, radio local y contacto presencial, con las mujeres que votan como mensajeras en la familia. <b>Indicador:</b> participación de hombres de 25 a 44 años.</p>
+
+<h3>Perfil 4. Urbano de participación media-alta: «Consolidado, con mujeres jóvenes por debajo»</h3>
+<p>Ciudad de México, Tlaxcala, Campeche y Yucatán; la mayor escolaridad (11.1 años) y conectividad (64% con internet). Su brecha de género es pequeña por una razón poco intuitiva: los hombres de 25 a 34 años votan casi como los del perfil de referencia (53% frente a 55%), pero las <b>mujeres de 25 a 34 años</b> votan 63% frente a 71% (−8 pp, IC95% de 7.5 a 9.2). Igualarlas sumaría unos 0.20 millones de votos. <b>Estrategia:</b> información práctica (horario de casilla, tiempos de espera) para mujeres jóvenes con trabajo y cuidados a su cargo, por redes y centros de trabajo; y accesibilidad para personas de 75 años o más. <b>Indicador:</b> participación de mujeres de 25 a 34 años y de 75 o más.</p>
+
+<h3>Perfil 5. Alta participación comunitaria: «La referencia»</h3>
+<p>Yucatán, Campeche, Chiapas, Zacatecas y Nuevo León; 44% de secciones rurales. Tiene la participación más alta en cada elección desde 2009 (68% en 2024) y los jóvenes votan casi como los adultos (hombres de 25 a 34 años, 55%; mujeres, 71%). No es prioridad de movilización. <b>Estrategia:</b> documentar qué sostiene la participación de sus jóvenes mediante entrevistas con autoridades comunitarias y funcionariado de casilla, para alimentar los mensajes de los perfiles 2 y 4, y facilitar el voto de 75 años o más. La comparación con este perfil es descriptiva: es más rural y parte de la diferencia puede deberse a eso.</p>
+
+<figure><img src="../../reto1_perfiles/reports/fig/fig3_mapa_perfiles.png" alt="Mapa de los perfiles"><figcaption>Figura 3. Ubicación de las secciones de cada perfil (marco cartográfico 2021).</figcaption></figure>
+
+<h2>5. Hallazgos que valen para todos los perfiles</h2>
+<ul>
+<li><b>Género.</b> En 2024 votaron 64.2% de las mujeres y 54.8% de los hombres; la brecha de 9 a 14 puntos entre los 18 y los 54 años se invierte desde los 65 y se repite en las seis elecciones.</li>
+<li><b>Edad.</b> El piso no está entre los más jóvenes sino en los 25 a 34 años (49.6%, frente a 50.4% de los 18 a 24); el máximo está en los 65 a 74 años (76.1%).</li>
+<li><b>Quién falta.</b> Las personas de 18 a 44 años son 66% de quienes no votan y 57% de la lista nominal; los hombres de 25 a 44 años, 27% de quienes no votan y 20% de la lista nominal.</li>
+<li><b>Mujeres de 75 años o más.</b> Votan de 6 a 8 puntos menos que los hombres en los cinco perfiles: el único hallazgo de edad con el mismo signo en todos.</li>
+<li><b>Cohortes.</b> No hay maduración sistemática de quienes cumplen 18 años: comparando 18-24 años en una elección con 25-34 seis años después (mismo tipo de elección) el cambio fue de +0.3, −0.4, +3.3 y −5.3 puntos. La brecha joven-adulto se mueve con el ciclo político, no con la edad.</li>
+</ul>
+
+<figure><img src="../../reto1_perfiles/reports/fig/fig6_historial.png" alt="Historial por elección"><figcaption>Figura 4. Participación por elección en cada perfil (línea azul) frente al promedio nacional (punteada). El vaivén entre presidenciales (2012, 2018, 2024) e intermedias (2009, 2015, 2021) se repite en todos los perfiles.</figcaption></figure>
+
+<h2>6. Qué tan sólida es la segmentación</h2>
+<p><b>Medición.</b> Con un remuestreo que simula el ruido de las celdas pequeñas, la proporción de la variación entre secciones que no es ruido es de 0.99 para el nivel, 0.82-0.85 para la brecha de género y 0.84-0.89 para la de jóvenes. La persistencia incompleta entre décadas es, por tanto, cambio real y no error de medición.</p>
+<p><b>Validez en el tiempo.</b> Con perfiles construidos con 2009-2018 y resultados de 2024, el perfil explica 32% de la varianza del nivel, 27% de la brecha de género y 15% de la de jóvenes (los grupos al azar, 0%). La brecha de jóvenes es el eje más débil: ahí el estado explica más (20%), aunque ambos se complementan. Sobre la geografía, el perfil añade de 0.13 a 0.23 de R² por encima de los 32 estados y de 0.05 a 0.11 por encima de unos 2,400 municipios.</p>
+<p><b>Diferenciación.</b> Los perfiles explican entre 55% y 61% de la varianza de cada eje; la distancia mínima entre centros es de 1.4 a 1.8 desviaciones estándar y solo 11% de la lista nominal está cerca de una frontera. La asignación de una sección se repite en 85% de las réplicas con ruido; 69% de las secciones lo hacen en al menos 80%, y publicamos esa confianza por sección. Una lección de rigor: una primera validación compartía una elección entre rasgos y resultado e inflaba un R²; la corregimos con ventanas sin elecciones en común.</p>
+<p><b>Dónde ocurre el cambio.</b> Las diferencias entre secciones de un mismo municipio persisten más (0.77) que las diferencias nacionales (0.69): el movimiento entre elecciones es sobre todo de municipios y estados completos. En la práctica, el orden de prioridad entre secciones de un mismo distrito es más confiable que el orden nacional.</p>
+
+<figure><img src="../../reto1_perfiles/reports/fig/fig4_votos_recuperables.png" alt="Votos recuperables"><figcaption>Figura 5. Votos que se recuperarían por elección según cuatro criterios (millones, IC95% por remuestreo de municipios). Los criterios se solapan y no se suman.</figcaption></figure>
+
+<h2>7. Cómo lo usaría el INE</h2>
+<p><b>Producto.</b> Entregamos un tablero (un solo archivo HTML, sin servidor) con mapa de distritos, municipios y secciones, filtros por entidad, distrito, perfil y confianza de asignación, y descarga en CSV; y tablas de votos recuperables por perfil, municipio y distrito. Se actualiza corriendo el código con cada nueva publicación de la CCPC.</p>
+<table>
+<tr><th>Quién</th><th>Qué haría con los perfiles</th></tr>
+<tr><td>Juntas Distritales y Locales</td><td>Ubicar sus secciones prioritarias y el grupo de edad y sexo al que dirigir la comunicación; orden de prioridad dentro del distrito.</td></tr>
+<tr><td>DECEyEC</td><td>Diseñar mensajes y canales por perfil para la movilización nacional de las intermedias de 2027; medir resultados con la CCPC.</td></tr>
+<tr><td>DERFE</td><td>Verificar si el domicilio desactualizado es frecuente en el perfil 1 y atender accesibilidad de 75 años o más.</td></tr>
+</table>
+<p><b>Piloto en 2027.</b> Asignar al azar secciones de un mismo perfil a dos o más brazos y medir con la CCPC 2027, que resuelve sección, sexo y edad. Con 250 secciones por brazo se detectan efectos de 1.0 a 1.7 puntos en grupos focalizados; los mensajes masivos requieren cerca de 1,000 por brazo (efecto mínimo de 0.7-0.8 puntos). La literatura experimental da una guía de magnitudes: mensajes de texto de recordatorio, de 0.7 a 0.9 puntos (Dinamarca, Finlandia); una segunda llamada, 1.2; la visita en persona, cerca de 4.3 entre quienes son contactados. En México, volantes con información neutral no movieron la participación y los de corrupción la redujeron 1.3 puntos (Chong et al., 2015). Por eso priorizamos mensajes prácticos y neutrales, y contacto presencial donde no hay internet.</p>
+<div class="box"><b>Neutralidad.</b> Ni los perfiles ni las estrategias usan voto por partido. Los mensajes son informativos, sobre cómo, dónde y cuándo votar.</div>
+
+<h2>8. Limitaciones</h2>
+<ul>
+<li><b>Descriptivo, no causal.</b> Las estrategias son hipótesis; con estos datos no se estima su efecto. Las causas de la brecha masculina del perfil 3 y del rezago de las mujeres jóvenes del perfil 4 no están establecidas.</li>
+<li><b>Lista nominal.</b> El denominador incluye a personas que ya no residen o fallecieron, lo que sobreestima la abstención donde hay emigración (norte y zonas de migración).</li>
+<li><b>Falacia ecológica.</b> Escolaridad, internet, lengua indígena y migración son características de la sección, no de las personas.</li>
+<li><b>Votos recuperables.</b> Son diferencias frente a secciones comparables, no pronósticos. La cifra depende sobre todo del punto de referencia: 4.1 millones con la mediana de comparables, 7.7 con el cuarto superior y 11.9 con el percentil 90. Donde la lista nominal incluye personas que ya no residen, el potencial está sobreestimado.</li>
+<li><b>Cobertura.</b> Las secciones creadas después de 2015 o con menos de 800 registros quedan sin perfil (8% de la lista nominal).</li>
+</ul>
+
+<h2>9. Reproducibilidad</h2>
+<p class="small">Código abierto en https://github.com/gpancardo/ine (carpetas <code>shared/</code> y <code>reto1_perfiles/</code>). Los scripts se ejecutan con <code>uv run</code> desde la raíz, comenzando por <code>shared/download_data.py</code> y <code>shared/build_panel.py</code>; el orden completo está en <code>reto1_perfiles/README.md</code>. Cada cifra de este documento proviene de un CSV en <code>reto1_perfiles/reports/</code>. El informe técnico completo, con todas las tablas de validación, es <code>reto1_perfiles/reports/INFORME.md</code>.</p>
+</body></html>

@@ -1,0 +1,11 @@
+Hackea la participación (INE) · Reto 1: Perfiles ciudadanos de participación
+Título: Cinco tipos de ciudadanía electoral
+
+Contenido
+- documento_tecnico.pdf     Documento técnico (9 cuartillas, Arial 11, interlineado 1.5)
+- fichas_perfiles.pdf       Fichas de perfil (5, una por página) y fichas/*.png en alta resolución (2160 x 2700)
+- presentacion.pdf          Presentación ejecutiva (10 diapositivas)
+- tablero_interactivo.html  Tablero con mapa por distrito, municipio y sección (abrir en un navegador)
+- codigo/                   Código reproducible (uv run; orden en codigo/reto1_perfiles/README.md) e informe técnico completo
+Repositorio: https://github.com/gpancardo/ine
+Cartas de cesión de derechos y de decir verdad: anexas, firmadas por todas las personas integrantes.
