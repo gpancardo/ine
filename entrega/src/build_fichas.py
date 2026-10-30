@@ -49,11 +49,11 @@ ICON = {
 CSS = """
 *{box-sizing:border-box} body{margin:0;font-family:Arial,'Liberation Sans',sans-serif;color:#1b1b1b;background:#fff}
 .f{width:1080px;height:1350px;position:relative;overflow:hidden;page-break-after:always;background:#fff;border:0}
-.top{height:300px;padding:44px 56px;color:#fff;display:flex;gap:28px;align-items:center}
-.top svg{width:150px;height:150px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.top{height:250px;padding:30px 56px;color:#fff;display:flex;gap:28px;align-items:center}
+.top svg{width:130px;height:130px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .k{font-size:24px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
-.top h1{margin:6px 0 4px;font-size:50px;line-height:1.05} .top p{margin:0;font-size:30px;font-style:italic}
-.body{padding:34px 56px}
+.top h1{margin:4px 0 4px;font-size:44px;line-height:1.05} .top p{margin:0;font-size:30px;font-style:italic}
+.body{padding:26px 56px}
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:26px}
 .kpi{border:2px solid #e3e3e3;border-radius:14px;padding:14px 16px}.kpi b{display:block;font-size:44px;line-height:1}.kpi span{font-size:19px;color:#555}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:30px}
@@ -64,6 +64,23 @@ p.t{font-size:23px;line-height:1.38;margin:0 0 14px}
 .est{border-radius:16px;padding:20px 24px;margin-top:6px}.est p{margin:0 0 9px;font-size:22px;line-height:1.35}
 .foot{position:absolute;left:56px;right:56px;bottom:28px;font-size:17px;color:#666;display:flex;justify-content:space-between;border-top:2px solid #eee;padding-top:10px}
 """
+import csv
+CUR = {}
+for r in csv.DictReader(open(D.parent.parent / "reto1_perfiles/reports/tipologia_curvas_2024.csv")):
+    CUR[(int(r["c"]), int(r["SEXO"]))] = [float(r[k]) * 100 for k in ("18-24","25-34","35-44","45-54","55-64","65-74","75+")]
+AGES = ["18-24","25-34","35-44","45-54","55-64","65-74","75+"]
+def chart(p):
+    W, H, L, B = 470, 205, 44, 30
+    X = lambda i: L + i * (W - L - 18) / 6
+    Y = lambda v: 14 + (90 - v) * (H - 14 - B) / 60
+    g = "".join(f'<line x1="{L}" x2="{W-10}" y1="{Y(v)}" y2="{Y(v)}" stroke="#e6e6e6"/><text x="{L-8}" y="{Y(v)+5}" font-size="15" text-anchor="end" fill="#777">{v}</text>' for v in (30, 50, 70, 90))
+    xs = "".join(f'<text x="{X(i)}" y="{H-10}" font-size="14" text-anchor="middle" fill="#777">{a}</text>' for i, a in enumerate(AGES))
+    def line(sex, col, lab):
+        v = CUR[(p["n"] - 1, sex)]
+        pts = " ".join(f"{X(i)},{Y(x)}" for i, x in enumerate(v))
+        dots = "".join(f'<circle cx="{X(i)}" cy="{Y(x)}" r="4" fill="{col}"/>' for i, x in enumerate(v))
+        return f'<polyline points="{pts}" fill="none" stroke="{col}" stroke-width="4"/>{dots}<text x="{X(0)+4}" y="{Y(v[0])+(-12 if sex==1 else 26)}" font-size="16" font-weight="700" fill="{col}">{lab}</text>'
+    return f'<svg viewBox="0 0 {W} {H}" width="100%">{g}{xs}{line(0,"#555","Hombres")}{line(1,p["c"],"Mujeres")}</svg>'
 def card(p):
     c = p["c"]; tint = c + "1f"
     hb = f'<div class="bar" style="width:{p["h"]*1.3}%;background:#555">Hombres 25-34: {p["h"]}%</div>'
@@ -76,8 +93,9 @@ def card(p):
 <div class="kpi"><b>{p["gen"]} pp</b><span>brecha de género 18-54 (mujeres − hombres)</span></div>
 <div class="kpi"><b>{p["jov"]} pp</b><span>jóvenes 18-34 frente a 55-74 años</span></div></div>
 <div class="row"><div><h2 style="color:{c}">Quiénes y dónde</h2><p class="t">{p["quien"]}</p><p class="t">{p["donde"]}</p></div>
-<div><h2 style="color:{c}">Participación 2024, 25 a 34 años</h2>{hb}{mb}
-<p class="cap" style="margin-top:12px">Hogares con internet: {p["net"]}% · Escolaridad: {p["esc"]} años</p>
+<div><h2 style="color:{c}">Participación 2024, 25 a 34 años</h2>{mb}{hb}
+<p class="cap" style="margin-top:10px">Participación 2024 por edad (%)</p>{chart(p)}
+<p class="cap" style="margin-top:6px">Hogares con internet: {p["net"]}% · Escolaridad: {p["esc"]} años</p>
 <p class="cap">Votos recuperables por nivel: {p["pot"]} M por elección</p></div></div>
 <div class="est" style="background:{tint};border-left:8px solid {c};margin-top:20px"><h2 style="color:{c}">Estrategia (hipótesis a probar)</h2>
 <p><b>Objetivo.</b> {p["obj"]}</p><p><b>Mensaje.</b> {p["msg"]}</p><p><b>Canal.</b> {p["canal"]}</p><p><b>Indicador (CCPC 2027).</b> {p["ind"]}</p></div>

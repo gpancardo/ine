@@ -18,12 +18,11 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 <p style="font-size:32px">Perfiles de participación 2009-2024 y cómo dirigirse a cada uno</p>
 <p style="margin-top:50px;font-size:24px">Hackea la participación: Datos que construyen democracia · Reto 1, Perfiles ciudadanos</p></div><div class="n" style="color:#9fb4d6">1</div></section>
 
-<section class="s"><h2>Pregunta: ¿qué tipos de ciudadanía existen según su participación?</h2>
-<ul><li>64,096 secciones electorales (92% de la lista nominal), seis elecciones federales 2009-2024.</li>
-<li>Solo datos agregados de la CCPC: sección × sexo × edad. Sin datos personales y sin voto por partido.</li>
-<li>Para el INE: campañas focalizadas y mensajes diferenciados por perfil.</li>
-<li>Nuestro criterio: un perfil debe <b>repetirse en el tiempo</b>, no describir una sola elección.</li></ul><div class="n">2</div></section>
-
+<section class="s"><h2>Un hueco que se repite en todo el país</h2>
+<div style="display:flex;gap:48px;margin-top:6px"><div><div class="big">27%</div><div class="lbl">de quienes no votan son hombres de 25 a 44 años, que son solo 20% de la lista nominal</div></div>
+<div><div class="big">5</div><div class="lbl">perfiles de ciudadanía; el mismo hueco, con cinco formas distintas</div></div></div>
+<p style="margin-top:36px"><b>Pregunta del reto:</b> ¿qué tipos de ciudadanía existen según su participación? Usamos 64,096 secciones y seis elecciones federales (2009-2024), solo datos agregados de la CCPC, sin voto por partido.</p>
+<p>Nuestro criterio: un perfil debe <b>repetirse en el tiempo</b>, no describir una sola elección.</p><div class="n">2</div></section>
 <section class="s"><h2>Método: tres rasgos que sí persisten</h2>
 <div class="two"><div><p><b>De ocho rasgos candidatos conservamos tres</b>, los que se repiten entre 2009-2015 y 2018-2024:</p>
 <ul><li>Nivel de participación</li><li>Brecha de género (18-54 años)</li><li>Brecha de jóvenes (18-34 frente a 55-74)</li></ul></div>
@@ -31,13 +30,15 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 <p>La <i>intermitencia</i> (votar solo en presidenciales) no persiste por territorio (r = 0.28 secciones, 0.07 municipios): se usa solo para describir.</p></div></div>
 <div class="src">Fuente: INFORME §2 y §5; confiabilidad_rasgos.csv</div><div class="n">3</div></section>
 
-<section class="s"><h2>Los perfiles se sostienen en el tiempo</h2>
-<div style="display:flex;gap:44px;margin-top:10px"><div><div class="big">32%</div><div class="lbl">de la varianza del nivel de 2024 la explican perfiles construidos con 2009-2018 (grupos al azar: 0%)</div></div>
-<div><div class="big">27%</div><div class="lbl">de la brecha de género de 2024</div></div>
-<div><div class="big" style="font-size:60px;padding-top:12px">+0.13 a +0.23</div><div class="lbl">de R² sobre lo que ya dice el estado</div></div></div>
-<p style="margin-top:36px">También somos claros sobre el límite: los datos son un continuo, no grupos naturales. Por eso ofrecemos <b>perfiles para comunicar</b> y <b>rasgos continuos para priorizar</b>.</p>
-<div class="src">Fuente: INFORME §5 y §5.1; validacion_tipologia.csv</div><div class="n">4</div></section>
-
+<section class="s"><h2>Los perfiles se sostienen y superan al camino directo</h2>
+<div style="display:flex;gap:40px;margin-top:4px"><div><div class="big">32%</div><div class="lbl">de la varianza del nivel de 2024 la explican perfiles hechos con 2009-2018 (al azar: 0%)</div></div>
+<div><div class="big">27%</div><div class="lbl">de la brecha de género de 2024</div></div></div>
+<table style="margin-top:26px;font-size:22px"><tr><th>Cómo se agrupa (R² medio, validación por entidad)</th><th>R²</th></tr>
+<tr><td>K-means sobre el perfil de 14 celdas de edad y sexo</td><td>0.15</td></tr>
+<tr><td>K-means sobre nuestros tres rasgos persistentes</td><td>0.21</td></tr>
+<tr><td><b>Pertenencia suave a cinco arquetipos</b></td><td><b>0.40</b></td></tr></table>
+<p style="font-size:22px;margin-top:12px">Los datos son un continuo: perfiles para comunicar, rasgos continuos para priorizar.</p>
+<div class="src">Fuente: INFORME §5 y §5.1; comparacion_algoritmos.csv</div><div class="n">4</div></section>
 <section class="s"><h2>Los cinco perfiles</h2>
 <img src="../../reto1_perfiles/reports/fig/fig2_perfil_grupos.png" style="width:1136px;margin-top:-6px"><div class="n">5</div></section>
 
@@ -61,13 +62,14 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 
 <section class="s"><h2>Votos que se recuperarían por elección</h2>
 <img src="../../reto1_perfiles/reports/fig/fig4_votos_recuperables.png" style="width:1136px">
-<p style="font-size:22px;margin-top:6px">7.7 M por nivel (IC95% 6.5-8.9), 3.8 M por brecha de género, 3.5 M por jóvenes; los criterios no se suman. 61 municipios (2.5%) reúnen la mitad del potencial por nivel.</p><div class="n">9</div></section>
+<p style="font-size:22px;margin-top:6px">7.7 M por nivel (IC95% 6.5-8.9), 3.8 M por brecha de género, 3.5 M por jóvenes; los criterios no se suman. 61 municipios reúnen la mitad del potencial por nivel (Tijuana, Juárez, Mexicali, León, Puebla encabezan); en distritos hacen falta 84 de 300.</p><div class="n">9</div></section>
 
-<section class="s"><h2>De los datos a la acción en 2027</h2>
-<div class="two"><div><ul style="font-size:24px"><li><b>Juntas Distritales:</b> tablero con mapa y descarga CSV; orden de prioridad dentro del distrito.</li>
-<li><b>DECEyEC:</b> mensajes por perfil para la movilización nacional de las intermedias.</li>
-<li><b>DERFE:</b> verificar domicilios desactualizados en el perfil 1.</li>
-<li><b>Piloto aleatorizado</b> con medición en la CCPC 2027: 250 secciones por brazo detectan 1.0-1.7 pp.</li></ul></div>
-<div><p><b>Límites que declaramos</b></p><ul style="font-size:23px"><li>Perfiles descriptivos, no causales; las estrategias son hipótesis.</li><li>La lista nominal sobreestima la abstención donde hay emigración.</li><li>Descriptores del censo son ecológicos.</li><li>Neutralidad: sin voto por partido.</li></ul></div></div>
+<section class="s"><h2>Plan para 2027: piloto aleatorizado y medible</h2>
+<div class="two"><div><table style="font-size:20px"><tr><th>Elemento</th><th>Diseño</th></tr>
+<tr><td>Unidad</td><td>Sección; azar dentro de municipio y perfil</td></tr>
+<tr><td>Brazos</td><td>Control · mensaje práctico neutral · (perfil 3) contacto presencial</td></tr>
+<tr><td>Resultado</td><td>Cambio 2021→2027 de las celdas objetivo, con la CCPC</td></tr>
+<tr><td>Poder</td><td>250 secciones por brazo: 1.4-1.7 pp; 1,000: 0.7-0.8 pp</td></tr></table></div>
+<div><p style="font-size:22px"><b>Quién lo usa:</b> Juntas Distritales (tablero), DECEyEC (mensajes), DERFE (domicilios).</p>
+<p style="font-size:22px"><b>Límites que declaramos:</b> perfiles descriptivos, no causales; estrategias son hipótesis; la lista nominal sobreestima la abstención donde hay emigración; neutralidad total: sin voto por partido.</p></div></div>
 <div class="src">Código y tablero: github.com/gpancardo/ine</div><div class="n">10</div></section>
-</body></html>

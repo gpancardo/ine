@@ -20,12 +20,14 @@ figure { margin: 8pt 0; break-inside: avoid; }
 figure img { width: 100%; display: block; }
 figcaption { font-size: 9pt; line-height: 1.3; color: #444; margin-top: 2pt; }
 .box { border-left: 3pt solid #2a6fdb; padding: 2pt 0 2pt 8pt; margin: 6pt 0 8pt; background: #f4f7fd; break-inside: avoid; }
+.kp{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin:0 0 10pt}.kp div{border:0.75pt solid #2a6fdb;border-radius:4pt;padding:4pt 6pt;line-height:1.2;background:#f4f7fd}.kp b{display:block;font-size:17pt;color:#1d4fa0}.kp span{font-size:8.5pt;color:#333}
 .small { font-size: 9pt; line-height: 1.35; }
 </style></head><body>
 
 <h1>Cinco tipos de ciudadanía electoral</h1>
 <p class="sub">Perfiles ciudadanos de participación a partir de los Conteos Censales de Participación Ciudadana 2009-2024 · Hackea la participación, Reto 1</p>
 
+<div class="kp"><div><b>64,096</b><span>secciones electorales, 92% de la lista nominal</span></div><div><b>5</b><span>perfiles estables entre décadas</span></div><div><b>7.7 M</b><span>votos por elección que se recuperarían (IC95% 6.5-8.9)</span></div><div><b>61</b><span>municipios reúnen la mitad de ese potencial</span></div></div>
 <h2>1. Resumen</h2>
 <p>Segmentamos 64,096 secciones electorales (92% de la lista nominal) en <b>cinco perfiles</b> con tres rasgos de su participación en 2009-2024: cuánto votan (nivel), cuánto menos votan los hombres que las mujeres de 18 a 54 años (brecha de género) y cuánto menos votan los jóvenes de 18 a 34 años que los de 55 a 74 (brecha de jóvenes). Cada perfil tiene nombre, una descripción por edad, sexo, región e historial, y una estrategia de fomento con mensaje, canal e indicador.</p>
 <ul>
@@ -45,6 +47,17 @@ figcaption { font-size: 9pt; line-height: 1.3; color: #444; margin-top: 2pt; }
 <p><b>Segmentación.</b> K-means con cinco grupos sobre los tres rasgos estandarizados. La convocatoria pide de cuatro a seis perfiles; con cinco, la solución es la más estable entre ventanas de tiempo y predice mejor el resultado de 2024 que con cuatro en el 100% de las réplicas de remuestreo de municipios.</p>
 <p><b>Alternativas que probamos.</b> Un árbol de decisión supervisado rinde igual que K-means; una mezcla gaussiana y el método de Ward dibujan fronteras distintas; un agrupamiento por municipio rinde mucho peor porque dentro de un municipio hay secciones de perfiles diferentes. Conservamos K-means por ser el más fácil de comunicar y le añadimos ocho reglas explícitas (un árbol sustituto con 78% de coincidencia validado por entidad) para clasificar cualquier sección o municipio con umbrales transparentes.</p>
 <p><b>Lo que enseña el continuo.</b> Un agrupamiento sobre datos sin grupos reales con la misma covarianza obtiene una silueta casi igual (0.221 frente a 0.231), y HDBSCAN no halla ningún grupo. Los datos son un continuo. Eso no invalida los perfiles; fija cómo usarlos. Los grupos duros pierden cerca de la mitad de lo que predicen los rasgos continuos (R² de 0.21 frente a 0.40), así que ofrecemos <b>dos niveles</b>: perfiles para comunicar y decidir mensajes, y los tres rasgos continuos (o pertenencias suaves a cinco arquetipos) para priorizar secciones.</p>
+
+<p><b>Frente al camino directo.</b> Lo más inmediato es agrupar las secciones por su perfil completo de edad y sexo (14 celdas). Comparamos esa opción con la nuestra bajo el mismo protocolo (rasgos de 2009-2018, resultados de 2024, validación cruzada por entidad, R² medio de los tres rasgos de 2024):</p>
+<table>
+<tr><th>Cómo se agrupa o representa la sección</th><th class="n">R² medio</th></tr>
+<tr><td>Cinco grupos con K-means sobre el perfil de 14 celdas de edad y sexo (el camino directo)</td><td class="n">0.15</td></tr>
+<tr><td>Cinco grupos con K-means sobre los tres rasgos persistentes (nuestros perfiles)</td><td class="n">0.21</td></tr>
+<tr><td>Cinco pertenencias suaves, mezcla gaussiana</td><td class="n">0.28</td></tr>
+<tr><td><b>Cinco arquetipos con pertenencia suave</b> (igualan la cota de los tres rasgos continuos)</td><td class="n"><b>0.40</b></td></tr>
+<tr><td>Cinco grupos al azar</td><td class="n">−0.03</td></tr>
+</table>
+<p>Elegir los rasgos por su persistencia mejora en 40% al camino directo, y conservar la pertenencia suave lo duplica.</p>
 
 <h2>4. Los cinco perfiles</h2>
 <table>
@@ -103,18 +116,27 @@ figcaption { font-size: 9pt; line-height: 1.3; color: #444; margin-top: 2pt; }
 <tr><td>DECEyEC</td><td>Diseñar mensajes y canales por perfil para la movilización nacional de las intermedias de 2027; medir resultados con la CCPC.</td></tr>
 <tr><td>DERFE</td><td>Verificar si el domicilio desactualizado es frecuente en el perfil 1 y atender accesibilidad de 75 años o más.</td></tr>
 </table>
-<p><b>Piloto en 2027.</b> Asignar al azar secciones de un mismo perfil a dos o más brazos y medir con la CCPC 2027, que resuelve sección, sexo y edad. Con 250 secciones por brazo se detectan efectos de 1.0 a 1.7 puntos en grupos focalizados; los mensajes masivos requieren cerca de 1,000 por brazo (efecto mínimo de 0.7-0.8 puntos). La literatura experimental da una guía de magnitudes: mensajes de texto de recordatorio, de 0.7 a 0.9 puntos (Dinamarca, Finlandia); una segunda llamada, 1.2; la visita en persona, cerca de 4.3 entre quienes son contactados. En México, volantes con información neutral no movieron la participación y los de corrupción la redujeron 1.3 puntos (Chong et al., 2015). Por eso priorizamos mensajes prácticos y neutrales, y contacto presencial donde no hay internet.</p>
+<p><b>Dónde empezar.</b> El potencial por nivel está concentrado en pocos municipios (61 de 2,400 reúnen la mitad) y mucho menos en distritos: hacen falta 84 de los 300 para sumar la mitad, así que conviene que las Juntas Distritales prioricen secciones dentro de su distrito y que la DECEyEC priorice municipios. Los de mayor potencial por nivel son Tijuana (271 mil votos), Juárez (257 mil), Mexicali (160 mil), León (137 mil) y Puebla (136 mil).</p>
+<p><b>Piloto aleatorizado para 2027.</b> Para pasar de hipótesis a evidencia proponemos el siguiente protocolo, que reutiliza el diseño de medición de la CCPC:</p>
+<table>
+<tr><th>Elemento</th><th>Diseño propuesto</th></tr>
+<tr><td>Unidad y asignación</td><td>Sección electoral; asignación al azar dentro de cada municipio (bloques) y dentro de cada perfil.</td></tr>
+<tr><td>Brazos</td><td>Control sin mensaje; mensaje práctico neutral (dónde y cómo votar) por celular o redes; en el perfil 3, contacto presencial como brazo adicional.</td></tr>
+<tr><td>Resultado</td><td>Cambio en participación entre 2021 y 2027 (intermedia con intermedia) de las celdas de sexo y edad objetivo de cada perfil, medido con la CCPC 2027.</td></tr>
+<tr><td>Tamaño</td><td>Con 250 secciones por brazo, efecto mínimo detectable de 1.4 puntos (todas las personas), 1.7 (jóvenes) y 1.6 (hombres de 25 a 44); con 500, de 1.0, 1.2 y 1.2; con 1,000, de 0.7 a 0.8.</td></tr>
+<tr><td>Salvaguardas</td><td>Contenido informativo y neutral; sin segmentar por partido; resultados solo agregados por sección; difusión de los resultados aunque no haya efecto.</td></tr>
+</table>
+<p>La literatura da una guía de magnitudes: mensajes de texto de recordatorio, de 0.7 a 0.9 puntos (Dinamarca, Finlandia); una segunda llamada, 1.2; la visita en persona, cerca de 4.3 entre quienes son contactados. En México, volantes con información neutral no movieron la participación y los de corrupción la redujeron 1.3 puntos (Chong et al., 2015). De ahí que el piloto de mensajes masivos necesite unas 1,000 secciones por brazo, y que el contacto presencial se pruebe donde no hay internet.</p>
 <div class="box"><b>Neutralidad.</b> Ni los perfiles ni las estrategias usan voto por partido. Los mensajes son informativos, sobre cómo, dónde y cuándo votar.</div>
 
 <h2>8. Limitaciones</h2>
 <ul>
 <li><b>Descriptivo, no causal.</b> Las estrategias son hipótesis; con estos datos no se estima su efecto. Las causas de la brecha masculina del perfil 3 y del rezago de las mujeres jóvenes del perfil 4 no están establecidas.</li>
 <li><b>Lista nominal.</b> El denominador incluye a personas que ya no residen o fallecieron, lo que sobreestima la abstención donde hay emigración (norte y zonas de migración).</li>
-<li><b>Falacia ecológica.</b> Escolaridad, internet, lengua indígena y migración son características de la sección, no de las personas.</li>
+<li><b>Falacia ecológica.</b> Los descriptores del censo caracterizan la sección, no a las personas.</li>
 <li><b>Votos recuperables.</b> Son diferencias frente a secciones comparables, no pronósticos. La cifra depende sobre todo del punto de referencia: 4.1 millones con la mediana de comparables, 7.7 con el cuarto superior y 11.9 con el percentil 90. Donde la lista nominal incluye personas que ya no residen, el potencial está sobreestimado.</li>
-<li><b>Cobertura.</b> Las secciones creadas después de 2015 o con menos de 800 registros quedan sin perfil (8% de la lista nominal).</li>
+<li><b>Cobertura.</b> Secciones nuevas o con menos de 800 registros quedan sin perfil (8% de la lista nominal).</li>
 </ul>
 
-<h2>9. Reproducibilidad</h2>
-<p class="small">Código abierto en https://github.com/gpancardo/ine (carpetas <code>shared/</code> y <code>reto1_perfiles/</code>). Los scripts se ejecutan con <code>uv run</code> desde la raíz, comenzando por <code>shared/download_data.py</code> y <code>shared/build_panel.py</code>; el orden completo está en <code>reto1_perfiles/README.md</code>. Cada cifra de este documento proviene de un CSV en <code>reto1_perfiles/reports/</code>. El informe técnico completo, con todas las tablas de validación, es <code>reto1_perfiles/reports/INFORME.md</code>.</p>
+<p class="small"><b>Reproducibilidad.</b> Código en https://github.com/gpancardo/ine y en el paquete (<code>codigo/</code>); orden de ejecución en <code>reto1_perfiles/README.md</code>. Cada cifra proviene de un CSV de <code>reto1_perfiles/reports/</code>; el informe completo es <code>INFORME.md</code>.</p>
 </body></html>
