@@ -1,0 +1,41 @@
+A. Autocorrelación del residuo (OLS en el propio año) entre transiciones consecutivas
+  res(2015) vs res(2018): sección r=+0.014 | municipio r=+0.002 | estado r=-0.152
+  res(2018) vs res(2021): sección r=-0.008 | municipio r=+0.180 | estado r=+0.066
+  res(2021) vs res(2024): sección r=+0.002 | municipio r=+0.045 | estado r=+0.039
+REF S2: sem+edad (Ridge) [0.0784, 0.0563]
+A+ choque previo (res1 sección, municipio) [0.0803, 0.0566]
+D+ difusión multi-escala (Ridge) [0.0802, 0.0556]
+D+ difusión multi-escala (LightGBM) [0.0813, 0.0579]
+B+ pendientes por estado (Ridge α=100) [0.0852, 0.0722]
+B+ pendientes por región k-means 40 (Ridge α=100) [0.0862, 0.0675]
+A+D+B combinado (Ridge α=100) [0.0894, 0.075]
+                                         variante  test   rmse     r2  d_vs_ref      lo      hi
+                         REF S2: sem+edad (Ridge)  2021 0.0784 0.6161       NaN     NaN     NaN
+                         REF S2: sem+edad (Ridge)  2024 0.0563 0.7105       NaN     NaN     NaN
+       A+ choque previo (res1 sección, municipio)  2021 0.0803 0.5975    0.0019  0.0013  0.0025
+       A+ choque previo (res1 sección, municipio)  2024 0.0566 0.7076    0.0003  0.0000  0.0005
+                 D+ difusión multi-escala (Ridge)  2021 0.0802 0.5986    0.0018  0.0009  0.0026
+                 D+ difusión multi-escala (Ridge)  2024 0.0556 0.7184   -0.0008 -0.0010 -0.0005
+              D+ difusión multi-escala (LightGBM)  2021 0.0813 0.5872    0.0029  0.0015  0.0042
+              D+ difusión multi-escala (LightGBM)  2024 0.0579 0.6945    0.0015  0.0010  0.0021
+           B+ pendientes por estado (Ridge α=100)  2021 0.0852 0.5463    0.0068  0.0046  0.0090
+           B+ pendientes por estado (Ridge α=100)  2024 0.0722 0.5252    0.0158  0.0129  0.0188
+B+ pendientes por región k-means 40 (Ridge α=100)  2021 0.0862 0.5359    0.0078  0.0056  0.0099
+B+ pendientes por región k-means 40 (Ridge α=100)  2024 0.0675 0.5845    0.0111  0.0087  0.0136
+                    A+D+B combinado (Ridge α=100)  2021 0.0894 0.5008    0.0110  0.0080  0.0140
+                    A+D+B combinado (Ridge α=100)  2024 0.0750 0.4865    0.0187  0.0156  0.0219
+
+F. Riesgo de deterioro relativo vs la última elección del mismo tipo (rank y precisión@10%)
+ test                                            criterio  spearman  precision_top10  lift
+ 2021                 Ridge S2 (pred − última mismo tipo)     0.752            0.457 4.573
+ 2021                                   Difusión LightGBM     0.750            0.442 4.418
+ 2021 Heurística: abstención alta en la última mismo tipo    -0.491            0.008 0.078
+ 2021                       Heurística: tendencia (a1−a2)     0.770            0.506 5.057
+ 2021                   Heurística: abstención alta en P1     0.221            0.232 2.323
+ 2021                                           Aleatorio     0.004            0.098 0.979
+ 2024                 Ridge S2 (pred − última mismo tipo)     0.393            0.289 2.889
+ 2024                                   Difusión LightGBM     0.233            0.216 2.159
+ 2024 Heurística: abstención alta en la última mismo tipo    -0.204            0.028 0.282
+ 2024                       Heurística: tendencia (a1−a2)     0.218            0.165 1.646
+ 2024                   Heurística: abstención alta en P1    -0.204            0.028 0.282
+ 2024                                           Aleatorio    -0.003            0.100 1.001

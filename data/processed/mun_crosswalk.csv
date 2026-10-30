@@ -1,0 +1,2469 @@
+mun_ine,mun_inegi,nom_ine,exacto
+1001,1001,Aguascalientes,True
+1002,1002,Asientos,True
+1003,1003,Calvillo,True
+1004,1004,Cosío,True
+1005,1005,Jesús María,True
+1010,1011,San Francisco de los Romo,True
+1006,1006,Pabellón de Arteaga,True
+1007,1007,Rincón de Romos,True
+1008,1008,San José de Gracía,True
+1009,1009,Tepezalá,True
+1011,1010,El Llano,True
+2001,2001,Ensenada,True
+2006,2006,San Quintin,True
+2002,2002,Mexicali,True
+2003,2003,Tecate,True
+2004,2004,Tijuana,True
+2005,2005,Playas de Rosarito,True
+3001,3001,Comondú,True
+3002,3002,Mulegé,True
+3003,3003,La Paz,True
+3004,3008,Los Cabos,True
+3005,3009,Loreto,True
+4001,4002,Campeche,True
+4002,4001,Calkiní,True
+4003,4003,Carmen,True
+4010,4011,Candelaria,True
+4004,4004,Champotón,True
+4013,4012,Seybaplaya,True
+4009,4009,Escárcega,True
+4011,4010,Calakmul,True
+4005,4005,Hecelchakán,True
+4006,4006,Hopelche}én,False
+4007,4007,Palizada,True
+4008,4008,Tenabo,True
+5001,5001,Abasolo,True
+5002,5002,Acuña,True
+5003,5003,Allende,True
+5004,5004,Arteaga,True
+5005,5005,Candela,True
+5006,5006,Castaños,True
+5007,5007,Cuatrociénegas,True
+5008,5008,Escobedo,True
+5009,5009,Francisco I. Madero,True
+5010,5010,Frontera,True
+5011,5011,General Cepeda,True
+5012,5012,Guerrero,True
+5013,5013,Hidalgo,True
+5014,5014,Jiménez,True
+5015,5015,Juárez,True
+5016,5016,Lamadrid,True
+5017,5017,Matamoros,True
+5018,5018,Monclova,True
+5019,5019,Morelos,True
+5020,5020,Múzquiz,True
+5021,5021,Nadadores,True
+5022,5022,Nava,True
+5023,5023,Ocampo,True
+5024,5024,Parras,True
+5025,5025,Piedras Negras,True
+5026,5026,Progreso,True
+5027,5027,Ramos Arizpe,True
+5028,5028,Sabinas,True
+5029,5029,Sacramento,True
+5030,5030,Saltillo,True
+5031,5031,San Buenaventura,True
+5032,5032,San Juan de Sabinas,True
+5033,5033,San Pedro,True
+5034,5034,Sierra Mojada,True
+5035,5035,Torreón,True
+5036,5036,Viesca,True
+5037,5037,Villa Unión,True
+5038,5038,Zaragoza,True
+6001,6002,Colima,True
+6002,6003,Comala,True
+6003,6004,Coquimatlán,True
+6004,6005,Cuauhtémoc,True
+6005,6010,Villa de Álvarez,True
+6006,6001,Armería,True
+6007,6006,Ixtlahuacán,True
+6008,6007,Manzanillo,True
+6009,6008,Minatitlán,True
+6010,6009,Tecomán,True
+7001,7001,Acacoyagua,True
+7002,7002,Acala,True
+7122,7123,Emiliano Zapata,True
+7003,7003,Acapetahua,True
+7004,7004,Altamirano,True
+7005,7005,Amatán,True
+7006,7006,Amatenango de la Frontera,True
+7007,7007,Amatenango del Valle,True
+7008,7008,Angel Albino Corzo,True
+7116,7117,Montecristo de Guerrero,True
+7009,7009,Arriaga,True
+7010,7010,Bejucal de Ocampo,True
+7011,7011,Bella Vista,True
+7012,7012,Berriozábal,True
+7013,7013,Bochil,True
+7014,7014,El Bosque,True
+7015,7015,Cacahoatán,True
+7016,7016,Catazajá,True
+7017,7017,Cintalapa,True
+7018,7018,Coapilla,True
+7019,7019,Comitán de Domínguez,True
+7020,7020,La Concordia,True
+7021,7021,Copainalá,True
+7022,7022,Chalchihuitán,True
+7023,7023,Chamula,True
+7024,7024,Chanal,True
+7025,7025,Chapultenango,True
+7026,7026,Chenalhó,True
+7112,7113,Aldama,True
+7027,7027,Chiapa de Corzo,True
+7028,7028,Chiapilla,True
+7029,7029,Chicoasén,True
+7030,7030,Chicomuselo,True
+7031,7031,Chilón,True
+7032,7032,Escuintla,True
+7033,7033,Francisco León,True
+7034,7034,Frontera Comalapa,True
+7035,7035,Frontera Hidalgo,True
+7036,7036,La Grandeza,True
+7037,7037,Huehuetán,True
+7038,7039,Huitiupaán,False
+7039,7038,Huixtán,True
+7040,7040,Huixtla,True
+7041,7041,La Independencia,True
+7042,7042,Ixhuatán,True
+7043,7043,Ixtacomitán,True
+7044,7044,Ixtapa,True
+7045,7045,Ixtapangajoya,True
+7046,7046,Jiquipilas,True
+7047,7047,Jitotol,True
+7048,7048,Juárez,True
+7049,7049,Larráinzar,True
+7118,7119,Santiago El Pinar,True
+7050,7050,La Libertad,True
+7051,7051,Mapastepec,True
+7052,7052,Las Margaritas,True
+7114,7115,Maravilla Tenejapa,True
+7053,7053,Mazapa de Madero,True
+7054,7054,Mazatán,True
+7055,7055,Metapa,True
+7056,7056,Mitontic,True
+7057,7057,Motozintla,True
+7058,7058,Nicolás Ruíz,True
+7059,7059,Ocosingo,True
+7113,7114,Benemérito de las Américas,True
+7115,7116,Marqués de Comillas,True
+7060,7060,Ocotepec,True
+7061,7061,Ocozocoautla de Espinosa,True
+7062,7062,Ostuacán,True
+7063,7063,Osumacinta,True
+7064,7064,Oxchuc,True
+7065,7065,Palenque,True
+7066,7066,Pantelhó,True
+7067,7067,Pantepec,True
+7068,7068,Pichucalco,True
+7069,7069,Pijijiapan,True
+7070,7070,El Porvenir,True
+7071,7072,Pueblo Nuevo Solistahuacán,True
+7120,7121,Rincón Chamula San Pedro,True
+7072,7073,Rayón,True
+7073,7074,Reforma,True
+7074,7075,Las Rosas,True
+7075,7076,Sabanilla,True
+7076,7077,Salto De Agua,True
+7077,7078,San Cristóbal de las Casas,True
+7078,7079,San Fernando,True
+7079,7112,San Juan Cancuc,True
+7080,7110,San Lucas,True
+7081,7080,Siltepec,True
+7124,7125,Honduras de la Sierra,True
+7119,7120,Capitán Luis Ángel Vidal,True
+7082,7081,Simojovel,True
+7083,7082,Sitalá,True
+7084,7083,Socoltenango,True
+7085,7084,Solosuchiapa,True
+7086,7085,Soyaló,True
+7087,7086,Suchiapa,True
+7088,7087,Suchiate,True
+7089,7088,Sunuapa,True
+7090,7089,Tapachula,True
+7091,7090,Tapalapa,True
+7092,7091,Tapilula,True
+7093,7092,Tecpatán,True
+7123,7124,Mezcalapa,True
+7094,7093,Tenejapa,True
+7095,7094,Teopisca,True
+7096,7096,Tila,True
+7097,7097,Tonalá,True
+7098,7098,Totolapa,True
+7099,7099,La Trinitaria,True
+7100,7100,Tumbalá,True
+7101,7102,Tuxtla Chico,True
+7102,7101,Tuxtla Gutiérrez,True
+7103,7103,Tuzantán,True
+7104,7104,Tzimol,True
+7105,7105,Unión Juárez,True
+7106,7106,Venustiano Carranza,True
+7107,7071,Villacomaltitlán,False
+7108,7107,Villa Corzo,True
+7121,7122,El Parral,True
+7109,7108,Villaflores,True
+7110,7109,Yajalón,True
+7111,7111,Zinacantán,True
+7117,7118,San Andrés Duraznal,True
+8001,8001,Ahumada,True
+8002,8002,Aldama,True
+8003,8003,Allende,True
+8004,8004,Aquiles Serdán,True
+8005,8005,Ascensión,True
+8006,8006,Bachíniva,True
+8007,8007,Balleza,True
+8008,8008,Batopilas de Manuel Gómez Morín,False
+8009,8009,Bocoyna,True
+8010,8010,Buenaventura,True
+8011,8011,Camargo,True
+8012,8012,Carichí,True
+8013,8013,Casas Grandes,True
+8014,8014,Coronado,True
+8015,8015,Coyame del Sotol,True
+8016,8016,La Cruz,True
+8017,8017,Cuauhtémoc,True
+8018,8018,Cusihuiriachi,True
+8019,8019,Chihuahua,True
+8020,8020,Chínipas,True
+8021,8021,Delicias,True
+8022,8022,Dr. BelisaRío Domínguez,True
+8023,8023,Galeana,True
+8024,8024,Santa Isabel,True
+8025,8025,Gómez Farías,True
+8026,8026,Gran Morelos,True
+8027,8027,Guachochi,True
+8028,8028,Guadalupe,True
+8029,8029,Guadalupe y Calvo,True
+8030,8030,Guazapares,True
+8031,8031,Guerrero,True
+8032,8032,Hidalgo del Parral,True
+8033,8033,Huejotitán,True
+8034,8034,Ignacio Zaragoza,True
+8035,8035,Janos,True
+8036,8036,Jiménez,True
+8037,8037,Juárez,True
+8038,8038,Julimes,True
+8039,8039,López,True
+8040,8040,Madera,True
+8041,8041,Maguarichi,True
+8042,8042,Manuel Benavides,True
+8043,8043,Matachí,True
+8044,8044,Matamoros,True
+8045,8045,Meoqui,True
+8046,8046,Morelos,True
+8047,8047,Moris,True
+8048,8048,Namiquipa,True
+8049,8049,Nonoava,True
+8050,8050,Nuevo Casas Grandes,True
+8051,8051,Ocampo,True
+8052,8052,Ojinaga,True
+8053,8053,Praxedis G. Guerrero,True
+8054,8054,Riva Palacio,True
+8055,8055,Rosales,True
+8056,8056,Rosario,True
+8057,8057,San Francisco de Borja,True
+8058,8058,San Francisco de Conchos,True
+8059,8059,San Francisco del Oro,True
+8060,8060,Santa Bárbara,True
+8061,8061,Satevó,True
+8062,8062,Saucillo,True
+8063,8063,Temósachic,True
+8064,8064,El Tule,True
+8065,8065,Urique,True
+8066,8066,Uruachi,True
+8067,8067,Valle de Zaragoza,True
+9002,9002,Azcapotzalco,True
+9003,9003,Coyoacán,True
+9004,9004,Cuajimalpa de Morelos,True
+9005,9005,Gustavo A. Madero,True
+9006,9006,Iztacalco,True
+9007,9007,Iztapalapa,True
+9008,9008,La Magdalena Contreras,True
+9009,9009,Milpa Alta,True
+9010,9010,Álvaro Obregón,True
+9011,9011,Tláhuac,True
+9012,9012,Tlalpan,True
+9013,9013,Xochimilco,True
+9014,9014,Benito Juárez,True
+9015,9015,Cuauhtémoc,True
+9016,9016,Miguel Hidalgo,True
+9017,9017,Venustiano Carranza,True
+10001,10001,Canatlán,True
+10002,10002,Canelas,True
+10003,10003,Coneto de Comonfort,True
+10004,10004,Cuencamé,True
+10005,10005,Durango,True
+10006,10006,Simón Bolívar,False
+10007,10007,Gómez Palacio,True
+10008,10008,Guadalupe Victoria,True
+10009,10009,Guanaceví,True
+10010,10010,Hidalgo,True
+10011,10011,Indé,True
+10012,10012,Lerdo,True
+10013,10013,Mapimí,True
+10014,10014,Mezquital,True
+10015,10015,Nazas,True
+10016,10016,Nombre de Dios,True
+10017,10039,Nuevo Ideal,True
+10018,10017,Ocampo,True
+10019,10018,El Oro,True
+10020,10019,Otáez,True
+10021,10020,Pánuco de Coronado,True
+10022,10021,Peñón Blanco,True
+10023,10022,Poanas,True
+10024,10023,Pueblo Nuevo,True
+10025,10024,Rodeo,True
+10026,10025,San Bernardo,True
+10027,10026,San Dimas,True
+10028,10027,San Juan de Guadalupe,True
+10029,10028,San Juan del Río,True
+10030,10029,San Luis del Cordero,True
+10031,10030,San Pedro del Gallo,True
+10032,10031,Santa Clara,True
+10033,10032,Santiago Papasquiaro,True
+10034,10033,Súchil,True
+10035,10034,Tamazula,True
+10036,10035,Tepehuanes,True
+10037,10036,Tlahualilo,True
+10038,10037,Topia,True
+10039,10038,Vicente Guerrero,True
+11001,11001,Abasolo,True
+11002,11002,Acámbaro,True
+11003,11003,San Miguel de Allende,True
+11004,11004,Apaseo el Alto,True
+11005,11005,Apaseo el Grande,True
+11006,11006,Atarjea,True
+11007,11007,Celaya,True
+11008,11008,Manuel Doblado,True
+11009,11009,Comonfort,True
+11010,11010,Coroneo,True
+11011,11011,Cortazar,True
+11012,11012,Cuerámaro,True
+11013,11013,Doctor Mora,True
+11014,11014,Dolores Hidalgo Cuna de la Independencia Nacional,True
+11015,11015,Guanajuato,True
+11016,11016,Huanímaro,True
+11017,11017,Irapuato,True
+11018,11018,Jaral del Progreso,True
+11019,11019,Jerécuaro,True
+11020,11020,León,True
+11021,11021,Moroleón,True
+11022,11022,Ocampo,True
+11023,11023,Pénjamo,True
+11024,11024,Pueblo Nuevo,True
+11025,11025,Purísima del Rincón,True
+11026,11026,Romita,True
+11027,11027,Salamanca,True
+11028,11028,Salvatierra,True
+11029,11029,San Diego de la Unión,True
+11030,11030,San Felipe,True
+11031,11031,San Francisco del Rincón,True
+11032,11032,San José Iturbide,True
+11033,11033,San Luis de la Paz,True
+11034,11034,Santa Catarina,True
+11035,11035,Santa Cruz de Juventino Rosas,True
+11036,11036,Santiago Maravatío,True
+11038,11038,Tarandacuao,True
+11039,11039,Tarimoro,True
+11040,11040,Tierra Blanca,True
+11041,11041,Uriangato,True
+11042,11042,Valle de Santiago,True
+11043,11043,Victoria,True
+11044,11044,Villagrán,True
+11045,11045,Xichú,True
+11046,11046,Yuriria,True
+12001,12001,Acapulco de Juárez,True
+12002,12002,Ahuacuotzingo,True
+12003,12003,Ajuchitlán del Progreso,True
+12004,12004,Alcozauca de Guerrero,True
+12005,12005,Alpoyeca,True
+12006,12006,Apaxtla,True
+12007,12007,Arcelia,True
+12008,12008,Atenango del Río,True
+12009,12009,Atlamajalcingo del Monte,True
+12010,12010,Atlixtac,True
+12011,12011,Atoyac de Álvarez,True
+12012,12012,Ayutla de los Libres,True
+12013,12013,Azoyú,True
+12080,12077,Marquelia,True
+12081,12080,Juchitán,True
+12014,12014,Benito Juárez,True
+12015,12015,Buenavista de Cuéllar,True
+12016,12016,Coahuayutla de José María Izazaga,True
+12017,12017,Cocula,True
+12018,12018,Copala,True
+12019,12019,Copalillo,True
+12020,12020,Copanatoyac,True
+12021,12021,Coyuca de Benítez,True
+12022,12022,Coyuca de Catalán,True
+12023,12023,Cuajinicuilapa,True
+12024,12024,Cualác,True
+12025,12025,Cuautepec,True
+12026,12026,Cuetzala del Progreso,True
+12027,12027,Cutzamala de Pinzón,True
+12028,12028,Chilapa de Álvarez,True
+12077,12079,José Joaquín de Herrera,True
+12029,12029,Chilpancingo de los Bravo,True
+12030,12075,Eduardo Neri,True
+12031,12030,Florencio Villarreal,True
+12032,12031,General Canuto A. Neri,True
+12033,12032,General Heliodoro Castillo,True
+12034,12033,Huamuxtitlán,True
+12035,12034,Huitzuco de los Figueroa,True
+12036,12035,Iguala de la Independencia,True
+12037,12036,Igualapa,True
+12038,12037,Ixcateopan de Cuauhtémoc,True
+12039,12038,Zihuatanejo de Azueta,True
+12040,12039,Juan R. Escudero,True
+12041,12040,Leonardo Bravo,True
+12042,12041,Malinaltepec,True
+12078,12081,Iliatenco,True
+12043,12042,Mártir De Cuilapan,True
+12044,12043,Metlatónoc,True
+12079,12078,Cochoapa el Grande,True
+12045,12044,Mochitlán,True
+12046,12045,Olinalá,True
+12047,12046,Ometepec,True
+12048,12047,Pedro Ascencio Alquisiras,True
+12049,12048,Petatlán,True
+12050,12049,Pilcaya,True
+12051,12050,Pungarabato,True
+12052,12051,Quechultenango,True
+12053,12052,San Luis Acatlán,True
+12054,12053,San Marcos,True
+12055,12054,San Miguel Totolapan,True
+12056,12055,Taxco de Alarcón,True
+12057,12056,Tecoanapa,True
+12058,12057,Técpan de Galeana,True
+12059,12058,Teloloapan,True
+12060,12059,Tepecoacuilco de Trujano,True
+12061,12060,Tetipac,True
+12062,12061,Tixtla de Guerrero,True
+12063,12062,Tlacoachistlahuaca,True
+12064,12063,Tlacoapa,True
+12065,12064,Tlalchapa,True
+12066,12065,Tlalixtaquilla de Maldonado,True
+12067,12066,Tlapa de Comonfort,True
+12068,12067,Tlapehuala,True
+12069,12068,La Unión de Isidoro Montes de Oca,True
+12070,12069,Xalpatláhuac,True
+12071,12070,Xochihuehuetlán,True
+12072,12071,Xochistlahuaca,True
+12073,12072,Zapotitlán Tablas,True
+12076,12076,Acatepec,True
+12074,12073,Zirándaro,True
+12075,12074,Zitlala,True
+13001,13001,Acatlán,True
+13002,13002,Acaxochitlán,True
+13003,13003,Actopan,True
+13004,13004,Agua Blanca de Iturbide,True
+13005,13005,Ajacuba,True
+13006,13006,Alfajayucan,True
+13007,13007,Almoloya,True
+13008,13008,Apan,True
+13009,13010,Atitalaquia,True
+13010,13011,Atlapexco,True
+13011,13012,Atotonilco el Grande,True
+13012,13013,Atotonilco de Tula,True
+13013,13014,Calnali,True
+13014,13015,Cardonal,True
+13015,13016,Cuautepec de Hinojosa,True
+13016,13017,Chapantongo,True
+13017,13018,Chapulhuacán,True
+13018,13019,Chilcuautla,True
+13019,13009,El Arenal,True
+13020,13020,Eloxochitlán,True
+13021,13021,Emiliano Zapata,True
+13022,13022,Epazoyucan,True
+13023,13023,Francisco I. Madero,True
+13024,13024,Huasca de Ocampo,True
+13025,13025,Huautla,True
+13026,13026,Huazalingo,True
+13027,13027,Huehuetla,True
+13028,13028,Huejutla de Reyes,True
+13029,13029,Huichapan,True
+13030,13030,Ixmiquilpan,True
+13031,13031,Jacala de Ledezma,True
+13032,13032,Jaltocán,True
+13033,13033,Juárez Hidalgo,True
+13034,13040,La Misión,True
+13035,13034,Lolotla,True
+13036,13035,Metepec,True
+13037,13037,Metztitlán,True
+13038,13038,Mineral del Chico,True
+13039,13039,Mineral del Monte,True
+13040,13051,Mineral de la Reforma,True
+13047,13048,Pachuca de Soto,True
+13041,13041,Mixquiahuala de Juárez,True
+13042,13042,Molango de Escamilla,True
+13043,13043,Nicolás Flores,True
+13044,13044,Nopala de Villagrán,True
+13045,13045,Omitlán de Juárez,True
+13046,13047,Pacula,True
+13048,13049,Pisaflores,True
+13049,13050,Progreso de Obregón,True
+13050,13036,San Agustón Metzquititlán,False
+13051,13052,San Agustín Tlaxiaca,True
+13052,13053,San Bartolo Tutotepec,True
+13053,13046,San Felipe Orizatlán,True
+13054,13054,San Salvador,True
+13055,13055,Santiago de Anaya,True
+13056,13056,Santiago Tulantepec de Lugo Guerrero,True
+13057,13057,Singuilucan,True
+13058,13058,Tasquillo,True
+13059,13059,Tecozautla,True
+13060,13060,Tenango de Doria,True
+13061,13061,Tepeapulco,True
+13062,13062,Tepehuacán de Guerrero,True
+13063,13063,Tepeji del Río de Ocampo,True
+13064,13064,Tepetitlán,True
+13065,13065,Tetepango,True
+13066,13067,Tezontepec de Aldama,True
+13067,13068,Tianguistengo,True
+13068,13069,Tizayuca,True
+13069,13070,Tlahuelilpan,True
+13070,13071,Tlahuiltepa,True
+13071,13072,Tlanalapa,True
+13072,13073,Tlanchinol,True
+13073,13074,Tlaxcoapan,True
+13074,13075,Tolcayuca,True
+13075,13076,Tula de Allende,True
+13076,13077,Tulancingo de Bravo,True
+13077,13066,Villa de Tezontepec,True
+13078,13078,Xochiatipan,True
+13079,13079,Xochicoatlán,True
+13080,13080,Yahualica,True
+13081,13081,Zacualtipán de Ángeles,True
+13082,13082,Zapotlán de Juárez,True
+13083,13083,Zempoala,True
+13084,13084,Zimapán,True
+14001,14001,Acatic,True
+14002,14002,Acatlán de Juárez,True
+14003,14003,Ahualulco de Mercado,True
+14004,14004,Amacueca,True
+14005,14005,Amatitán,True
+14006,14006,Ameca,True
+14007,14007,San Juanito de Escobedo,True
+14008,14008,Arandas,True
+14125,14125,San Ignacio Cerro Gordo,True
+14009,14009,El Arenal,True
+14010,14010,Atemajac de Brizuela,True
+14011,14011,Atengo,True
+14012,14012,Atenguillo,True
+14013,14013,Atotonilco el Alto,True
+14014,14014,Atoyac,True
+14015,14015,Autlán de Navarro,True
+14016,14016,Ayotlán,True
+14017,14017,Ayutla,True
+14018,14018,La Barca,True
+14019,14019,Bolaños,True
+14020,14020,Cabo Corrientes,True
+14021,14021,Casimiro Castillo,True
+14022,14022,Cihuatlán,True
+14023,14023,Zapotlán el Grande,True
+14024,14113,San Gabriel,True
+14025,14024,Cocula,True
+14026,14025,Colotlán,True
+14027,14026,Concepción de Buenos Aires,True
+14028,14027,Cuautitlán de García Barragán,True
+14029,14028,Cuautla,True
+14030,14029,Cuquío,True
+14031,14030,Chapala,True
+14032,14031,Chimaltitán,True
+14033,14032,Chiquilistlán,True
+14034,14033,Degollado,True
+14035,14034,Ejutla,True
+14036,14035,Encarnación de Díaz,True
+14037,14036,Etzatlán,True
+14038,14079,Gómez Farías,True
+14039,14037,El Grullo,True
+14040,14038,Guachinango,True
+14041,14039,Guadalajara,True
+14042,14040,Hostotipaquillo,True
+14043,14041,Huejúcar,True
+14044,14042,Huejuquilla el Alto,True
+14045,14043,La Huerta,True
+14046,14044,Ixtlahuacán de los Membrillos,True
+14047,14045,Ixtlahuacán del Río,True
+14048,14046,Jalostotitlán,True
+14049,14047,Jamay,True
+14050,14048,Jesús María,True
+14051,14049,Jilotlán de los Dolores,True
+14052,14050,Jocotepec,True
+14053,14051,Juanacatlán,True
+14054,14052,Juchitlán,True
+14055,14053,Lagos de Moreno,True
+14056,14054,El Limón,True
+14057,14055,Magdalena,True
+14058,14056,Santa María del Oro,True
+14059,14057,La Manzanilla de la Paz,True
+14060,14058,Mascota,True
+14061,14059,Mazamitla,True
+14062,14060,Mexticacán,True
+14063,14061,Mezquitic,True
+14064,14062,Mixtlán,True
+14065,14063,Ocotlán,True
+14066,14064,Ojuelos de Jalisco,True
+14067,14065,Pihuamo,True
+14068,14066,Poncitlán,True
+14069,14067,Puerto Vallarta,True
+14070,14068,Villa Purificación,True
+14071,14069,Quitupan,True
+14072,14070,El Salto,True
+14073,14071,San Cristóbal de la Barranca,True
+14074,14072,San Diego de Alejandría,True
+14075,14073,San Juan de los Lagos,True
+14076,14074,San Julián,True
+14077,14075,San Marcos,True
+14078,14076,San Martín de Bolaños,True
+14079,14077,San Martín Hidalgo,True
+14080,14078,San Miguel el Alto,True
+14081,14080,San Sebastián del Oeste,True
+14082,14081,Santa María de los Ángeles,True
+14083,14082,Sayula,True
+14084,14083,Tala,True
+14085,14084,Talpa de Allende,True
+14086,14085,Tamazula de Gordiano,True
+14087,14086,Tapalpa,True
+14088,14087,Tecalitlán,True
+14089,14088,Tecolotlán,True
+14090,14089,Techaluta de Montenegro,True
+14091,14090,Tenamaxtlán,True
+14092,14091,Teocaltiche,True
+14093,14092,Teocuitatlán de Corona,True
+14094,14093,Tepatitlán de Morelos,True
+14095,14094,Tequila,True
+14096,14095,Teuchitlán,True
+14097,14096,Tizapán el Alto,True
+14098,14097,Tlajomulco de Zúñiga,True
+14099,14098,San Pedro Tlaquepaque,False
+14100,14099,Tolimán,True
+14101,14100,Tomatlán,True
+14102,14101,Tonalá,True
+14103,14102,Tonaya,True
+14104,14103,Tonila,True
+14105,14104,Totatiche,True
+14106,14105,Tototlán,True
+14107,14106,Tuxcacuesco,True
+14108,14107,Tuxcueca,True
+14109,14108,Tuxpan,True
+14110,14109,Unión de San Antonio,True
+14111,14110,Unión de Tula,True
+14112,14111,Valle de Guadalupe,True
+14113,14112,Valle de Juárez,True
+14114,14114,Villa Corona,True
+14115,14115,Villa Guerrero,True
+14116,14116,Villa Hidalgo,True
+14117,14117,Cañadas de Obregón,True
+14118,14118,Yahualica de González Gallo,True
+14119,14119,Zacoalco de Torres,True
+14120,14120,Zapopan,True
+14121,14121,Zapotiltic,True
+14122,14122,Zapotitlán de Vadillo,True
+14123,14123,Zapotlán del Rey,True
+14124,14124,Zapotlanejo,True
+15001,15001,Acambay de Ruíz Castañeda,False
+15002,15002,Acolman,True
+15003,15003,Aculco,True
+15004,15004,Almoloya de Alquisiras,True
+15005,15005,Almoloya de Juárez,True
+15115,15114,Villa Victoria,True
+15006,15006,Almoloya del Río,True
+15007,15007,Amanalco,True
+15008,15008,Amatepec,True
+15009,15009,Amecameca,True
+15010,15010,Apaxco,True
+15011,15011,Atenco,True
+15012,15012,Atizapán,True
+15013,15013,Atizapán de Zaragoza,True
+15014,15014,Atlacomulco,True
+15015,15015,Atlautla,True
+15016,15016,Axapusco,True
+15017,15017,Ayapango,True
+15018,15018,Calimaya,True
+15019,15019,Capulhuac,True
+15020,15020,Coacalco de Berriozábal,True
+15021,15021,Coatepec Harinas,True
+15022,15022,Cocotitlán,True
+15023,15023,Coyotepec,True
+15024,15024,Cuautitlán,True
+15025,15121,Cuautitlán Izcalli,True
+15122,15122,Valle de Chalco Solidaridad,True
+15026,15025,Chalco,True
+15027,15026,Chapa de Mota,True
+15028,15027,Chapultepec,True
+15029,15028,Chiautla,True
+15030,15029,Chicoloapan,True
+15031,15030,Chiconcuac,True
+15032,15031,Chimalhuacán,True
+15060,15058,Nezahualcóyotl,True
+15033,15032,Donato Guerra,True
+15034,15033,Ecatepec de Morelos,True
+15035,15034,Ecatzingo,True
+15036,15035,Huehuetoca,True
+15037,15036,Hueypoxtla,True
+15038,15037,Huixquilucan,True
+15039,15038,Isidro Fabela,True
+15040,15039,Ixtapaluca,True
+15041,15040,Ixtapan de la Sal,True
+15042,15041,Ixtapan del Oro,True
+15043,15042,Ixtlahuaca,True
+15044,15043,Xalatlaco,True
+15045,15044,Jaltenco,True
+15125,15125,Tonanitla,True
+15046,15045,Jilotepec,True
+15047,15046,Jilotzingo,True
+15048,15047,Jiquipilco,True
+15049,15048,Jocotitlán,True
+15050,15049,Joquicingo,True
+15051,15050,Juchitepec,True
+15052,15051,Lerma,True
+15053,15052,Malinalco,True
+15054,15053,Melchor Ocampo,True
+15055,15054,Metepec,True
+15056,15055,Mexicaltzingo,True
+15057,15056,Morelos,True
+15058,15057,Naucalpan de Juárez,True
+15059,15059,Nextlalpan,True
+15061,15060,Nicolás Romero,True
+15062,15061,Nopaltepec,True
+15063,15062,Ocoyoacac,True
+15064,15063,Ocuilan,True
+15065,15064,El Oro,True
+15066,15065,Otumba,True
+15067,15066,Otzoloapan,True
+15068,15067,Otzolotepec,True
+15069,15068,Ozumba,True
+15070,15069,Papalotla,True
+15071,15070,La Paz,True
+15072,15071,Polotitlán,True
+15073,15072,Rayón,True
+15074,15073,San Antonio la Isla,True
+15075,15074,San Felipe del Progreso,True
+15124,15124,San José del Rincón,True
+15076,15075,San Martín de las Pirámides,True
+15077,15076,San Mateo Atenco,True
+15078,15077,San Simón de Guerrero,True
+15079,15078,Santo Tomás,True
+15080,15079,Soyaniquilpan de Juárez,True
+15081,15080,Sultepec,True
+15082,15081,Tecámac,True
+15083,15082,Tejupilco,True
+15123,15123,Luvianos,True
+15084,15083,Temamatla,True
+15085,15084,Temascalapa,True
+15086,15085,Temascalcingo,True
+15087,15086,Temascaltepec,True
+15088,15087,Temoaya,True
+15089,15088,Tenancingo,True
+15090,15089,Tenango del Aire,True
+15091,15090,Tenango del Valle,True
+15092,15091,Teoloyucan,True
+15093,15092,Teotihuacán,True
+15094,15093,Tepetlaoxtoc,True
+15095,15094,Tepetlixpa,True
+15096,15095,Tepotzotlán,True
+15097,15096,Tequixquiac,True
+15098,15097,Texcaltitlán,True
+15099,15098,Texcalyacac,True
+15100,15099,Texcoco,True
+15101,15100,Tezoyuca,True
+15102,15101,Tianguistenco,True
+15103,15102,Timilpan,True
+15104,15103,Tlalmanalco,True
+15105,15104,Tlalnepantla de Baz,True
+15106,15105,Tlatlaya,True
+15107,15106,Toluca,True
+15108,15107,Tonatico,True
+15109,15108,Tultepec,True
+15110,15109,Tultitlán,True
+15111,15110,Valle de Bravo,True
+15112,15111,Villa de Allende,True
+15113,15112,Villa del Carbón,True
+15114,15113,Villa Guerrero,True
+15116,15115,Xonacatlán,True
+15117,15116,Zacazonapan,True
+15118,15117,Zacualpan,True
+15119,15118,Zinacantepec,True
+15120,15119,Zumpahuacán,True
+15121,15120,Zumpango,True
+16001,16001,Acuitzio,True
+16002,16002,Aguililla,True
+16003,16003,Álvaro Obregón,True
+16004,16004,Angamacutiro,True
+16005,16005,Angangueo,True
+16006,16006,Apatzingán,True
+16007,16007,Aporo,True
+16008,16008,Aquila,True
+16009,16009,ARío,True
+16010,16010,Arteaga,True
+16011,16011,Briseñas,True
+16012,16012,Buenavista,True
+16013,16013,Carácuaro,True
+16014,16014,Coahuayana,True
+16015,16015,Coalcomán de Vázquez Pallares,True
+16016,16016,Coeneo,True
+16017,16017,Contepec,True
+16018,16018,Copándaro,True
+16019,16019,Cotija,True
+16020,16020,Cuitzeo,True
+16021,16021,Charapan,True
+16022,16022,Charo,True
+16023,16023,Chavinda,True
+16024,16024,Cherán,True
+16025,16025,Chilchota,True
+16026,16026,Chinicuila,True
+16027,16027,Chucándiro,True
+16028,16028,Churintzio,True
+16029,16029,Churumuco,True
+16030,16030,Ecuandureo,True
+16031,16031,Epitacio Huerta,True
+16032,16032,Erongarícuaro,True
+16033,16033,Gabriel Zamora,True
+16034,16034,Hidalgo,True
+16035,16035,La Huacana,True
+16036,16036,Huandacareo,True
+16037,16037,Huaniqueo,True
+16038,16038,Huetamo,True
+16039,16039,Huiramba,True
+16040,16040,Indaparapeo,True
+16041,16041,Irimbo,True
+16042,16042,Ixtlán,True
+16043,16043,Jacona,True
+16044,16044,Jiménez,True
+16045,16045,Jiquilpan,True
+16046,16113,José Sixto Verduzco,True
+16047,16046,Juárez,True
+16048,16047,Jungapeo,True
+16049,16048,Lagunillas,True
+16050,16052,Lázaro Cárdenas,True
+16051,16049,Madero,True
+16052,16050,Maravatío,True
+16053,16051,Marcos Castellanos,True
+16054,16053,Morelia,True
+16055,16054,Morelos,True
+16056,16055,Múgica,True
+16057,16056,Nahuatzen,True
+16058,16057,Nocupétaro,True
+16059,16058,Nuevo Parangaricutiro,True
+16060,16059,Nuevo Urecho,True
+16061,16060,Numarán,True
+16062,16061,Ocampo,True
+16063,16062,Pajacuarán,True
+16064,16063,Panindícuaro,True
+16065,16064,Parácuaro,True
+16066,16065,Paracho,True
+16067,16066,Pátzcuaro,True
+16068,16067,Penjamillo,True
+16069,16068,Peribán,True
+16070,16069,La Piedad,True
+16071,16070,Purépero,True
+16072,16071,Puruándiro,True
+16073,16072,Queréndaro,True
+16074,16073,Quiroga,True
+16075,16074,Cojumatlán de Régules,True
+16076,16075,Los Reyes,True
+16077,16076,Sahuayo,True
+16078,16077,San Lucas,True
+16079,16078,Santa Ana Maya,True
+16080,16079,Salvador Escalante,True
+16081,16080,Senguio,True
+16082,16081,Susupuato,True
+16083,16082,Tacámbaro,True
+16084,16083,Tancítaro,True
+16085,16084,Tangamandapio,True
+16086,16085,Tangancícuaro,True
+16087,16086,Tanhuato,True
+16088,16087,Taretan,True
+16089,16088,Tarímbaro,True
+16090,16089,Tepalcatepec,True
+16091,16090,Tingambato,True
+16092,16091,Tingüindín,True
+16093,16092,Tiquicheo de Nicolás Romero,True
+16094,16093,Tlalpujahua,True
+16095,16094,Tlazazalca,True
+16096,16095,Tocumbo,True
+16097,16096,Tumbiscatío,True
+16098,16097,Turicato,True
+16099,16098,Tuxpan,True
+16100,16099,Tuzantla,True
+16101,16100,Tzintzuntzan,True
+16102,16101,Tzitzio,True
+16103,16102,Uruapan,True
+16104,16103,Venustiano Carranza,True
+16105,16104,Villamar,True
+16106,16105,Vista Hermosa,True
+16107,16106,Yurécuaro,True
+16108,16107,Zacapu,True
+16109,16108,Zamora,True
+16110,16109,Zináparo,True
+16111,16110,Zinapécuaro,True
+16112,16111,Ziracuaretiro,True
+16113,16112,Zitácuaro,True
+17001,17001,Amacuzac,True
+17002,17002,Atlatlahucan,True
+17003,17003,Axochiapan,True
+17004,17004,Ayala,True
+17005,17005,Coatlán del Río,True
+17006,17006,Cuautla,True
+17007,17007,Cuernavaca,True
+17008,17008,Emiliano Zapata,True
+17009,17009,Huitzilac,True
+17010,17010,Jantetelco,True
+17011,17011,Jiutepec,True
+17012,17012,Jojutla,True
+17013,17013,Jonacatepec,True
+17014,17014,Mazatepec,True
+17015,17015,Miacatlán,True
+17034,17034,Coatetelco,True
+17016,17016,Ocuituco,True
+17017,17017,Puente de Ixtla,True
+17035,17035,Xoxocotla,True
+17018,17018,Temixco,True
+17019,17019,Tepalcingo,True
+17020,17020,Tepoztlán,True
+17021,17021,Tetecala,True
+17022,17022,Tetela del Volcán,True
+17036,17036,Hueyapan,True
+17023,17023,Tlalnepantla,True
+17024,17024,Tlaltizapán de Zapata,False
+17025,17025,Tlaquiltenango,True
+17026,17026,Tlayacapan,True
+17027,17027,Totolapan,True
+17028,17028,Xochitepec,True
+17029,17029,Yautepec,True
+17030,17030,Yecapixtla,True
+17031,17031,Zacatepec,True
+17032,17032,Zacualpan de Amilpas,False
+17033,17033,Temoac,True
+18001,18001,Acaponeta,True
+18002,18002,Ahuacatlán,True
+18003,18003,Amatlán de Cañas,True
+18004,18020,Bahía de Banderas,True
+18005,18004,Compostela,True
+18006,18005,Huajicori,True
+18007,18006,Ixtlán del Río,True
+18008,18007,Jala,True
+18009,18009,Del Nayar,True
+18010,18010,Rosamorada,True
+18011,18011,Ruíz,True
+18012,18012,San Blas,True
+18013,18013,San Pedro Lagunillas,True
+18014,18014,Santa María del Oro,True
+18015,18015,Santiago Ixcuintla,True
+18016,18016,Tecuala,True
+18017,18017,Tepic,True
+18018,18018,Tuxpan,True
+18019,18008,Xalisco,True
+18020,18019,La Yesca,True
+19001,19001,Abasolo,True
+19002,19002,Agualeguas,True
+19003,19003,Los Aldamas,True
+19004,19004,Allende,True
+19005,19005,Anáhuac,True
+19006,19006,Apodaca,True
+19007,19007,Aramberri,True
+19008,19008,Bustamante,True
+19009,19009,Cadereyta Jiménez,True
+19010,19010,Carmen,True
+19011,19011,Cerralvo,True
+19012,19012,Ciénega de Flores,True
+19013,19013,China,True
+19014,19014,Dr. Arroyo,True
+19015,19015,Dr. Coss,True
+19016,19016,Dr. González,True
+19017,19017,Galeana,True
+19018,19018,García,True
+19019,19019,San Pedro Garza García,True
+19020,19020,Gral. Bravo,True
+19021,19021,Gral. Escobedo,True
+19022,19022,Gral. Terán,True
+19023,19023,Gral. Treviño,True
+19024,19024,Gral. Zaragoza,True
+19025,19025,Gral. Zuazua,True
+19026,19026,Guadalupe,True
+19027,19027,Los Herreras,True
+19028,19047,Hidalgo,True
+19029,19028,Higueras,True
+19030,19029,Hualahuises,True
+19031,19030,Iturbide,True
+19032,19031,Juárez,True
+19033,19032,Lampazos de Naranjo,True
+19034,19033,Linares,True
+19035,19034,Marín,True
+19036,19035,Melchor Ocampo,True
+19037,19036,Mier y Noriega,True
+19038,19037,Mina,True
+19039,19038,Montemorelos,True
+19040,19039,Monterrey,True
+19041,19040,Parás,True
+19042,19041,Pesquería,True
+19043,19042,Los Ramones,True
+19044,19043,Rayones,True
+19045,19044,Sabinas Hidalgo,True
+19046,19045,Salinas Victoria,True
+19047,19046,San Nicolás de los Garza,True
+19048,19048,Santa Catarina,True
+19049,19049,Santiago,True
+19050,19050,Vallecillo,True
+19051,19051,Villaldama,True
+20001,20001,Abejones,True
+20002,20002,Acatlán de Pérez Figueroa,True
+20003,20174,Ánimas Trujano,True
+20386,20385,Santa Cruz Xoxocotlán,True
+20004,20003,Asunción Cacalotepec,True
+20005,20004,Asunción Cuyotepeji,True
+20006,20005,Asunción Ixtaltepec,True
+20007,20006,Asunción Nochixtlán,True
+20008,20007,Asunción Ocotlán,True
+20009,20008,Asunción Tlacolulita,True
+20010,20398,Ayoquezco De Aldama,True
+20011,20009,Ayotzintepec,True
+20012,20010,El BarRío de la Soledad,True
+20013,20011,Calihualá,True
+20014,20012,Candelaria Loxicha,True
+20015,20025,Chahuites,True
+20016,20026,Chalcatongo De Hidalgo,True
+20017,20013,Ciénega de Zimatlán,True
+20018,20015,Coatecas Altas,True
+20019,20016,Coicoyán de las Flores,True
+20020,20017,La Compañía,True
+20021,20018,Concepción Buenavista,True
+20022,20019,Concepción Papalo,True
+20023,20020,Constancia del Rosario,True
+20024,20021,Cosolapa,True
+20025,20022,Cosoltepec,True
+20026,20023,Cuilápam de Guerrero,True
+20027,20024,Cuyamecalco Villa de Zaragoza,True
+20028,20028,Heroica Ciudad de Ejutla de Crespo,True
+20029,20029,Eloxochitlán de Flores Magón,True
+20030,20030,El Espinal,True
+20031,20032,Fresnillo de Trujano,True
+20032,20034,Guadalupe de Ramírez,True
+20033,20033,Guadalupe Etla,True
+20034,20035,Guelatao de Juárez,True
+20035,20036,Guevea De Humboldt,True
+20036,20037,Mesones Hidalgo,True
+20037,20039,Heroica Ciudad de Huajuapan de León,True
+20038,20040,Huautepec,True
+20039,20041,Huautla de Jiménez,True
+20040,20065,Ixpantepec Nieves,True
+20041,20014,Ciudad Ixtepec,True
+20042,20042,Ixtlán de Juárez,True
+20043,20043,Heroica Ciudad de Juchitán de Zaragoza,True
+20044,20044,Loma Bonita,True
+20045,20045,Magdalena Apasco,True
+20046,20046,Magdalena Jaltepec,True
+20047,20048,Magdalena Mixtepec,True
+20048,20049,Magdalena Ocotlán,True
+20049,20050,Magdalena Peñasco,True
+20050,20051,Magdalena Teitipac,True
+20051,20052,Magdalena Tequisistlán,True
+20052,20053,Magdalena Tlacotepec,True
+20053,20562,Magdalena Yodocono de Porfirio Díaz,True
+20054,20054,Magdalena Zahuatlán,True
+20055,20055,Mariscala de Juárez,True
+20056,20056,Mártires de Tacubaya,True
+20057,20057,Matías Romero Avendaño,True
+20058,20058,Mazatlán Villa de Flores,True
+20059,20059,Miahuatlán de Porfirio Díaz,True
+20060,20060,Mixistlán de la Reforma,True
+20061,20061,Monjas,True
+20062,20062,Natividad,True
+20063,20063,Nazareno Etla,True
+20064,20064,Nejapa de Madero,True
+20065,20504,Nuevo Zoquiápam,True
+20066,20067,Oaxaca de Juárez,True
+20067,20068,Ocotlán de Morelos,True
+20068,20069,La Pe,True
+20069,20070,Pinotepa de Don Luis,True
+20070,20071,Pluma Hidalgo,True
+20071,20073,Putla Villa de Guerrero,True
+20072,20075,Reforma de Pineda,True
+20073,20076,La Reforma,True
+20074,20077,Reyes Etla,True
+20075,20078,Rojas de Cuauhtémoc,True
+20076,20079,Salina Cruz,True
+20077,20080,San Agustín Amatengo,True
+20078,20081,San Agustín Atenango,True
+20079,20082,San Agustín Chayuco,True
+20080,20083,San Agustín De Las Juntas,True
+20081,20084,San Agustín Etla,True
+20082,20085,San Agustín Loxicha,True
+20083,20086,San Agustín Tlacotepec,True
+20084,20087,San Agustín Yatareni,True
+20085,20088,San Andrés Cabecera Nueva,True
+20086,20089,San Andrés Dinicuiti,True
+20087,20090,San Andrés Huaxpaltepec,True
+20088,20091,San Andrés Huayápam,True
+20089,20092,San Andrés Ixtlahuaca,True
+20090,20093,San Andrés Lagunas,True
+20091,20094,San Andrés Nuxiño,True
+20092,20095,San Andrés Paxtlán,True
+20093,20096,San Andrés Sinaxtla,True
+20094,20097,San Andrés Solaga,True
+20095,20098,San Andrés Teotilálpam,True
+20096,20099,San Andrés Tepetlapa,True
+20097,20100,San Andrés Yaá,True
+20098,20101,San Andrés Zabache,True
+20099,20102,San Andrés Zautla,True
+20100,20103,San Antonino Castillo Velasco,True
+20101,20104,San Antonino el Alto,True
+20102,20105,San Antonino Monte Verde,True
+20103,20106,San Antonio Acutla,True
+20104,20107,San Antonio de la Cal,True
+20105,20108,San Antonio Huitepec,True
+20106,20109,San Antonio Nanahuatípam,True
+20107,20110,San Antonio Sinicahua,True
+20108,20111,San Antonio Tepetlapa,True
+20109,20112,San Baltazar Chichicápam,True
+20110,20113,San Baltazar Loxicha,True
+20111,20114,San Baltazar Yatzachi el Bajo,True
+20112,20115,San Bartolo Coyotepec,True
+20113,20121,San Bartolo Soyaltepec,True
+20114,20122,San Bartolo Yautepec,True
+20115,20116,San Bartolomé Ayautla,True
+20116,20117,San Bartolomé Loxicha,True
+20117,20118,San Bartolomé Quialana,True
+20118,20119,San Bartolomé Yucuañe,True
+20119,20120,San Bartolomé Zoogocho,True
+20120,20123,San Bernardo Mixtepec,True
+20121,20124,Heroica Villa de San Blas Atempa,True
+20122,20125,San Carlos Yautepec,True
+20123,20126,San Cristóbal Amatlán,True
+20124,20127,San Cristóbal Amoltepec,True
+20125,20128,San Cristóbal LachiRíoag,True
+20126,20129,San Cristóbal Suchixtlahuaca,True
+20127,20130,San Dionisio del Mar,True
+20128,20131,San Dionisio Ocotepec,True
+20129,20132,San Dionisio Ocotlán,True
+20130,20133,San Esteban Atatlahuca,True
+20131,20134,San Felipe Jalapa de Díaz,True
+20132,20135,San Felipe Tejalápam,True
+20133,20136,San Felipe Usila,True
+20134,20137,San Francisco Cahuacuá,True
+20135,20138,San Francisco Cajonos,True
+20136,20139,San Francisco Chapulapa,True
+20137,20140,San Francisco Chindúa,True
+20138,20141,San Francisco del Mar,True
+20139,20142,San Francisco Huehuetlán,True
+20140,20143,San Francisco Ixhuatán,True
+20141,20144,San Francisco Jaltepetongo,True
+20142,20145,San Francisco Lachigoló,True
+20143,20146,San Francisco Logueche,True
+20144,20147,San Francisco Nuxaño,True
+20145,20148,San Francisco Ozolotepec,True
+20146,20149,San Francisco Sola,True
+20147,20150,San Francisco Telixtlahuaca,True
+20148,20151,San Francisco Teopan,True
+20149,20152,San Francisco Tlapancingo,True
+20150,20153,San Gabriel Mixtepec,True
+20151,20154,San Ildefonso Amatlán,True
+20152,20155,San Ildefonso Sola,True
+20153,20156,San Ildefonso Villa Alta,True
+20154,20157,San Jacinto Amilpas,True
+20155,20158,San Jacinto Tlacotepec,True
+20156,20159,San Jerónimo Coatlán,True
+20157,20160,San Jerónimo Silacayoapilla,True
+20158,20161,San Jerónimo Sosola,True
+20159,20162,San Jerónimo Taviche,True
+20160,20163,San Jerónimo Tecóatl,True
+20161,20550,San Jerónimo Tlacochahuaya,True
+20162,20164,San Jorge Nuchita,True
+20163,20165,San José Ayuquila,True
+20164,20166,San José Chiltepec,True
+20165,20167,San José del Peñasco,True
+20166,20168,San José Estancia Grande,True
+20167,20169,San José Independencia,True
+20168,20170,San José Lachiguiri,True
+20169,20072,San José del Progreso,True
+20170,20171,San José Tenango,True
+20171,20172,San Juan Achiutla,True
+20172,20173,San Juan Atepec,True
+20173,20175,San Juan Bautista Atatlahuca,True
+20174,20176,San Juan Bautista Coixtlahuaca,True
+20175,20177,San Juan Bautista Cuicatlán,True
+20176,20178,San Juan Bautista Guelache,True
+20177,20179,San Juan Bautista Jayacatlán,True
+20178,20180,San Juan Bautista Lo de Soto,True
+20179,20181,San Juan Bautista Suchitepec,True
+20180,20183,San Juan Bautista Tlachichilco,True
+20181,20182,San Juan Bautista Tlacoatzintepec,True
+20182,20184,San Juan Bautista Tuxtepec,True
+20183,20559,San Juan Bautista Valle Nacional,True
+20184,20185,San Juan Cacahuatepec,True
+20185,20191,San Juan Chicomezúchil,True
+20186,20192,San Juan Chilateca,True
+20187,20027,Chiquihuitlán de Benito Juárez,True
+20188,20186,San Juan Cieneguilla,True
+20189,20187,San Juan Coatzóspam,True
+20190,20188,San Juan Colorado,True
+20191,20189,San Juan Comaltepec,True
+20192,20190,San Juan Cotzocón,True
+20193,20206,San Juan de los Cués,True
+20194,20193,San Juan del Estado,True
+20195,20194,San Juan del Río,True
+20196,20195,San Juan Diuxi,True
+20197,20196,San Juan Evangelista Analco,True
+20198,20197,San Juan Guelavía,True
+20199,20198,San Juan Guichicovi,True
+20200,20199,San Juan Ihualtepec,True
+20201,20200,San Juan Juquila Mixes,True
+20202,20201,San Juan Juquila Vijanos,True
+20203,20202,San Juan Lachao,True
+20204,20203,San Juan Lachigalla,True
+20205,20204,San Juan Lajarcia,True
+20206,20205,San Juan Lalana,True
+20207,20207,San Juan Mazatlán,True
+20208,20209,San Juan Mixtepec,False
+20209,20209,San Juan Mixtepec,False
+20210,20210,San Juan Ñumí,True
+20211,20211,San Juan Ozolotepec,True
+20212,20212,San Juan Petlapa,True
+20213,20213,San Juan Quiahije,True
+20214,20214,San Juan Quiotepec,True
+20215,20215,San Juan Sayultepec,True
+20216,20216,San Juan Tabaá,True
+20217,20217,San Juan Tamazola,True
+20218,20218,San Juan Teita,True
+20219,20219,San Juan Teitipac,True
+20220,20220,San Juan Tepeuxila,True
+20221,20221,San Juan Teposcolula,True
+20222,20222,San Juan Yaeé,True
+20223,20223,San Juan Yatzona,True
+20224,20224,San Juan Yucuita,True
+20225,20225,San Lorenzo,True
+20226,20226,San Lorenzo Albarradas,True
+20227,20227,San Lorenzo Cacaotepec,True
+20228,20228,San Lorenzo Cuaunecuiltitla,True
+20229,20229,San Lorenzo Texmelúcan,True
+20230,20230,San Lorenzo Victoria,True
+20231,20231,San Lucas Camotlán,True
+20232,20232,San Lucas Ojitlán,True
+20233,20233,San Lucas Quiaviní,True
+20234,20234,San Lucas Zoquiápam,True
+20235,20235,San Luis Amatlán,True
+20236,20236,San Marcial Ozolotepec,True
+20237,20237,San Marcos Arteaga,True
+20238,20238,San Martín de los Cansecos,True
+20239,20239,San Martín Huamelúlpam,True
+20240,20240,San Martín Itunyoso,True
+20241,20241,San Martín Lachilá,True
+20242,20242,San Martín Peras,True
+20243,20243,San Martín Tilcajete,True
+20244,20244,San Martín Toxpalan,True
+20245,20245,San Martín Zacatepec,True
+20246,20246,San Mateo Cajonos,True
+20247,20248,San Mateo del Mar,True
+20248,20250,San Mateo Etlatongo,True
+20249,20251,San Mateo Nejápam,True
+20250,20252,San Mateo Peñasco,True
+20251,20253,San Mateo Piñas,True
+20252,20254,San Mateo Río Hondo,True
+20253,20255,San Mateo Sindihui,True
+20254,20256,San Mateo Tlapiltepec,True
+20255,20249,San Mateo Yoloxochitlán,True
+20256,20257,San Melchor Betaza,True
+20257,20258,San Miguel Achiutla,True
+20258,20259,San Miguel Ahuehuetitlán,True
+20259,20260,San Miguel Aloapam,True
+20260,20261,San Miguel Amatitlán,True
+20261,20262,San Miguel Amatlán,True
+20262,20264,San Miguel Chicahua,True
+20263,20265,San Miguel Chimalapa,True
+20264,20263,San Miguel Coatlán,True
+20265,20266,San Miguel del Puerto,True
+20266,20267,San Miguel del Río,True
+20267,20268,San Miguel Ejutla,True
+20268,20269,San Miguel El Grande,True
+20269,20270,San Miguel Huautla,True
+20270,20271,San Miguel Mixtepec,True
+20271,20272,San Miguel Panixtlahuaca,True
+20272,20273,San Miguel Peras,True
+20273,20274,San Miguel Piedras,True
+20274,20275,San Miguel Quetzaltepec,True
+20275,20276,San Miguel Santa Flor,True
+20276,20278,San Miguel Soyaltepec,True
+20277,20279,San Miguel Suchixtepec,True
+20278,20280,Villa Talea De Castro,True
+20279,20281,San Miguel Tecomatlán,True
+20280,20282,San Miguel Tenango,True
+20281,20283,San Miguel Tequixtepec,True
+20282,20284,San Miguel Tilquiápam,True
+20283,20285,San Miguel Tlacamama,True
+20284,20286,San Miguel Tlacotepec,True
+20285,20287,San Miguel Tulancingo,True
+20286,20288,San Miguel Yotao,True
+20287,20289,San Nicolás,True
+20288,20290,San Nicolás Hidalgo,True
+20289,20291,San Pablo Coatlán,True
+20290,20292,San Pablo Cuatro Venados,True
+20291,20293,San Pablo Etla,True
+20292,20294,San Pablo Huitzo,True
+20293,20295,San Pablo Huixtepec,True
+20294,20296,San Pablo Macuiltianguis,True
+20295,20297,San Pablo Tijaltepec,True
+20296,20298,San Pablo Villa de Mitla,True
+20297,20299,San Pablo Yaganiza,True
+20298,20300,San Pedro Amuzgos,True
+20299,20301,San Pedro Apóstol,True
+20300,20302,San Pedro Atoyac,True
+20301,20303,San Pedro Cajonos,True
+20302,20304,San Pedro Coxcaltepec Cántaros,True
+20303,20305,San Pedro Comitancillo,True
+20304,20306,San Pedro El Alto,True
+20305,20307,San Pedro Huamelula,True
+20306,20308,San Pedro Huilotepec,True
+20307,20309,San Pedro Ixcatlán,True
+20308,20310,San Pedro Ixtlahuaca,True
+20309,20311,San Pedro Jaltepetongo,True
+20310,20312,San Pedro Jicayán,True
+20311,20313,San Pedro Jocotipac,True
+20312,20314,San Pedro Juchatengo,True
+20313,20315,San Pedro Mártir,True
+20314,20316,San Pedro Mártir Quiechapa,True
+20315,20317,San Pedro Mártir Yucuxaco,True
+20316,20319,San Pedro Mixtepec,False
+20317,20319,San Pedro Mixtepec,False
+20318,20320,San Pedro Molinos,True
+20319,20321,San Pedro Nopala,True
+20320,20322,San Pedro Ocopetatillo,True
+20321,20323,San Pedro Ocotepec,True
+20322,20324,San Pedro Pochutla,True
+20323,20325,San Pedro Quiatoni,True
+20324,20326,San Pedro Sochiápam,True
+20325,20327,San Pedro Tapanatepec,True
+20326,20328,San Pedro Taviche,True
+20327,20329,San Pedro Teozacoalco,True
+20328,20330,San Pedro Teutila,True
+20329,20331,San Pedro Tidaá,True
+20330,20332,San Pedro Topiltepec,True
+20331,20333,San Pedro Totolápam,True
+20332,20334,Villa de Tututepec,False
+20333,20337,San Pedro y San Pablo Ayutla,True
+20334,20339,San Pedro y San Pablo Teposcolula,True
+20335,20340,San Pedro y San Pablo Tequixtepec,True
+20336,20335,San Pedro Yaneri,True
+20337,20336,San Pedro Yólox,True
+20338,20341,San Pedro Yucunama,True
+20339,20342,San Raymundo Jalpan,True
+20340,20343,San Sebastián Abasolo,True
+20341,20344,San Sebastián Coatlán,True
+20342,20345,San Sebastián Ixcapa,True
+20343,20346,San Sebastián Nicananduta,True
+20344,20347,San Sebastián Río Hondo,True
+20345,20348,San Sebastián Tecomaxtlahuaca,True
+20346,20349,San Sebastián Teitipac,True
+20347,20350,San Sebastián Tutla,True
+20348,20351,San Simón Almolongas,True
+20349,20352,San Simón Zahuatlán,True
+20350,20534,San Vicente Coatlán,True
+20351,20535,San Vicente Lachixío,True
+20352,20536,San Vicente Nuñú,True
+20353,20353,Santa Ana,True
+20354,20354,Santa Ana Ateixtlahuaca,True
+20355,20355,Santa Ana Cuauhtémoc,True
+20356,20356,Santa Ana del Valle,True
+20357,20357,Santa Ana Tavela,True
+20358,20358,Santa Ana Tlapacoyan,True
+20359,20359,Santa Ana Yareni,True
+20360,20360,Santa Ana Zegache,True
+20361,20361,Santa Catalina Quierí,True
+20362,20362,Santa Catarina Cuixtla,True
+20363,20363,Santa Catarina Ixtepeji,True
+20364,20364,Santa Catarina Juquila,True
+20365,20365,Santa Catarina Lachatao,True
+20366,20366,Santa Catarina Loxicha,True
+20367,20367,Santa Catarina Mechoacán,True
+20368,20368,Santa Catarina Minas,True
+20369,20369,Santa Catarina Quiané,True
+20370,20074,Santa Catarina Quioquitani,True
+20371,20370,Santa Catarina Tayata,True
+20372,20371,Santa Catarina Ticuá,True
+20373,20372,Santa Catarina Yosonotú,True
+20374,20373,Santa Catarina Zapoquila,True
+20375,20374,Santa Cruz Acatepec,True
+20376,20375,Santa Cruz Amilpas,True
+20377,20376,Santa Cruz de Bravo,True
+20378,20377,Santa Cruz Itundujia,True
+20379,20378,Santa Cruz Mixtepec,True
+20380,20379,Santa Cruz Nundaco,True
+20381,20380,Santa Cruz Papalutla,True
+20382,20381,Santa Cruz Tacache de Mina,True
+20383,20382,Santa Cruz Tacahua,True
+20384,20383,Santa Cruz Tayata,True
+20385,20384,Santa Cruz Xitla,True
+20387,20386,Santa Cruz Zenzontepec,True
+20388,20387,Santa Gertrudis,True
+20389,20388,Santa Inés del Monte,True
+20390,20389,Santa Inés Yatzeche,True
+20391,20569,Santa Inés de Zaragoza,True
+20392,20390,Santa Lucia del Camino,True
+20393,20391,Santa Lucia Miahuatlán,True
+20394,20392,Santa Lucia Monteverde,True
+20395,20393,Santa Lucia Ocotlán,True
+20396,20047,Santa Magdalena Jicotlán,True
+20397,20394,Santa María Alotepec,True
+20398,20395,Santa María Apazco,True
+20399,20396,Santa María la Asunción,True
+20400,20399,Santa María Atzompa,True
+20401,20400,Santa María Camotlán,True
+20402,20404,Santa María Chachoápam,True
+20403,20405,Villa De Chilapa de Díaz,True
+20404,20406,Santa María Chilchotla,True
+20405,20407,Santa María Chimalapa,True
+20406,20401,Santa María Colotepec,True
+20407,20402,Santa María Cortijo,True
+20408,20403,Santa María Coyotepec,True
+20409,20408,Santa María del Rosario,True
+20410,20409,Santa María del Tule,True
+20411,20410,Santa María Ecatepec,True
+20412,20411,Santa María Guelacé,True
+20413,20412,Santa María Guienagati,True
+20414,20413,Santa María Huatulco,True
+20415,20414,Santa María Huazolotitlán,True
+20416,20415,Santa María Ipalapa,True
+20417,20416,Santa María Ixcatlán,True
+20418,20417,Santa María Jacatepec,True
+20419,20418,Santa María Jalapa del Marqués,True
+20420,20419,Santa María Jaltianguis,True
+20421,20420,Santa María Lachixío,True
+20422,20421,Santa María Mixtequilla,True
+20423,20422,Santa María Nativitas,True
+20424,20423,Santa María Nduayaco,True
+20425,20424,Santa María Ozolotepec,True
+20426,20425,Santa María Pápalo,True
+20427,20427,Santa María Petapa,True
+20428,20426,Santa María Peñoles,True
+20429,20428,Santa María Quiegolani,True
+20430,20429,Santa María Sola,True
+20431,20430,Santa María Tataltepec,True
+20432,20431,Santa María Tecomavaca,True
+20433,20432,Santa María Temaxcalapa,True
+20434,20433,Santa María Temaxcaltepec,True
+20435,20434,Santa María Teopoxco,True
+20436,20435,Santa María Tepantlali,True
+20437,20436,Santa María Texcatitlán,True
+20438,20437,Santa María Tlahuitoltepec,True
+20439,20438,Santa María Tlalixtac,True
+20440,20439,Santa María Tonameca,True
+20441,20440,Santa María Totolapilla,True
+20442,20441,Santa María Xadani,True
+20443,20442,Santa María Yalina,True
+20444,20443,Santa María Yavesía,True
+20445,20444,Santa María Yolotepec,True
+20446,20445,Santa María Yosoyúa,True
+20447,20446,Santa María Yucuhiti,True
+20448,20447,Santa María Zacatepec,True
+20449,20448,Santa María Zaniza,True
+20450,20449,Santa María Zoquitlán,True
+20451,20450,Santiago Amoltepec,True
+20452,20451,Santiago Apoala,True
+20453,20452,Santiago Apóstol,True
+20454,20453,Santiago Astata,True
+20455,20454,Santiago Atitlán,True
+20456,20455,Santiago Ayuquililla,True
+20457,20456,Santiago Cacaloxtepec,True
+20458,20457,Santiago Camotlán,True
+20459,20459,Santiago Chazumba,True
+20460,20460,Santiago Choápam,True
+20461,20458,Santiago Comaltepec,True
+20462,20461,Santiago del Río,True
+20463,20462,Santiago Huajolotitlán,True
+20464,20463,Santiago Huauclilla,True
+20465,20464,Santiago Ihuitlán Plumas,True
+20466,20465,Santiago Ixcuintepec,True
+20467,20466,Santiago Ixtayutla,True
+20468,20467,Santiago Jamiltepec,True
+20469,20468,Santiago Jocotepec,True
+20470,20469,Santiago Juxtlahuaca,True
+20471,20470,Santiago Lachiguiri,True
+20515,20515,Santo Domingo Tehuantepec,True
+20472,20471,Santiago Lalopa,True
+20473,20472,Santiago Laollaga,True
+20474,20473,Santiago Laxopa,True
+20475,20474,Santiago Llano Grande,True
+20476,20475,Santiago Matatlán,True
+20477,20476,Santiago Miltepec,True
+20478,20477,Santiago Minas,True
+20479,20478,Santiago Nacaltepec,True
+20480,20479,Santiago Nejapilla,True
+20481,20066,Santiago Niltepec,True
+20482,20480,Santiago Nundiche,True
+20483,20481,Santiago Nuyoó,True
+20484,20482,Santiago Pinotepa Nacional,True
+20485,20483,Santiago Suchilquitongo,True
+20486,20484,Santiago Tamazola,True
+20487,20485,Santiago Tapextla,True
+20488,20487,Santiago Tenango,True
+20489,20488,Santiago Tepetlapa,True
+20490,20489,Santiago Tetepec,True
+20491,20490,Santiago Texcalcingo,True
+20492,20491,Santiago Textitlán,True
+20493,20492,Santiago Tilantongo,True
+20494,20493,Santiago Tillo,True
+20495,20494,Santiago Tlazoyaltepec,True
+20496,20495,Santiago Xanica,True
+20497,20496,Santiago Xiacuí,True
+20498,20497,Santiago Yaitepec,True
+20499,20498,Santiago Yaveo,True
+20500,20499,Santiago Yolomécatl,True
+20501,20500,Santiago Yosondúa,True
+20502,20501,Santiago Yucuyachi,True
+20503,20502,Santiago Zacatepec,True
+20504,20503,Santiago Zoochila,True
+20505,20506,Santo Domingo Albarradas,True
+20506,20507,Santo Domingo Armenta,True
+20507,20508,Santo Domingo Chihuitán,True
+20508,20509,Santo Domingo de Morelos,True
+20509,20505,Santo Domingo Ingenio,True
+20510,20510,Santo Domingo Ixcatlán,True
+20511,20511,Santo Domingo Nuxaá,True
+20512,20512,Santo Domingo Ozolotepec,True
+20513,20513,Santo Domingo Petapa,True
+20514,20514,Santo Domingo Roayaga,True
+20516,20516,Santo Domingo Teojomulco,True
+20517,20517,Santo Domingo Tepuxtepec,True
+20518,20518,Santo Domingo Tlatayápam,True
+20519,20519,Santo Domingo Tomaltepec,True
+20520,20520,Santo Domingo Tonalá,True
+20521,20521,Santo Domingo Tonaltepec,True
+20522,20522,Santo Domingo Xagacía,True
+20523,20523,Santo Domingo Yanhuitlán,True
+20524,20524,Santo Domingo Yodohino,True
+20525,20525,Santo Domingo Zanatepec,True
+20526,20530,Santo Tomás Jalieza,True
+20527,20531,Santo Tomás Mazaltepec,True
+20528,20532,Santo Tomás Ocotepec,True
+20529,20533,Santo Tomás Tamazulapan,True
+20530,20526,Santos Reyes Nopala,True
+20531,20527,Santos Reyes Pápalo,True
+20532,20528,Santos Reyes Tepejillo,True
+20533,20529,Santos Reyes Yucuná,True
+20534,20537,Silacayoápam,True
+20535,20538,Sitio de Xitlapehua,True
+20536,20277,Villa Sola de Vega,True
+20537,20539,Soledad Etla,True
+20538,20542,Taniche,True
+20539,20540,Villa de Tamazulápam del Progreso,True
+20540,20031,Tamazulápam del Espíritu Santo,True
+20541,20541,Tanetze de Zaragoza,True
+20542,20543,Tataltepec de Valdés,True
+20543,20486,Villa Tejúpam de la Unión,True
+20544,20544,Teococuilco de Marcos Pérez,True
+20545,20545,Teotitlán de Flores Magón,True
+20546,20546,Teotitlán del Valle,True
+20547,20547,Teotongo,True
+20548,20548,Tepelmeme Villa de Morelos,True
+20549,20549,"Heroica Villa Tezoatlán de Segura y Luna, Cuna de la Independencia de Oaxaca",False
+20550,20551,Tlacolula de Matamoros,True
+20551,20552,Tlacotepec Plumas,True
+20552,20553,Tlalixtac de Cabrera,True
+20553,20397,Heroica Ciudad de Tlaxiaco,True
+20554,20554,Totontepec Villa de Morelos,True
+20555,20555,Trinidad Zaachila,True
+20556,20556,La Trinidad Vista Hermosa,True
+20557,20557,Unión Hidalgo,True
+20558,20558,Valerio Trujano,True
+20559,20247,Capulálpam de Méndez,True
+20560,20338,Villa de Etla,True
+20561,20560,Villa Díaz Ordaz,True
+20562,20038,Villa Hidalgo Yalalag,False
+20563,20561,Yaxe,True
+20564,20563,Yogana,True
+20565,20564,Yutanduchi de Guerrero,True
+20566,20565,Villa de Zaachila,True
+20567,20566,San Mateo Yucutindoo,False
+20568,20567,Zapotitlán Lagunas,True
+20569,20568,Zapotitlán Palmas,True
+20570,20570,Zimatlán de Álvarez,True
+21001,21001,Acajete,True
+21002,21002,Acateno,True
+21003,21003,Acatlán,True
+21004,21004,Acatzingo,True
+21005,21005,Acteopan,True
+21006,21006,Ahuacatlán,True
+21007,21007,Ahuatlán,True
+21008,21008,Ahuazotepec,True
+21009,21009,Ahuehuetitla,True
+21010,21010,Ajalpan,True
+21011,21011,Albino Zertuche,True
+21012,21012,Aljojuca,True
+21013,21013,Altepexi,True
+21014,21014,Amixtlán,True
+21015,21015,Amozoc,True
+21016,21016,Aquixtla,True
+21017,21017,Atempan,True
+21018,21018,Atexcal,True
+21019,21019,Atlixco,True
+21020,21020,Atoyatempan,True
+21021,21021,Atzala,True
+21022,21022,Atzitzihuacán,True
+21023,21023,Atzitzintla,True
+21024,21024,Axutla,True
+21025,21025,Ayotoxco de Guerrero,True
+21026,21026,Calpan,True
+21027,21027,Caltepec,True
+21028,21028,Camocuautla,True
+21029,21099,Cañada Morelos,True
+21030,21029,Caxhuacan,True
+21031,21030,Coatepec,True
+21032,21031,Coatzingo,True
+21033,21032,Cohetzala,True
+21034,21033,Cohuecan,True
+21035,21034,Coronango,True
+21036,21035,Coxcatlán,True
+21037,21036,Coyomeapan,True
+21038,21037,Coyotepec,True
+21039,21038,Cuapiaxtla De Madero,True
+21040,21039,Cuautempan,True
+21042,21041,Cuautlancingo,True
+21043,21042,Cuayuca de Andrade,True
+21044,21043,Cuetzalan del Progreso,True
+21045,21044,Cuyoaco,True
+21046,21045,Chalchicomula de Sesma,True
+21047,21046,Chapulco,True
+21048,21047,Chiautla,True
+21049,21048,Chiautzingo,True
+21050,21049,Chiconcuautla,True
+21051,21050,Chichiquila,True
+21052,21051,Chietla,True
+21053,21052,Chigmecatitlán,True
+21054,21053,Chignahuapan,True
+21055,21054,Chignautla,True
+21056,21055,Chila,True
+21057,21056,Chila de la Sal,True
+21058,21057,Honey,True
+21059,21058,Chilchotla,True
+21060,21059,Chinantla,True
+21061,21060,Domingo Arenas,True
+21062,21061,Eloxochitlán,True
+21063,21062,Epatlán,True
+21064,21063,Esperanza,True
+21065,21064,Francisco Z. Mena,True
+21066,21065,General Felipe Ángeles,True
+21067,21066,Guadalupe,True
+21068,21067,Guadalupe Victoria,True
+21069,21068,Hermenegildo Galeana,True
+21070,21069,Huaquechula,True
+21071,21070,Huatlatlauca,True
+21072,21071,Huauchinango,True
+21073,21072,Huehuetla,True
+21074,21073,Huehuetlán el Chico,True
+21075,21150,Huehuetlán el Grande,True
+21076,21074,Huejotzingo,True
+21077,21075,Hueyapan,True
+21078,21076,Hueytamalco,True
+21079,21077,Hueytlalpan,True
+21080,21078,Huitzilan de Serdán,True
+21081,21079,Huitziltepec,True
+21082,21080,Atlequizayan,True
+21083,21081,Ixcamilpa de Guerrero,True
+21084,21082,Ixcaquixtla,True
+21085,21083,Ixtacamaxtitlán,True
+21086,21084,Ixtepec,True
+21087,21085,Izúcar de Matamoros,True
+21088,21086,Jalpan,True
+21089,21087,Jolalpan,True
+21090,21088,Jonotla,True
+21091,21089,Jopala,True
+21092,21090,Juan C. Bonilla,True
+21093,21091,Juan Galindo,True
+21094,21092,Juan N. Méndez,True
+21095,21093,Lafragua,True
+21096,21094,Libres,True
+21097,21095,La Magdalena Tlatlauquitepec,True
+21098,21096,Mazapiltepec de Juárez,True
+21099,21097,Mixtla,True
+21100,21098,Molcaxac,True
+21101,21100,Naupan,True
+21102,21101,Nauzontla,True
+21103,21102,Nealtican,True
+21104,21103,Nicolás Bravo,True
+21105,21104,Nopalucan,True
+21106,21105,Ocotepec,True
+21107,21106,Ocoyucan,True
+21108,21107,Olintla,True
+21109,21108,Oriental,True
+21110,21109,Pahuatlán,True
+21111,21110,Palmar de Bravo,True
+21112,21111,Pantepec,True
+21113,21112,Petlalcingo,True
+21114,21113,Piaxtla,True
+21115,21114,Puebla,True
+21116,21115,Quecholac,True
+21117,21116,Quimixtlán,True
+21118,21117,Rafael Lara Grajales,True
+21119,21118,Los Reyes de Juárez,True
+21120,21119,San Andrés Cholula,True
+21121,21120,San Antonio Cañada,True
+21122,21121,San Diego la Mesa Tochimiltzingo,True
+21123,21122,San Felipe Teotlalcingo,True
+21124,21123,San Felipe Tepatlán,True
+21125,21124,San Gabriel Chilac,True
+21126,21125,San Gregorio Atzompa,True
+21127,21126,San Jerónimo Tecuanipan,True
+21128,21127,San Jerónimo Xayacatlán,True
+21129,21128,San José Chiapa,True
+21130,21129,San José Miahuatlán,True
+21131,21130,San Juan Atenco,True
+21132,21131,San Juan Atzompa,True
+21133,21132,San Martín Texmelucan,True
+21134,21133,San Martín Totoltepec,True
+21135,21134,San Matias Tlalancaleca,True
+21136,21135,San Miguel Ixitlán,True
+21137,21136,San Miguel Xoxtla,True
+21138,21137,San Nicolás Buenos Aires,True
+21139,21138,San Nicolás de los Ranchos,True
+21140,21139,San Pablo Anicano,True
+21141,21140,San Pedro Cholula,True
+21142,21141,San Pedro Yeloixtlahuaca,True
+21143,21142,San Salvador El Seco,True
+21144,21143,San Salvador El Verde,True
+21145,21144,San Salvador Huixcolotla,True
+21146,21146,Santa Catarina Tlaltempan,True
+21147,21147,Santa Inés Ahuatempan,True
+21148,21148,Santa Isabel Cholula,True
+21149,21149,Santiago Miahuatlán,True
+21150,21151,Santo Tomás Hueyotlipan,True
+21151,21152,Soltepec,True
+21152,21153,Tecali de Herrera,True
+21153,21154,Tecamachalco,True
+21154,21155,Tecomatlán,True
+21155,21156,Tehuacán,True
+21156,21157,Tehuitzingo,True
+21157,21158,Tenampulco,True
+21158,21159,Teopantlán,True
+21159,21160,Teotlalco,True
+21160,21161,Tepanco de López,True
+21161,21162,Tepango de Rodríguez,True
+21162,21163,Tepatlaxco de Hidalgo,True
+21163,21164,Tepeaca,True
+21164,21165,Tepemaxalco,True
+21165,21166,Tepeojuma,True
+21166,21167,Tepetzintla,True
+21167,21168,Tepexco,True
+21168,21169,Tepexi de Rodríguez,True
+21169,21170,Tepeyahualco,True
+21170,21171,Tepeyahualco de Cuauhtémoc,True
+21171,21172,Tetela de Ocampo,True
+21172,21173,Teteles de Avila Castillo,True
+21173,21174,Teziutlán,True
+21174,21175,Tianguismanalco,True
+21175,21176,Tilapa,True
+21176,21177,Tlacotepec de Benito Juárez,True
+21177,21145,San Sebastián Tlacotepec,True
+21178,21178,Tlacuilotepec,True
+21179,21179,Tlachichuca,True
+21180,21180,Tlahuapan,True
+21181,21181,Tlaltenango,True
+21182,21182,Tlanepantla,True
+21183,21183,Tlaola,True
+21184,21184,Tlapacoya,True
+21185,21185,Tlapanalá,True
+21186,21186,Tlatlauquitepec,True
+21187,21187,Tlaxco,True
+21188,21188,Tochimilco,True
+21189,21189,Tochtepec,True
+21190,21190,Totoltepec de Guerrero,True
+21191,21191,Tulcingo,True
+21192,21192,Tuzamapan de Galeana,True
+21193,21193,Tzicatlacoyan,True
+21194,21194,Venustiano Carranza,True
+21195,21195,Vicente Guerrero,True
+21196,21196,Xayacatlán de Bravo,True
+21197,21197,Xicotepec,True
+21198,21198,Xicotlán,True
+21199,21199,Xiutetelco,True
+21200,21200,Xochiapulco,True
+21201,21201,Xochiltepec,True
+21202,21202,Xochitlán de Vicente Suárez,True
+21203,21203,Xochitlán Todos Santos,True
+21204,21204,Yaonáhuac,True
+21205,21205,Yehualtepec,True
+21206,21206,Zacapala,True
+21207,21207,Zacapoaxtla,True
+21208,21208,Zacatlán,True
+21209,21209,Zapotitlán,True
+21210,21210,Zapotitlán de Méndez,True
+21211,21211,Zaragoza,True
+21212,21212,Zautla,True
+21213,21213,Zihuateutla,True
+21214,21214,Zinacatepec,True
+21215,21215,Zongozotla,True
+21216,21216,Zoquiapan,True
+21217,21217,Zoquitlán,True
+21041,21040,Cuautinchán,True
+22001,22001,Amealco de Bonfil,True
+22002,22003,Arroyo Seco,True
+22003,22004,Cadereyta de Montes,True
+22004,22005,Colón,True
+22005,22006,Corregidora,True
+22006,22007,Ezequiel Montes,True
+22007,22008,Huimilpan,True
+22008,22009,Jalpan de Serra,True
+22009,22010,Landa de Matamoros,True
+22010,22011,El Marqués,True
+22011,22012,Pedro Escobedo,True
+22012,22013,Peñamiller,True
+22013,22002,Pinal de Amoles,True
+22014,22014,Querétaro,True
+22015,22015,San Joaquín,True
+22016,22016,San Juan del Río,True
+22017,22017,Tequisquiapan,True
+22018,22018,Tolimán,True
+23001,23005,Benito Juárez,True
+23011,23011,Puerto Morelos,True
+23002,23001,Cozumel,True
+23008,23008,Solidaridad,True
+23009,23009,Tulum,True
+23003,23002,Felipe Carrillo Puerto,True
+23004,23003,Isla Mujeres,True
+23005,23006,José María Morelos,True
+23006,23007,Lázaro Cárdenas,True
+23007,23004,Othón P. Blanco,True
+23010,23010,Bacalar,True
+24001,24001,Ahualulco,True
+24002,24002,Alaquines,True
+24003,24003,Aquismón,True
+24004,24004,Armadillo de los Infante,True
+24005,24005,Cárdenas,True
+24006,24006,Catorce,True
+24007,24007,Cedral,True
+24008,24008,Cerritos,True
+24009,24009,Cerro de San Pedro,True
+24010,24010,Ciudad del Maíz,True
+24057,24058,El Naranjo,True
+24011,24011,Ciudad Fernández,True
+24012,24012,Tancanhuitz,True
+24013,24013,Ciudad Valles,True
+24014,24014,Coxcatlán,True
+24015,24015,Charcas,True
+24016,24016,Ebano,True
+24017,24017,Guadalcázar,True
+24018,24018,Huehuetlán,True
+24019,24019,Lagunillas,True
+24020,24020,Matehuala,True
+24021,24021,Mexquitic De Carmona,True
+24022,24022,Moctezuma,True
+24023,24023,Rayón,True
+24024,24024,Rioverde,True
+24025,24025,Salinas,True
+24026,24026,San Antonio,True
+24027,24027,San Ciro de Acosta,True
+24028,24028,San Luis Potosí,True
+24029,24029,San Martín Chalchicuautla,True
+24030,24030,San Nicolás Tolentino,True
+24031,24034,San Vicente Tancuayalab,True
+24032,24031,Santa Catarina,True
+24033,24032,Santa María del Río,True
+24034,24033,Santo Domingo,True
+24035,24035,Soledad de Graciano Sánchez,True
+24036,24036,Tamasopo,True
+24037,24037,Tamazunchale,True
+24058,24057,Matlapa,True
+24038,24038,Tampacán,True
+24039,24039,Tampamolón Corona,True
+24040,24040,Tamuín,True
+24041,24041,Tanlajás,True
+24042,24042,Tanquián de Escobedo,True
+24043,24043,Tierra Nueva,True
+24044,24044,Vanegas,True
+24045,24045,Venado,True
+24046,24056,Villa de Arista,True
+24047,24046,Villa de Arriaga,True
+24048,24047,Villa de Guadalupe,True
+24049,24048,Villa de la Paz,True
+24050,24049,Villa de Ramos,True
+24051,24050,Villa de Reyes,True
+24052,24051,Villa Hidalgo,True
+24053,24052,Villa Juárez,True
+24054,24053,Axtla De Terrazas,True
+24055,24054,Xilitla,True
+24056,24055,Zaragoza,True
+25001,25001,Ahome,True
+25002,25002,Angostura,True
+25003,25003,Badiraguato,True
+25004,25004,Concordia,True
+25005,25005,Cosalá,True
+25006,25006,Culiacán,True
+25007,25007,Choix,True
+25008,25008,Elota,True
+25009,25009,Escuinapa,True
+25010,25010,El Fuerte,True
+25011,25011,Guasave,True
+25012,25012,Mazatlán,True
+25013,25013,Mocorito,True
+25014,25014,Rosario,True
+25015,25015,Salvador Alvarado,True
+25016,25016,San Ignacio,True
+25017,25017,Sinaloa,True
+25018,25018,Navolato,True
+26001,26001,Aconchi,True
+26002,26002,Agua Prieta,True
+26003,26004,Altar,True
+26004,26005,Arivechi,True
+26005,26006,Arizpe,True
+26006,26007,Atil,True
+26007,26008,Bacadéhuachi,True
+26008,26009,Bacanora,True
+26009,26010,Bacerac,True
+26010,26011,Bacoachi,True
+26011,26013,Banámichi,True
+26012,26014,Baviácora,True
+26013,26015,Bavispe,True
+26014,26016,Benjamín Hill,True
+26015,26019,Cananea,True
+26016,26022,Cucurpe,True
+26017,26023,Cumpas,True
+26018,26024,Divisaderos,True
+26019,26027,Fronteras,True
+26020,26028,Granados,True
+26021,26031,Huachinera,True
+26022,26032,Huásabas,True
+26023,26034,Huépac,True
+26024,26035,Imuris,True
+26025,26036,Magdalena,True
+26026,26038,Moctezuma,True
+26027,26039,Naco,True
+26028,26040,Nácori Chico,True
+26029,26041,Nacozari de García,True
+26030,26043,Nogales,True
+26031,26046,Oquitoa,True
+26032,26052,Sahuaripa,True
+26033,26053,San Felipe de Jesús,True
+26034,26054,San Javier,True
+26035,26057,San Pedro De La Cueva,True
+26036,26058,Santa Ana,True
+26037,26059,Santa Cruz,True
+26038,26060,Sáric,True
+26039,26061,Soyopa,True
+26040,26062,Suaqui Grande,True
+26041,26063,Tepache,True
+26042,26064,Trincheras,True
+26043,26065,Tubutama,True
+26044,26067,Villa Hidalgo,True
+26045,26068,Villa Pesqueira,True
+26046,26017,Caborca,True
+26047,26020,Carbó,True
+26048,26021,La Colorada,True
+26049,26030,Hermosillo,True
+26050,26037,Mazatán,True
+26051,26045,Opodepe,True
+26052,26047,Pitiquito,True
+26053,26048,Puerto Peñasco,True
+26054,26050,Rayon,True
+26055,26055,San Luis Río Colorado,True
+26056,26056,San Miguel de Horcasitas,True
+26057,26066,Ures,True
+26058,26012,Bácum,True
+26059,26018,Cajeme,True
+26060,26025,Empalme,True
+26061,26029,Guaymas,True
+26072,26072,San Ignacio Río Muerto,True
+26062,26003,Alamos,True
+26063,26026,Etchojoa,True
+26071,26071,Benito Juárez,True
+26064,26033,Huatabampo,True
+26065,26042,Navojoa,True
+26066,26044,Onavas,True
+26067,26049,Quiriego,True
+26068,26051,Rosario,True
+26069,26069,Yécora,True
+26070,26070,General Plutarco Elías Calles,True
+27001,27001,Balancán,True
+27002,27002,Cárdenas,True
+27003,27003,Centla,True
+27004,27004,Centro,True
+27005,27005,Comalcalco,True
+27006,27006,Cunduacán,True
+27007,27007,Emiliano Zapata,True
+27008,27008,Huimanguillo,True
+27009,27009,Jalapa,True
+27010,27010,Jalpa de Méndez,True
+27011,27011,Jonuta,True
+27012,27012,Macuspana,True
+27013,27013,Nacajuca,True
+27014,27014,Paraíso,True
+27015,27015,Tacotalpa,True
+27016,27016,Teapa,True
+27017,27017,Tenosique,True
+28001,28001,Abasolo,True
+28002,28002,Aldama,True
+28003,28003,Altamira,True
+28004,28004,Antiguo Morelos,True
+28005,28005,Burgos,True
+28006,28006,Bustamante,True
+28007,28007,Camargo,True
+28008,28008,Casas,True
+28009,28009,Ciudad Madero,True
+28010,28010,Cruillas,True
+28011,28011,Gómez Farías,True
+28012,28012,González,True
+28013,28013,Güémez,True
+28014,28014,Guerrero,True
+28015,28015,Gustavo Díaz Ordaz,True
+28016,28016,Hidalgo,True
+28017,28017,Jaumave,True
+28018,28018,Jiménez,True
+28019,28019,Llera,True
+28020,28020,Mainero,True
+28021,28021,El Mante,True
+28022,28022,Matamoros,True
+28023,28023,Méndez,True
+28024,28024,Mier,True
+28025,28025,Miguel Alemán,True
+28026,28026,Miquihuana,True
+28027,28027,Nuevo Laredo,True
+28028,28028,Nuevo Morelos,True
+28029,28029,Ocampo,True
+28030,28030,Padilla,True
+28031,28031,Palmillas,True
+28032,28032,Reynosa,True
+28033,28033,Río Bravo,True
+28034,28034,San Carlos,True
+28035,28035,San Fernando,True
+28036,28036,San Nicolás,True
+28037,28037,Soto la Marina,True
+28038,28038,Tampico,True
+28039,28039,Tula,True
+28040,28040,Valle Hermoso,True
+28041,28041,Victoria,True
+28042,28042,Villagrán,True
+28043,28043,Xicoténcatl,True
+29001,29001,Amaxac de Guerrero,True
+29002,29002,Apetatitlán de Antonio Carvajal,True
+29003,29005,Apizaco,True
+29004,29003,Atlangatepec,True
+29034,29034,Tlaxco,True
+29005,29004,Atltzayanca,True
+29006,29006,Calpulalpan,True
+29007,29007,El Carmen Tequexquitla,True
+29008,29008,Cuapiaxtla,True
+29009,29009,Cuaxomulco,True
+29010,29010,Chiautempan,True
+29052,29048,La Magdalena Tlaltelulco,True
+29051,29050,San Francisco Tetlanohcan,True
+29011,29011,Muñoz de Domingo Arenas,True
+29012,29012,Españita,True
+29013,29013,Huamantla,True
+29014,29014,Hueyotlipan,True
+29015,29015,Ixtacuixtla de Mariano Matamoros,True
+29058,29056,Santa Ana Nopalucan,True
+29016,29016,Ixtenco,True
+29017,29017,Mazatecochco de José María Morelos,True
+29018,29018,Contla de Juan Cuamatzi,True
+29019,29019,Tepetitla de Lardizábal,True
+29020,29020,Sanctórum de Lázaro Cárdenas,True
+29060,29045,Benito Juárez,True
+29021,29021,Nanacamilpa de Mariano Arista,True
+29022,29022,Acuamanala de Miguel Hidalgo,True
+29046,29059,Santa Cruz Quilehtla,True
+29045,29057,Santa Apolonia Teacalco,True
+29023,29023,Natívitas,True
+29024,29024,Panotla,True
+29025,29025,San Pablo del Monte,True
+29026,29026,Santa Cruz Tlaxcala,True
+29027,29027,Tenancingo,True
+29028,29028,Teolocholco,True
+29029,29029,Tepeyanco,True
+29049,29060,Santa Isabel Xiloxoxtla,True
+29047,29053,San Juan Huactzinco,True
+29030,29030,Terrenate,True
+29054,29046,Emiliano Zapata,True
+29055,29047,Lázaro Cárdenas,True
+29031,29031,Tetla de la Solidaridad,True
+29032,29032,Tetlatlahuca,True
+29053,29049,San Damián Texóloc,True
+29056,29051,San Jerónimo Zacualpan,True
+29033,29033,Tlaxcala,True
+29035,29035,Tocatlán,True
+29036,29036,Totolac,True
+29037,29037,Zitlaltépec de Trinidad Sánchez Santos,False
+29038,29038,Tzompantepec,True
+29050,29052,San José Teacalco,True
+29039,29039,Xaloztoc,True
+29040,29040,Xaltocan,True
+29057,29055,San Lucas Tecopilco,True
+29041,29041,Papalotla de Xicohténcatl,True
+29042,29042,Xicohtzinco,True
+29043,29043,Yauhquemehcan,True
+29059,29054,San Lorenzo Axocomanitla,True
+29044,29044,Zacatelco,True
+29048,29058,Santa Catarina Ayometla,True
+30001,30001,Acajete,True
+30002,30002,Acatlán,True
+30003,30003,Acayucan,True
+30004,30004,Actopan,True
+30005,30005,Acula,True
+30006,30006,Acultzingo,True
+30007,30007,Camarón de Tejeda,True
+30008,30160,Álamo Temapache,True
+30009,30008,Alpatláhuac,True
+30010,30009,Alto Lucero de Gutiérrez Barios,False
+30011,30010,Altotonga,True
+30012,30011,Alvarado,True
+30013,30012,Amatitlán,True
+30014,30014,Amatlán de los Reyes,True
+30015,30013,Naranjos Amatlán,True
+30016,30015,Angel R. Cabada,True
+30017,30016,La Antigua,True
+30018,30017,Apazapan,True
+30019,30018,Aquila,True
+30020,30019,Astacinga,True
+30021,30020,Atlahuilco,True
+30022,30021,Atoyac,True
+30023,30022,Atzacan,True
+30024,30023,Atzalan,True
+30025,30024,Tlaltetela,True
+30026,30025,Ayahualulco,True
+30027,30026,Banderilla,True
+30028,30027,Benito Juárez,True
+30029,30028,Boca del Río,True
+30030,30029,Calcahualco,True
+30031,30030,Camerino Z. Mendoza,True
+30032,30031,Carrillo Puerto,True
+30033,30157,Castillo de Teayo,True
+30034,30032,Catemaco,True
+30035,30033,Cazones De Herrera,True
+30036,30034,Cerro Azul,True
+30037,30035,Citlaltépetl,True
+30038,30036,Coacoatzintla,True
+30039,30037,Coahuitlán,True
+30040,30038,Coatepec,True
+30041,30039,Coatzacoalcos,True
+30042,30040,Coatzintla,True
+30043,30041,Coetzala,True
+30044,30042,Colipa,True
+30045,30043,Comapa,True
+30046,30044,Córdoba,True
+30047,30045,Cosamaloapan,False
+30208,30208,Carlos A. Carrillo,True
+30048,30046,Cosautlán de Carvajal,True
+30049,30047,Coscomatepec,True
+30050,30048,Cosoleacaque,True
+30051,30049,Cotaxtla,True
+30052,30050,Coxquihui,True
+30053,30051,Coyutla,True
+30054,30052,Cuichapa,True
+30055,30053,Cuitláhuac,True
+30056,30054,Chacaltianguis,True
+30057,30055,Chalma,True
+30058,30056,Chiconamel,True
+30059,30057,Chiconquiaco,True
+30060,30058,Chicontepec,True
+30061,30059,Chinameca,True
+30062,30060,Chinampa de Gorostiza,True
+30063,30061,Las Choapas,True
+30064,30062,Chocamán,True
+30065,30063,Chontla,True
+30066,30064,Chumatlán,True
+30067,30065,Emiliano Zapata,True
+30068,30066,Espinal,True
+30069,30067,Filomeno Mata,True
+30070,30068,Fortín,True
+30071,30069,Gutiérrez Zamora,True
+30072,30070,Hidalgotitlán,True
+30209,30210,Uxpanapa,True
+30073,30071,Huatusco,True
+30074,30072,Huayacocotla,True
+30075,30073,Hueyapan de Ocampo,True
+30076,30074,Huiloapan de Cuauhtémoc,True
+30077,30075,Ignacio de la Llave,True
+30078,30076,Ilamatlán,True
+30079,30077,Isla,True
+30080,30078,Ixcatepec,True
+30081,30079,Ixhuacán de los Reyes,True
+30082,30083,Ixhuatlán de Madero,True
+30083,30080,Ixhuatlán del Café,True
+30084,30082,Ixhuatlán del Sureste,True
+30085,30081,Ixhuatlancillo,True
+30086,30084,Ixmatlahuacan,True
+30087,30085,Ixtaczoquitlán,True
+30088,30086,Jalacingo,True
+30089,30087,Xalapa,True
+30090,30088,Jalcomulco,True
+30091,30089,Jáltipan,True
+30092,30090,Jamapa,True
+30093,30091,Jesús Carranza,True
+30094,30093,Jilotepec,True
+30095,30094,Juan Rodríguez Clara,True
+30096,30095,Juchique de Ferrer,True
+30097,30096,Landero y Coss,True
+30098,30097,Lerdo de Tejada,True
+30099,30098,Magdalena,True
+30100,30099,Maltrata,True
+30101,30100,Manlio Fabio Altamirano,True
+30102,30101,Mariano Escobedo,True
+30103,30102,Martínez de la Torre,True
+30211,30211,San Rafael,True
+30104,30103,Mecatlán,True
+30105,30104,Mecayapan,True
+30210,30209,Tatahuicapan de Juárez,True
+30106,30105,Medellín de Bravo,False
+30107,30106,Miahuatlán,True
+30108,30107,Las Minas,True
+30109,30108,Minatitlán,True
+30110,30109,Misantla,True
+30111,30110,Mixtla de Altamirano,True
+30112,30111,Moloacán,True
+30113,30112,Naolinco,True
+30114,30113,Naranjal,True
+30115,30114,Nautla,True
+30116,30115,Nogales,True
+30117,30116,Oluta,True
+30118,30117,Omealca,True
+30119,30118,Orizaba,True
+30120,30119,Otatitlán,True
+30121,30120,Oteapan,True
+30122,30121,Ozuluama de Mascareñas,True
+30123,30122,Pajapan,True
+30124,30123,Pánuco,True
+30125,30124,Papantla,True
+30126,30125,Paso del Macho,True
+30127,30126,Paso de Ovejas,True
+30128,30127,La Perla,True
+30129,30128,Perote,True
+30130,30129,Platón Sánchez,True
+30131,30130,Playa Vicente,True
+30212,30212,Santiago Sochiapan,True
+30132,30131,Poza Rica de Hidalgo,True
+30133,30133,Pueblo Viejo,True
+30134,30134,Puente Nacional,True
+30135,30135,Rafael Delgado,True
+30136,30136,Rafael Lucio,True
+30137,30132,Las Vigas de Ramírez,True
+30138,30137,Los Reyes,True
+30139,30138,Río Blanco,True
+30140,30139,Saltabarranca,True
+30141,30140,San Andrés Tenejapan,True
+30142,30141,San Andrés Tuxtla,True
+30143,30142,San Juan Evangelista,True
+30144,30143,Santiago Tuxtla,True
+30145,30144,Sayula de Alemán,True
+30146,30145,Soconusco,True
+30147,30146,Sochiapa,True
+30148,30147,Soledad Atzompa,True
+30149,30148,Soledad De Doblado,True
+30150,30149,Soteapan,True
+30151,30150,Tamalín,True
+30152,30151,Tamiahua,True
+30153,30152,Tampico Alto,True
+30154,30153,Tancoco,True
+30155,30154,Tantima,True
+30156,30155,Tantoyuca,True
+30157,30156,Tatatila,True
+30158,30158,Tecolutla,True
+30159,30159,Tehuipango,True
+30160,30161,Tempoal,True
+30161,30162,Tenampa,True
+30162,30163,Tenochtitlán,True
+30163,30164,Teocelo,True
+30164,30165,Tepatlaxco,True
+30165,30166,Tepetlán,True
+30166,30167,Tepetzintla,True
+30167,30168,Tequila,True
+30168,30169,José Azueta,True
+30169,30170,Texcatepec,True
+30170,30171,Texhuacán,True
+30171,30172,Texistepec,True
+30172,30173,Tezonapa,True
+30173,30174,Tierra Blanca,True
+30174,30175,Tihuatlán,True
+30175,30176,Tlacojalpan,True
+30176,30177,Tlacolulan,True
+30177,30178,Tlacotalpan,True
+30178,30179,Tlacotepec de Mejía,True
+30179,30180,Tlachichilco,True
+30180,30181,Tlalixcoyan,True
+30181,30182,Tlalnelhuayocan,True
+30182,30183,Tlapacoyan,True
+30183,30184,Tlaquilpa,True
+30184,30185,Tlilapan,True
+30185,30186,Tomatlán,True
+30186,30187,Tonayán,True
+30187,30188,Totutla,True
+30188,30189,Tuxpan,True
+30189,30190,Tuxtilla,True
+30190,30191,Ursulo Galván,True
+30191,30192,Vega de Alatorre,True
+30192,30193,Veracruz,True
+30193,30194,Villa Aldama,True
+30194,30092,Xico,True
+30195,30195,Xoxocotla,True
+30196,30196,Yanga,True
+30197,30197,Yecuatla,True
+30198,30198,Zacualpan,True
+30199,30199,Zaragoza,True
+30200,30200,Zentla,True
+30201,30201,Zongolica,True
+30202,30202,Zontecomatlán de López y Fuentes,True
+30203,30203,Zozocolco De Hidalgo,True
+30204,30207,Tres Valles,True
+30205,30206,Nanchital de Lázaro Cárdenas del Río,True
+30206,30204,Agua Dulce,True
+30207,30205,El Higo,True
+31001,31001,Abalá,True
+31002,31002,Acanceh,True
+31003,31003,Akil,True
+31004,31004,Baca,True
+31005,31005,Bokobá,True
+31006,31006,Buctzotz,True
+31007,31007,Cacalchén,True
+31008,31008,Calotmul,True
+31009,31009,Cansahcab,True
+31010,31010,Cantamayec,True
+31011,31011,Celestún,True
+31012,31012,Cenotillo,True
+31013,31013,Conkal,True
+31014,31014,Cuncunul,True
+31015,31015,Cuzamá,True
+31016,31016,Chacsinkín,True
+31017,31017,Chankom,True
+31018,31018,Chapab,True
+31019,31019,Chemax,True
+31020,31020,Chicxulub Pueblo,True
+31021,31021,Chichimilá,True
+31022,31022,Chikindzonot,True
+31023,31023,Chocholá,True
+31024,31024,Chumayel,True
+31025,31025,Dzán,True
+31026,31026,Dzemul,True
+31027,31027,Dzidzantún,True
+31028,31028,Dzilam de Bravo,True
+31029,31029,Dzilam González,True
+31030,31030,Dzitás,True
+31031,31031,Dzoncauich,True
+31032,31032,Espita,True
+31033,31033,Halachó,True
+31034,31034,Hocabá,True
+31035,31035,Hoctún,True
+31036,31036,Homún,True
+31037,31037,Huhí,True
+31038,31038,Hunucmá,True
+31039,31039,Ixil,True
+31040,31040,Izamal,True
+31041,31041,Kanasín,True
+31042,31042,Kantunil,True
+31043,31043,Kaua,True
+31044,31044,Kinchil,True
+31045,31045,Kopomá,True
+31046,31046,Mama,True
+31047,31047,Maní,True
+31048,31048,Maxcanú,True
+31049,31049,Mayapán,True
+31050,31050,Mérida,True
+31051,31051,Mocochá,True
+31052,31052,Motul,True
+31053,31053,Muna,True
+31054,31054,Muxupip,True
+31055,31055,Opichén,True
+31056,31056,Oxkutzcab,True
+31057,31057,Panabá,True
+31058,31058,Peto,True
+31059,31059,Progreso,True
+31060,31060,Quintana Roo,True
+31061,31061,Río Lagartos,True
+31062,31062,Sacalum,True
+31063,31063,Samahil,True
+31064,31064,Sanahcat,True
+31065,31065,San Felipe,True
+31066,31066,Santa Elena,True
+31067,31067,Seyé,True
+31068,31068,Sinanché,True
+31069,31069,Sotuta,True
+31070,31070,Sucilá,True
+31071,31071,Sudzal,True
+31072,31072,Suma,True
+31073,31073,Tahdziú,True
+31074,31074,Tahmek,True
+31075,31075,Teabo,True
+31076,31076,Tecoh,True
+31077,31077,Tekal de Venegas,True
+31078,31078,Tekantó,True
+31079,31079,Tekax,True
+31080,31080,Tekit,True
+31081,31081,Tekom,True
+31082,31082,Telchac Pueblo,True
+31083,31083,Telchac Puerto,True
+31084,31084,Temax,True
+31085,31085,Temozón,True
+31086,31086,Tepakán,True
+31087,31087,Tetiz,True
+31088,31088,Teya,True
+31089,31089,Ticul,True
+31090,31090,Timucuy,True
+31091,31091,Tinum,True
+31092,31092,Tixcacalcupul,True
+31093,31093,Tixkokob,True
+31094,31094,Tixmehuac,True
+31095,31095,Tixpéhual,True
+31096,31096,Tizimín,True
+31097,31097,Tunkás,True
+31098,31098,Tzucacab,True
+31099,31099,Uayma,True
+31100,31100,Ucú,True
+31101,31101,Umán,True
+31102,31102,Valladolid,True
+31103,31103,Xocchel,True
+31104,31104,Yaxcabá,True
+31105,31105,Yaxkukul,True
+31106,31106,Yobaín,True
+32001,32001,Apozol,True
+32002,32002,Apulco,True
+32003,32003,Atolinga,True
+32004,32004,Benito Juárez,True
+32005,32005,Calera,True
+32006,32006,Cañitas de Felipe Pescador,True
+32007,32007,Concepción del Oro,True
+32008,32008,Cuauhtémoc,True
+32009,32009,Chalchihuites,True
+32010,32010,Fresnillo,True
+32011,32011,Trinidad García de la Cadena,True
+32012,32012,Genaro Codina,True
+32013,32013,General Enrique Estrada,True
+32014,32014,General Francisco R. Murguía,True
+32015,32015,El Plateado de Joaquín Amaro,True
+32016,32016,General Pánfilo Natera,True
+32017,32017,Guadalupe,True
+32057,32057,Trancoso,True
+32018,32018,Huanusco,True
+32019,32019,Jalpa,True
+32020,32020,Jerez,True
+32021,32021,Jiménez del Teul,True
+32022,32022,Juan Aldama,True
+32023,32023,Juchipila,True
+32024,32024,Loreto,True
+32025,32025,Luis Moya,True
+32026,32026,Mazapil,True
+32027,32027,Melchor Ocampo,True
+32028,32028,Mezquital del Oro,True
+32029,32029,Miguel Auza,True
+32030,32030,Momax,True
+32031,32031,Monte Escobedo,True
+32032,32032,Morelos,True
+32033,32033,Moyahua de Estrada,True
+32034,32034,Nochistlán de Mejía,True
+32035,32035,Noria de Ángeles,True
+32036,32036,Ojocaliente,True
+32037,32037,Pánuco,True
+32038,32038,Pinos,True
+32039,32039,Río Grande,True
+32040,32040,Sain Alto,True
+32041,32041,El Salvador,True
+32042,32042,Sombrerete,True
+32043,32043,Susticacán,True
+32044,32044,Tabasco,True
+32045,32045,Tepechitlán,True
+32046,32046,Tepetongo,True
+32047,32047,Teúl de González Ortega,True
+32058,32058,Santa María de la Paz,True
+32048,32048,Tlaltenango de Sánchez Román,True
+32049,32049,Valparaíso,True
+32050,32050,Vetagrande,True
+32051,32051,Villa de Cos,True
+32052,32052,Villa García,True
+32053,32053,Villa González Ortega,True
+32054,32054,Villa Hidalgo,True
+32055,32055,Villanueva,True
+32056,32056,Zacatecas,True

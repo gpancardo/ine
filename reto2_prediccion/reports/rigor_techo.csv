@@ -1,0 +1,11 @@
+test,concepto,valor
+2021,honesto: modelo elegido (temporal),0.6160080978412619
+2021,oráculo: pesos de rezago del propio año,0.6685551986654832
+2021,oráculo + media municipal LOO del residuo (FUGA),0.8766615850010657
+2021,"estático: LGBM todas las features, mismo año, CV por municipio",0.776498968758345
+2021,ruido binomial (fracción de varianza irreducible),0.01874991447051967
+2024,honesto: modelo elegido (temporal),0.7105874769179672
+2024,oráculo: pesos de rezago del propio año,0.7207960503676053
+2024,oráculo + media municipal LOO del residuo (FUGA),0.8591518879414213
+2024,"estático: LGBM todas las features, mismo año, CV por municipio",0.7907362929486759
+2024,ruido binomial (fracción de varianza irreducible),0.02667137399196796

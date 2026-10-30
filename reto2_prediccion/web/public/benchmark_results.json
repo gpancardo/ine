@@ -1,0 +1,86 @@
+[
+  {
+    "modelo":"Lasso",
+    "rmse":0.0673,
+    "mae":0.051,
+    "r2":0.6644,
+    "ganador":true
+  },
+  {
+    "modelo":"Ridge",
+    "rmse":0.0674,
+    "mae":0.051,
+    "r2":0.6633,
+    "ganador":false
+  },
+  {
+    "modelo":"Stacking",
+    "rmse":0.0676,
+    "mae":0.0516,
+    "r2":0.6606,
+    "ganador":false
+  },
+  {
+    "modelo":"OLS_sem (P1,M1,P2,M2)",
+    "rmse":0.0679,
+    "mae":0.0514,
+    "r2":0.6581,
+    "ganador":false
+  },
+  {
+    "modelo":"LightGBM",
+    "rmse":0.069,
+    "mae":0.0527,
+    "r2":0.6465,
+    "ganador":false
+  },
+  {
+    "modelo":"Baseline_P1 (última presidencial)",
+    "rmse":0.0692,
+    "mae":0.0522,
+    "r2":0.6431,
+    "ganador":false
+  },
+  {
+    "modelo":"Random_Forest",
+    "rmse":0.0696,
+    "mae":0.0535,
+    "r2":0.6402,
+    "ganador":false
+  },
+  {
+    "modelo":"CatBoost",
+    "rmse":0.0703,
+    "mae":0.054,
+    "r2":0.6336,
+    "ganador":false
+  },
+  {
+    "modelo":"Baseline_media_historia",
+    "rmse":0.0766,
+    "mae":0.0594,
+    "r2":0.5587,
+    "ganador":false
+  },
+  {
+    "modelo":"Baseline_a1 (elección adyacente)",
+    "rmse":0.0817,
+    "mae":0.0632,
+    "r2":0.4773,
+    "ganador":false
+  },
+  {
+    "modelo":"Baseline_M1 (última intermedia)",
+    "rmse":0.0997,
+    "mae":0.0774,
+    "r2":0.2616,
+    "ganador":false
+  },
+  {
+    "modelo":"Baseline_Const0 (media nacional)",
+    "rmse":0.1156,
+    "mae":0.0925,
+    "r2":-0.0004,
+    "ganador":false
+  }
+]

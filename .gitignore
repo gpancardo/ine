@@ -1,0 +1,9 @@
+node_modules
+.next
+next-env.d.ts
+tsconfig.tsbuildinfo
+data/raw
+data/processed/*.pkl
+data/processed/*.gpkg
+__pycache__/
+catboost_info/

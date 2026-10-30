@@ -1,0 +1,5 @@
+Secciones con las 6 elecciones: 54892
+k | silhouette | estabilidad (ARI entre dos mitades)
+2 | 0.333 | 0.987
+3 | 0.273 | 0.914
+4 | 0.216 | 0.884

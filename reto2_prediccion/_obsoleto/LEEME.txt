@@ -1,0 +1,1 @@
+Resultado del primer intento (datos sintéticos, antes de descubrir las fuentes reales). Ya no se usa; se conserva por si algo en la app web depende de su formato de salida.

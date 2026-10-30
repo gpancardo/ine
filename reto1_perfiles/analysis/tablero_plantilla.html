@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfiles de participación</title>
+<style>/*LEAFLET_CSS*/</style>
+<style>
+:root{--bg:#fafaf8;--fg:#1d1d1b;--mut:#66665f;--line:#deddd6;--card:#fff;--acc:#7a1f4b;
+ --p1:#c2552c;--p2:#d9a21b;--p3:#3d7d4f;--p4:#2f6aa3;--p5:#7b4ea3}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171716;--fg:#ecebe6;--mut:#a3a29a;--line:#36352f;--card:#22221f;--acc:#e08ab2;
+ --p1:#e0784f;--p2:#e8be4a;--p3:#62a873;--p4:#5d95cf;--p5:#a47bcc}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1180px;margin:0 auto;padding:20px 16px 48px}h1{font-size:1.5rem;margin:0 0 4px}h2{font-size:1.05rem;margin:28px 0 8px}
+p.sub{color:var(--mut);margin:0 0 16px}
+.ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin-bottom:14px}.ctl label{display:flex;flex-direction:column;font-size:.8rem;color:var(--mut);gap:3px}
+select,input,button{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg)}button{cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--acc);color:#fff;border-color:var(--acc)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:8px 0 6px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px}.kpi b{display:block;font-size:1.35rem}.kpi span{font-size:.8rem;color:var(--mut)}
+.mix{display:flex;height:12px;border-radius:3px;overflow:hidden;min-width:90px;background:var(--line)}.mix i{display:block;height:100%}
+.leg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.82rem;color:var(--mut);margin:6px 0}.leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.86rem;font-variant-numeric:tabular-nums}
+th,td{padding:6px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th{position:sticky;top:0;background:var(--card);cursor:pointer;font-weight:600}
+th:first-child,td:first-child,td.l,th.l{text-align:left}tr:last-child td{border-bottom:0}th[aria-sort]{color:var(--acc)}
+#map{height:520px;border:1px solid var(--line);border-radius:8px;margin:10px 0 6px;background:var(--card)}@media (max-width:640px){#map{height:380px}}
+.leaflet-container{font:inherit}.mleg{background:var(--card);color:var(--fg);padding:6px 8px;border-radius:6px;font-size:.78rem;line-height:1.5;box-shadow:0 1px 4px #0003}.mleg i{display:inline-block;width:12px;height:10px;margin-right:5px;vertical-align:-1px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.card{background:var(--card);border:1px solid var(--line);border-left:5px solid;border-radius:8px;padding:10px 12px;font-size:.86rem}
+.card h3{margin:0 0 4px;font-size:.95rem}.note{font-size:.8rem;color:var(--mut)}footer{margin-top:28px;font-size:.8rem;color:var(--mut)}footer li{margin:3px 0}
+</style>
+</head>
+<body><main>
+<h1>Perfiles de participación por sección</h1>
+<p class="sub">Cinco perfiles de la CCPC 2009-2024 y votos que se recuperarían por elección si cada brecha se cerrara al nivel de secciones comparables. Para priorizar dentro de cada Junta, no para sumar criterios.</p>
+
+<div class="ctl">
+ <label>Entidad<select id="edo"></select></label>
+ <label>Distrito federal<select id="def"></select></label>
+ <label>Municipio (buscar)<input id="q" placeholder="nombre…" list="mlist"><datalist id="mlist"></datalist></label>
+ <label>Perfil<select id="per"><option value="0">Todos</option></select></label>
+ <label>Color del mapa<select id="met"><option value="per">Perfil (mayoritario)</option><option value="0">Votos por nivel / 1,000 electores</option><option value="1">Por género / 1,000</option><option value="2">Por jóvenes / 1,000</option><option value="3">Por 75+ / 1,000</option></select></label>
+ <label>Confianza mínima<select id="conf"><option value="0">Cualquiera</option><option value="0.8">≥ 0.8</option><option value="0.95">≥ 0.95</option></select></label>
+ <div class="tabs" role="group" aria-label="Agrupar por"><button data-v="def" aria-pressed="true">Distritos</button> <button data-v="mun">Municipios</button> <button data-v="sec">Secciones</button></div>
+ <button id="csv">Descargar CSV</button>
+</div>
+
+<div class="kpis" id="kpis"></div>
+<div class="leg" id="leg"></div>
+<div id="map" role="region" aria-label="Mapa de la selección; haz clic en un distrito o municipio para filtrar"></div>
+<p class="note">Clic en un distrito o municipio para filtrar la tabla. En la vista de secciones, cada punto es una sección (tamaño según lista nominal). Cartografía electoral INE; mapa base © OpenStreetMap (requiere conexión; sin ella el mapa se dibuja sin fondo).</p>
+<div class="wrap"><table><thead id="th"></thead><tbody id="tb"></tbody></table></div>
+<p class="note" id="nrows"></p>
+
+<h2>Qué hacer en cada perfil (hipótesis para pilotear)</h2>
+<div class="cards" id="cards"></div>
+
+<footer><ul>
+<li><b>Votos recuperables</b>: nivel = hasta el percentil 75 de secciones del mismo tipo (urbana, mixta, rural); género = hombres de 18 a 54 como las mujeres de su sección; jóvenes = 18-34 hasta el percentil 75 de pares; 75+ = como el grupo 55-74 de su sección. Base: lista nominal 2024. Los criterios se solapan y no se suman. Con el percentil 50 como referencia, el potencial por nivel baja a la mitad (4.1 M frente a 7.7 M).</li>
+<li><b>Confianza</b>: proporción de réplicas de remuestreo en que la sección conserva su perfil. Prioriza secciones con ≥ 0.8.</li>
+<li>La lista nominal incluye personas que ya no residen en la sección; donde hay mucha emigración (norte, zonas rurales) el potencial está sobreestimado. Las estrategias son hipótesis, sin efecto estimado; la evidencia experimental sugiere efectos de 0.3 a 1 pp para mensajes masivos.</li>
+<li>Solo datos agregados; no usa datos personales ni voto por partido. Secciones creadas después de 2015 no tienen perfil.</li>
+</ul></footer>
+</main>
+<script>/*LEAFLET_JS*/</script>
+<script>
+const D=/*DATA*/null;
+const [SID,EDO,DEF,MUN,PER,TIPO,LN,PART,VN,VG,VJ,V75,CONF,LAT,LON]=[...Array(15).keys()];
+const COL=i=>`var(--p${i})`, fmt=n=>Math.round(n).toLocaleString('es-MX'), $=id=>document.getElementById(id);
+const EST={1:["Fricción práctica: domicilio de la credencial y dónde votar","Celular y redes; centros de trabajo y escuelas"],
+ 2:["Jóvenes de 18 a 34: relevancia local del voto y primer voto","Redes sociales; escuelas y universidades; pares"],
+ 3:["Hombres de 25 a 44: cómo, dónde y cuándo votar; estudio de barreras antes de escalar","TV, radio comunitaria, actividades presenciales, familias"],
+ 4:["Mujeres de 25 a 34 (horario, cuidados) y accesibilidad para 75+","Redes y centros de trabajo; TV e instituciones locales"],
+ 5:["Sostener y documentar qué mantiene la participación joven","TV, radio y liderazgos comunitarios"]};
+let mode="def", sortK=VN, sortDir=-1, lastFit="";
+const map=L.map("map",{preferCanvas:true,zoomSnap:.5}).setView([23.6,-102.5],5);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:17,attribution:"© OpenStreetMap"}).addTo(map);
+let layer=null; const legCtl=L.control({position:"bottomright"}); legCtl.onAdd=()=>L.DomUtil.create("div","mleg"); legCtl.addTo(map);
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim(), SEQ=["#f3e3ea","#dfa9c1","#c56b95","#9b3a6a","#5e1239"];
+function drawMap(G){
+ const met=$("met").value, rate=g=>1000*g.v[+met]/g.ln, pcol=p=>css(`--p${p}`);
+ let brk=[]; if(met!="per"){const xs=G.map(rate).sort((a,b)=>a-b);brk=[.2,.4,.6,.8].map(q=>xs[Math.floor(q*(xs.length-1))]||0);}
+ const col=g=>met=="per"?pcol(g.per):SEQ[brk.filter(b=>rate(g)>b).length];
+ const tip=g=>`<b>${g.name}</b><br>${D.nombres[g.per]}<br>Lista nominal ${fmt(g.ln)} · participación ${g.part.toFixed(1)}%<br>Votos recuperables: nivel ${fmt(g.v[0])}, género ${fmt(g.v[1])}, jóvenes ${fmt(g.v[2])}`;
+ if(layer)map.removeLayer(layer);
+ if(mode=="sec"){layer=L.layerGroup(G.map(g=>L.circleMarker([g.lat,g.lon],{radius:Math.max(2,Math.sqrt(g.ln)/12),weight:0,fillOpacity:.75,fillColor:col(g)}).bindTooltip(tip(g)+`<br>Confianza ${g.conf.toFixed(2)}`)));}
+ else{const fs=G.filter(g=>D.geo[mode][g.k]).map(g=>({type:"Feature",geometry:D.geo[mode][g.k],properties:g}));
+  layer=L.geoJSON(fs,{style:f=>({color:css("--card"),weight:.6,fillOpacity:.8,fillColor:col(f.properties)}),
+   onEachFeature:(f,l)=>{const g=f.properties;l.bindTooltip(tip(g),{sticky:true});l.on("click",()=>pick(g));}});}
+ layer.addTo(map);
+ const fitKey=[mode,edoSel.value,defSel.value,perSel.value,$("conf").value,$("q").value].join("|");
+ if(fitKey!=lastFit&&G.length){lastFit=fitKey;const b=mode=="sec"?L.latLngBounds(G.map(g=>[g.lat,g.lon])):layer.getBounds();if(b.isValid())map.fitBounds(b,{padding:[10,10],maxZoom:13});}
+ legCtl.getContainer().innerHTML=met=="per"?[1,2,3,4,5].map(p=>`<div><i style="background:${pcol(p)}"></i>${p}. ${D.nombres[p]}</div>`).join("")
+  :"<b>por 1,000 electores</b>"+SEQ.map((c,i)=>`<div><i style="background:${c}"></i>${i==0?"≤ "+brk[0].toFixed(0):i==4?"> "+brk[3].toFixed(0):brk[i-1].toFixed(0)+"–"+brk[i].toFixed(0)}</div>`).join("");}
+function pick(g){const e=Math.floor(mode=="def"?g.k/100:g.k/1000);edoSel.value=e;fillDef();
+ if(mode=="def")defSel.value=g.k%100; else $("q").value=D.muns[g.k];
+ mode="sec";  // del distrito o municipio a sus secciones
+ document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.v==mode));sortK=4;sortDir=-1;render();}
+const edoSel=$("edo"), defSel=$("def"), perSel=$("per");
+edoSel.innerHTML='<option value="0">Todo el país</option>'+Object.entries(D.edos).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+for(let p=1;p<=5;p++) perSel.innerHTML+=`<option value="${p}">${p}. ${D.nombres[p]}</option>`;
+$("leg").innerHTML=[1,2,3,4,5].map(p=>`<span><i style="background:${COL(p)}"></i>${p}. ${D.nombres[p]}</span>`).join("");
+$("cards").innerHTML=[1,2,3,4,5].map(p=>`<div class="card" style="border-left-color:${COL(p)}"><h3>${p}. ${D.nombres[p]}</h3><div>${EST[p][0]}</div><div class="note">Canal: ${EST[p][1]}</div></div>`).join("");
+function fillDef(){const e=+edoSel.value, s=new Set(D.rows.filter(r=>!e||r[EDO]==e).map(r=>r[DEF]));
+ defSel.innerHTML='<option value="0">Todos</option>'+(e?[...s].sort((a,b)=>a-b).map(d=>`<option value="${d}">${D.edos[e]}-${d}</option>`).join(""):"");
+ const ms=Object.keys(D.muns).filter(m=>!e||Math.floor(m/1000)==e); $("mlist").innerHTML=ms.map(m=>`<option value="${D.muns[m]}">`).join("");}
+function sel(){const e=+edoSel.value,d=+defSel.value,p=+perSel.value,c=+$("conf").value,q=$("q").value.trim().toLowerCase();
+ return D.rows.filter(r=>(!e||r[EDO]==e)&&(!d||r[DEF]==d)&&(!p||r[PER]==p)&&r[CONF]>=c&&(!q||D.muns[r[MUN]].toLowerCase().includes(q)));}
+function group(rows){if(mode=="sec")return rows.map(r=>({k:r[SID],name:`${D.edos[r[EDO]]} ${r[SID]%10000} · ${D.muns[r[MUN]]}`,ln:r[LN],part:r[PART],v:[r[VN],r[VG],r[VJ],r[V75]],mix:[0,0,0,0,0].map((_,i)=>i+1==r[PER]?1:0),per:r[PER],conf:r[CONF],tipo:r[TIPO],lat:r[LAT],lon:r[LON]}));
+ const m=new Map();for(const r of rows){const k=mode=="def"?r[EDO]*100+r[DEF]:r[MUN];let g=m.get(k);
+  if(!g){g={k,name:mode=="def"?`${D.edos[r[EDO]]}-${r[DEF]}`:`${D.muns[r[MUN]]} (${D.edos[r[EDO]]})`,ln:0,pw:0,v:[0,0,0,0],mix:[0,0,0,0,0],n:0};m.set(k,g)}
+  g.ln+=r[LN];g.pw+=r[LN]*r[PART];g.v[0]+=r[VN];g.v[1]+=r[VG];g.v[2]+=r[VJ];g.v[3]+=r[V75];g.mix[r[PER]-1]+=r[LN];g.n++}
+ return [...m.values()].map(g=>(g.part=g.pw/g.ln,g.per=g.mix.indexOf(Math.max(...g.mix))+1,g.mix=g.mix.map(x=>x/g.ln),g));}
+const mixBar=m=>`<div class="mix">${m.map((x,i)=>x?`<i style="width:${100*x}%;background:${COL(i+1)}" title="${i+1}. ${D.nombres[i+1]}: ${Math.round(100*x)}%"></i>`:"").join("")}</div>`;
+function cols(){return [["Unidad","name",1],["Lista nominal","ln"],[mode=="sec"?"Perfil":"Mezcla de perfiles","per",1],["Participación media 2015-24 (%)","part"],
+ ["Por nivel","v0"],["Por género (H 18-54)","v1"],["Por jóvenes 18-34","v2"],["Por 75+","v3"]].concat(mode=="sec"?[["Confianza","conf"]]:[["Secciones","n"]]);}
+function render(){const rows=sel(),G=group(rows),C=cols();
+ const key=c=>c.startsWith("v")?(g=>g.v[+c[1]]):(g=>g[c]);const kf=key(C[sortK][1]);G.sort((a,b)=>{const x=kf(a),y=kf(b);return (x>y?1:x<y?-1:0)*sortDir});
+ const t=[0,0,0,0];let ln=0,pw=0;for(const r of rows){ln+=r[LN];pw+=r[LN]*r[PART];t[0]+=r[VN];t[1]+=r[VG];t[2]+=r[VJ];t[3]+=r[V75]}
+ $("kpis").innerHTML=[[fmt(rows.length),"secciones"],[fmt(ln),"lista nominal 2024"],[ln?(pw/ln).toFixed(1)+"%":"–","participación media 2015-2024"],[fmt(t[0]),"votos recuperables por nivel"],[fmt(t[1]),"por brecha de género"],[fmt(t[2]),"por jóvenes 18-34"]]
+  .map(([a,b])=>`<div class="kpi"><b>${a}</b><span>${b}</span></div>`).join("");
+ $("th").innerHTML="<tr>"+C.map((c,i)=>`<th class="${c[2]?"l":""}" data-i="${i}" ${i==sortK?`aria-sort="${sortDir>0?"ascending":"descending"}"`:""}>${c[0]}</th>`).join("")+"</tr>";
+ const show=G.slice(0,500);
+ $("tb").innerHTML=show.map(g=>`<tr><td>${g.name}</td><td>${fmt(g.ln)}</td><td class="l">${mode=="sec"?`<span style="color:${COL(g.per)}">■</span> ${g.per}. ${D.nombres[g.per]}`:mixBar(g.mix)}</td><td>${g.part.toFixed(1)}</td>${g.v.map(x=>`<td>${fmt(x)}</td>`).join("")}<td>${mode=="sec"?g.conf.toFixed(2):fmt(g.n)}</td></tr>`).join("");
+ drawMap(G);
+ $("nrows").textContent=G.length>500?`Se muestran 500 de ${fmt(G.length)} filas; el CSV incluye todas.`:`${fmt(G.length)} filas.`;
+ document.querySelectorAll("th").forEach(th=>th.onclick=()=>{const i=+th.dataset.i;sortDir=i==sortK?-sortDir:(cols()[i][2]?1:-1);sortK=i;render()});
+ $("csv").onclick=()=>{const h=["unidad","lista_nominal","perfil_mayoritario","participacion_media_2015_2024","v_nivel","v_genero","v_joven","v_75",mode=="sec"?"confianza":"secciones"];
+  const lines=[h.join(",")].concat(G.map(g=>[`"${g.name}"`,g.ln,g.per,g.part.toFixed(1),...g.v,mode=="sec"?g.conf:g.n].join(",")));
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+lines.join("\n")],{type:"text/csv"}));a.download=`perfiles_${mode}.csv`;a.click();};}
+edoSel.onchange=()=>{fillDef();render()};[defSel,perSel,$("conf"),$("met")].forEach(x=>x.onchange=render);$("q").oninput=render;
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{mode=b.dataset.v;document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-pressed",x==b));sortK=4;sortDir=-1;render()});
+sortK=4;fillDef();render();
+</script>
+</body></html>
