@@ -32,4 +32,9 @@ for v in [c for c in t.columns if c not in ("c", "est", "n", "azar")]:
     rows.append({"rasgo de 2024": v, f"R² grupos del pasado (k={K})": r2g(t[v], t.c, t.n), "R² grupos al azar": r2g(t[v], t.azar, t.n), "R² estado (32)": r2g(t[v], t.est, t.n), "R² lineal en rasgos continuos del pasado": rl})
 R = pd.DataFrame(rows); print(R.round(3).to_string(index=False)); R.to_csv("reto1_perfiles/reports/validacion_tipologia.csv", index=False)
 ct = pd.crosstab(past.loc[common, "c"], full.loc[common, "c"], normalize="index"); print("\nmatriz de transición (filas: grupo 2009-2018; columnas: grupo 2015-2024), %:"); print((ct * 100).round(0).to_string())
+# ARI entre ventanas SIN elecciones en común (2009-2015 frente a 2018-2024); el ARI de arriba comparte 2015 y 2018
+A = L.features(s, [2009, 2012, 2015], [2012], [2009, 2015]); B = L.features(s, [2018, 2021, 2024], [2018, 2024], [2021]); cab = A.index.intersection(B.index)
+la = KMeans(K, n_init=20, random_state=0).fit_predict(StandardScaler().fit_transform(A.loc[cab, L.CLUSTER])); lb = KMeans(K, n_init=20, random_state=0).fit_predict(StandardScaler().fit_transform(B.loc[cab, L.CLUSTER]))
+ari_d = adjusted_rand_score(la, lb); print(f"ARI sin traslape (2009-2015 vs 2018-2024, {len(cab)} secciones): {ari_d:.3f}")
+pd.DataFrame([dict(ventanas="2009-2018 vs 2015-2024 (comparten 2015 y 2018)", ARI=adjusted_rand_score(past.loc[common, "c"], full.loc[common, "c"]), secciones=len(common)), dict(ventanas="2009-2015 vs 2018-2024 (sin traslape)", ARI=ari_d, secciones=len(cab))]).to_csv("reto1_perfiles/reports/validacion_ari_disjunto.csv", index=False)
 print("pureza media ponderada (máx de cada fila):", round(float((ct.max(axis=1) * past.loc[common, "c"].value_counts(normalize=True).sort_index()).sum()), 3))

@@ -24,11 +24,11 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 <div style="display:flex;gap:48px;margin-top:6px"><div><div class="big">27%</div><div class="lbl">de quienes no votan son hombres de 25 a 44 años, que son solo 20% de la lista nominal</div></div>
 <div><div class="big">5</div><div class="lbl">perfiles de ciudadanía; el mismo hueco, con cinco formas distintas</div></div></div>
 <p style="margin-top:36px"><b>Pregunta del reto:</b> ¿qué tipos de ciudadanía existen según su participación? Usamos 64,096 secciones y seis elecciones federales (2009-2024), solo datos agregados de la CCPC, sin voto por partido.</p>
-<div class="strip"><div><b>32%</b><span>del nivel de 2024 lo explican perfiles hechos solo con 2009-2018 (al azar: 0%)</span></div><div><b>85%</b><span>de coincidencia en la asignación de cada sección en réplicas con ruido</span></div><div><b>7.7 M</b><span>votos recuperables por elección (IC95% 6.5-8.9)</span></div></div><div class="n">2</div></section>
+<div class="strip"><div><b>32%</b><span>del nivel de 2024 lo explican perfiles hechos solo con 2009-2018 (al azar: 0%)</span></div><div><b>85%</b><span>de coincidencia en la asignación de cada sección en réplicas con ruido</span></div><div><b>7.7 M</b><span>votos recuperables por elección (de 4.1 a 11.9 M según la referencia)</span></div></div><div class="n">2</div></section>
 <section class="s"><h2>Método: tres rasgos que sí persisten</h2>
 <div class="two"><div><p><b>De ocho rasgos candidatos conservamos tres</b>, los que se repiten entre 2009-2015 y 2018-2024:</p>
 <ul><li>Nivel de participación</li><li>Brecha de género (18-54 años)</li><li>Brecha de jóvenes (18-34 frente a 55-74)</li></ul></div>
-<div><p><b>Cinco perfiles</b> con K-means: el más estable en el rango de 4 a 6 que pide la convocatoria.</p>
+<div><p><b>Cinco perfiles</b> con K-means: el más estable y el que mejor predice 2024 en el rango de 4 a 6 que pide la convocatoria. Los rasgos persisten; la asignación de cada sección se recalcula con cada CCPC.</p>
 <p>La <i>intermitencia</i> (votar solo en presidenciales) no persiste por territorio (r = 0.28 secciones, 0.07 municipios): se usa solo para describir.</p></div></div>
 <div class="src">Fuente: INFORME §2 y §5; confiabilidad_rasgos.csv</div><div class="n">3</div></section>
 
@@ -64,7 +64,7 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 
 <section class="s"><h2>Votos que se recuperarían por elección</h2>
 <img src="../../reto1_perfiles/reports/fig/fig4_votos_recuperables.png" style="width:1136px">
-<p style="font-size:22px;margin-top:6px">7.7 M por nivel (IC95% 6.5-8.9), 3.8 M por brecha de género, 3.5 M por jóvenes; los criterios no se suman. 61 municipios reúnen la mitad del potencial por nivel (Tijuana, Juárez, Mexicali, León, Puebla encabezan); en distritos hacen falta 84 de 300.</p><div class="n">9</div></section>
+<p style="font-size:22px;margin-top:6px">7.7 M por nivel (de 4.1 a 11.9 M según la referencia), 3.8 M por brecha de género, 3.5 M por jóvenes; los criterios no se suman. 61 municipios reúnen la mitad del potencial por nivel (Tijuana, Juárez, Mexicali, León, Puebla encabezan); en distritos hacen falta 84 de 300.</p><div class="n">9</div></section>
 
 <section class="s"><h2>Plan para 2027: piloto aleatorizado y medible</h2>
 <div class="two"><div><table style="font-size:18px"><tr><th>Elemento</th><th>Diseño</th></tr>

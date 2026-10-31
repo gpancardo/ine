@@ -9,7 +9,7 @@ Insumo para el documento técnico y las fichas. Este documento no es un entregab
 | Los tres ejes son rasgos estables de cada territorio | Persistencia entre décadas corregida por ruido: 0.70, 0.85 y 0.64; dentro de cada municipio, 0.77 en el nivel | Sólida para nivel y género; moderada para jóvenes |
 | Los perfiles aportan más que la geografía | Construidos con 2009-2018, añaden de 0.13 a 0.23 de R² sobre 2024 por encima del estado y de 0.05 a 0.11 por encima del municipio | Sólida |
 | Los cinco perfiles se distinguen entre sí | η² de 0.55 a 0.61; contrastes por celda con IC95% de ±1 pp; k=5 es el más estable en el rango de 4 a 6 | Moderada: cortes de un continuo, no grupos naturales |
-| Una sección está bien asignada | Mismo perfil en el 85% de las réplicas bootstrap; 69% de las secciones con confianza ≥ 0.8; 68% conserva el perfil entre décadas | Moderada: se publica la confianza de cada sección |
+| Una sección está bien asignada | Mismo perfil en el 85% de las réplicas bootstrap; 69% de las secciones con confianza ≥ 0.8; 68% conserva el perfil entre 2009-2018 y 2015-2024 (ventanas que comparten dos elecciones; ARI sin traslape 0.12) | Moderada: se publica la confianza de cada sección |
 | Las estrategias tendrán efecto | Ninguno con estos datos; la evidencia experimental externa (E7, verificada) indica 0.25-0.9 pp para mensajes masivos y ≈4 pp por persona contactada en visitas | **Hipótesis.** Por eso se propone un piloto con medición |
 
 Regla de redacción que se deriva de esta tabla: los perfiles se presentan como **prioridades de atención** con evidencia de persistencia, y las estrategias como **hipótesis a probar**. No se afirma que una estrategia "aumentará" la participación.
@@ -25,7 +25,7 @@ Regla de redacción que se deriva de esta tabla: los perfiles se presentan como 
 Formato de cada ficha: quiénes son, dónde están, a quién dirigirse, qué hacer, cómo medirlo y qué se desconoce. "Frente al perfil 5" es la diferencia, en puntos porcentuales, con la misma celda de sexo y edad en el perfil 5.
 
 ### Perfil 1. Baja participación del norte urbano: "Nadie vota mucho"
-- **Quiénes**: 19.3 millones de electores (21% de la lista nominal) en 11,330 secciones; 77% urbanas, con 20% de población nacida en otra entidad. Participación media 2015-2024: 44%, la más baja en todas las elecciones desde 2009 y en todas las edades.
+- **Quiénes**: 19.3 millones de electores (21% de la lista nominal) en 11,413 secciones; 78% urbanas, con 20% de población nacida en otra entidad. Participación media 2015-2024: 44%, la más baja en todas las elecciones desde 2009 y en todas las edades.
 - **Dónde**: es mayoritario en 46 distritos federales; 18 de ellos concentran la mitad del potencial (Chihuahua 3 y 2, Baja California 6 y 5, Sonora 2). Municipios: Tijuana, Juárez y Mexicali.
 - **A quién**: hombres de 25 a 34 años (votan 35%; −20 pp frente al perfil 5) y mujeres de 25 a 34 (45%; −26 pp). Es el único perfil en que las mujeres jóvenes se alejan de la referencia más que los hombres.
 - **Qué hacer** (hipótesis):
@@ -37,7 +37,7 @@ Formato de cada ficha: quiénes son, dónde están, a quién dirigirse, qué hac
 - **Qué se desconoce**: si la causa es la movilidad residencial, el desinterés o la falta de oferta política local.
 
 ### Perfil 2. Rezago juvenil urbano: "Votan los padres, no los hijos"
-- **Quiénes**: el perfil más numeroso, con 26.3 millones de electores (29%) en 17,349 secciones; 76% urbanas. Participación media: 52%. Tiene la mayor brecha entre jóvenes y adultos mayores (−26 pp): las personas de 65 a 74 años votan más de 77% y los hombres de 25 a 34, 39%.
+- **Quiénes**: el perfil más numeroso, con 25.7 millones de electores (28%) en 16,850 secciones; 76% urbanas. Participación media: 52%. Tiene la mayor brecha entre jóvenes y adultos mayores (−26 pp): las personas de 65 a 74 años votan más de 77% y los hombres de 25 a 34, 39%.
 - **Dónde**: es mayoritario en 92 distritos, la mayor huella territorial; 32 de ellos concentran la mitad del potencial juvenil. Estados: Veracruz, Estado de México, Aguascalientes, Sinaloa e Hidalgo.
 - **A quién**: hombres de 25 a 34 años (39%; −16 pp frente al perfil 5) y mujeres de 25 a 34 (53%; −18 pp). Son la primera y la segunda celda con más no votantes del país: 1.7 y 1.3 millones.
 - **Qué hacer** (hipótesis):
@@ -49,7 +49,7 @@ Formato de cada ficha: quiénes son, dónde están, a quién dirigirse, qué hac
 - **Qué se desconoce**: es el perfil con más secciones cerca de una frontera (13%), y la brecha de jóvenes es el eje menos persistente (r = 0.49). Su lista de secciones debe recalcularse con cada CCPC.
 
 ### Perfil 3. Rural con brecha masculina: "Votan ellas, no ellos"
-- **Quiénes**: 10.4 millones de electores (12%) en 8,434 secciones; 63% rurales y 13% con hablantes de lengua indígena. Participación media: 60%. Tiene la mayor brecha de género (19 pp): los hombres de 25 a 34 años votan 37% y las mujeres, 64%. El 77% de los hombres es económicamente activo.
+- **Quiénes**: 10.2 millones de electores (11%) en 8,326 secciones; 64% rurales y 12% con hablantes de lengua indígena. Participación media: 60%. Tiene la mayor brecha de género (19 pp): los hombres de 25 a 34 años votan 37% y las mujeres, 64%. El 77% de los hombres es económicamente activo.
 - **Dónde**: es mayoritario en 39 distritos; 17 concentran la mitad del potencial (Guanajuato 1 y 2, Guerrero 5, Aguascalientes 1, Estado de México 9). Estados: Zacatecas, San Luis Potosí, Puebla, Querétaro y Guerrero.
 - **A quién**: hombres de 18 a 44 años. Los de 25 a 34 años representan el 18% de los no votantes del perfil, la mayor concentración de los cinco perfiles; su participación está 18 pp por debajo del perfil 5. Las mujeres de la misma edad están solo 7 pp por debajo.
 - **Qué hacer** (hipótesis):
@@ -61,9 +61,9 @@ Formato de cada ficha: quiénes son, dónde están, a quién dirigirse, qué hac
 - **Qué se desconoce**: la causa. La hipótesis de los emigrantes que siguen en la lista nominal se probó y no se sostiene (explica 10% de la brecha).
 
 ### Perfil 4. Urbano de participación media-alta: "Ciudadanía consolidada, con mujeres jóvenes por debajo"
-- **Quiénes**: 24.6 millones de electores (27%) en 18,829 secciones; 80% urbanas, con la mayor escolaridad (11.1 años) y la mayor conectividad (64% con internet). Participación media: 62%. Estados: Ciudad de México, Tlaxcala, Campeche y Yucatán.
+- **Quiénes**: 25.2 millones de electores (28%) en 19,244 secciones; 80% urbanas, con la mayor escolaridad (11.1 años) y la mayor conectividad (64% con internet). Participación media: 62%. Estados: Ciudad de México, Tlaxcala, Campeche y Yucatán.
 - **Dónde**: es mayoritario en 88 distritos.
-- **A quién** (corrige el informe): los hombres de este perfil votan casi como los del perfil 5 (25 a 34 años: 53% frente a 55%). La diferencia está en las **mujeres de 25 a 34 años** (62% frente a 71%; −8 pp). Su brecha de género es pequeña porque las mujeres jóvenes votan menos, no porque los hombres voten más. Si las mujeres de 25 a 34 años votaran como las del perfil 5 se sumarían ≈0.20 millones de votos (2.4 millones × 8.3 pp), más que los adultos de 75 años o más (0.17 millones). Los 0.76 millones del criterio de género corresponden a otra cosa: los hombres de 18 a 54 años que votan menos que las mujeres de su sección, una brecha común a todos los perfiles.
+- **A quién** (corrige el informe): los hombres de este perfil votan casi como los del perfil 5 (25 a 34 años: 52% frente a 55%). La diferencia está en las **mujeres de 25 a 34 años** (62% frente a 71%; −8 pp). Su brecha de género es pequeña porque las mujeres jóvenes votan menos, no porque los hombres voten más. Si las mujeres de 25 a 34 años votaran como las del perfil 5 se sumarían ≈0.20 millones de votos (2.4 millones × 8.3 pp), más que los adultos de 75 años o más (0.17 millones). Los 0.76 millones del criterio de género corresponden a otra cosa: los hombres de 18 a 54 años que votan menos que las mujeres de su sección, una brecha común a todos los perfiles.
 - **Qué hacer** (hipótesis):
   - Información práctica dirigida a mujeres jóvenes con trabajo y cuidados a su cargo (horario de casilla, tiempo de espera), en redes sociales y centros de trabajo.
   - Mantener la línea de accesibilidad para personas de 75 años o más (las mujeres de 75+ votan 66%, frente a 72% de los hombres).
@@ -71,7 +71,7 @@ Formato de cada ficha: quiénes son, dónde están, a quién dirigirse, qué hac
 - **Qué se desconoce**: por qué las mujeres jóvenes de este perfil votan menos que las del perfil 5. Puede ser un efecto urbano y no algo propio del perfil.
 
 ### Perfil 5. Alta participación comunitaria: "El perfil de referencia"
-- **Quiénes**: 9.6 millones de electores (11%) en 8,154 secciones; 44% rurales y 17% mixtas, con 13% de hablantes de lengua indígena. Tiene la participación más alta en cada elección desde 2009 (68% en 2024) y la menor brecha de jóvenes (−10 pp).
+- **Quiénes**: 9.8 millones de electores (11%) en 8,263 secciones; 43% rurales y 17% mixtas, con 13% de hablantes de lengua indígena. Tiene la participación más alta en cada elección desde 2009 (68% en 2024) y la menor brecha de jóvenes (−11 pp).
 - **Dónde**: es mayoritario en 35 distritos. Estados: Yucatán, Campeche, Chiapas, Zacatecas y Nuevo León.
 - **A quién**: no es prioridad de movilización. Su caída más marcada está en los mayores de 75 años (−15 pp frente a 55-74), atribuible al acceso físico.
 - **Qué hacer**:
