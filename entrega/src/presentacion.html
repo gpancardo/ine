@@ -10,6 +10,8 @@ p,li{font-size:26px;line-height:1.38;margin:0 0 12px}ul{padding-left:30px;margin
 .dark{background:#173a6b;color:#fff}.dark p{color:#dbe6f7}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 table{border-collapse:collapse;width:100%;font-size:21px}th,td{border-bottom:2px solid #e5e5e5;padding:8px 10px;text-align:left;vertical-align:top}th{background:#f1f4f9}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.strip div{background:#f1f4f9;border-left:6px solid #2a6fdb;border-radius:8px;padding:12px 16px}.strip b{display:block;font-size:40px;color:#1d4fa0;line-height:1.1}.strip span{font-size:19px;color:#333}
+.box{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}.box div{border:2px solid #2a6fdb;border-radius:10px;padding:10px 16px;font-size:22px}
 .big{font-size:84px;font-weight:700;line-height:1;color:#2a6fdb}.lbl{font-size:22px;color:#555}
 img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius:50%;margin-right:10px}
 </style></head><body>
@@ -22,7 +24,7 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 <div style="display:flex;gap:48px;margin-top:6px"><div><div class="big">27%</div><div class="lbl">de quienes no votan son hombres de 25 a 44 años, que son solo 20% de la lista nominal</div></div>
 <div><div class="big">5</div><div class="lbl">perfiles de ciudadanía; el mismo hueco, con cinco formas distintas</div></div></div>
 <p style="margin-top:36px"><b>Pregunta del reto:</b> ¿qué tipos de ciudadanía existen según su participación? Usamos 64,096 secciones y seis elecciones federales (2009-2024), solo datos agregados de la CCPC, sin voto por partido.</p>
-<p>Nuestro criterio: un perfil debe <b>repetirse en el tiempo</b>, no describir una sola elección.</p><div class="n">2</div></section>
+<div class="strip"><div><b>32%</b><span>del nivel de 2024 lo explican perfiles hechos solo con 2009-2018 (al azar: 0%)</span></div><div><b>85%</b><span>de coincidencia en la asignación de cada sección en réplicas con ruido</span></div><div><b>7.7 M</b><span>votos recuperables por elección (IC95% 6.5-8.9)</span></div></div><div class="n">2</div></section>
 <section class="s"><h2>Método: tres rasgos que sí persisten</h2>
 <div class="two"><div><p><b>De ocho rasgos candidatos conservamos tres</b>, los que se repiten entre 2009-2015 y 2018-2024:</p>
 <ul><li>Nivel de participación</li><li>Brecha de género (18-54 años)</li><li>Brecha de jóvenes (18-34 frente a 55-74)</li></ul></div>
@@ -37,7 +39,7 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 <tr><td>K-means sobre el perfil de 14 celdas de edad y sexo</td><td>0.15</td></tr>
 <tr><td>K-means sobre nuestros tres rasgos persistentes</td><td>0.21</td></tr>
 <tr><td><b>Pertenencia suave a cinco arquetipos</b></td><td><b>0.40</b></td></tr></table>
-<p style="font-size:22px;margin-top:12px">Los datos son un continuo: perfiles para comunicar, rasgos continuos para priorizar.</p>
+<div class="box"><div><b>Comunicar → 5 perfiles.</b> Explican 55-61% de la varianza de cada eje; 11% de la lista nominal está cerca de una frontera.</div><div><b>Priorizar → rasgos continuos</b> o pertenencias suaves (R² 0.40): los datos son un continuo.</div></div>
 <div class="src">Fuente: INFORME §5 y §5.1; comparacion_algoritmos.csv</div><div class="n">4</div></section>
 <section class="s"><h2>Los cinco perfiles</h2>
 <img src="../../reto1_perfiles/reports/fig/fig2_perfil_grupos.png" style="width:1136px;margin-top:-6px"><div class="n">5</div></section>
@@ -49,7 +51,7 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 <div class="two"><div><p><b>Común a los cinco perfiles:</b> los hombres de 25 a 34 años son el grupo con más personas que no votan. A escala nacional, los hombres de 25 a 44 años son 20% de la lista nominal y 27% de quienes no votan.</p>
 <p><b>La caída en intermedias es nacional</b> (6 a 18 puntos) y no territorial: la movilización de 2027 debe ser nacional.</p></div>
 <div><p><b>Distinto por perfil:</b></p><ul style="font-size:24px">
-<li>Norte urbano: todas las edades</li><li>Rezago juvenil: menores de 45 años</li><li>Rural: hombres de 25 a 44 (los de 25 a 34 votan 37%; las mujeres, 64%)</li><li>Urbano medio-alto: mujeres de 25 a 34 (−8 pp)</li><li>Comunitario: referencia</li></ul></div></div><div class="n">7</div></section>
+<li>Norte urbano: todas las edades</li><li>Rezago juvenil: menores de 45 años</li><li>Rural: hombres de 25 a 44 (37% frente a 64% de las mujeres de 25 a 34); causa abierta, primero estudio cualitativo</li><li>Urbano medio-alto: mujeres de 25 a 34 (−8 pp)</li><li>Comunitario: referencia</li></ul></div></div><div class="n">7</div></section>
 
 <section class="s"><h2>Una estrategia, un mensaje y un indicador por perfil</h2>
 <table><tr><th>Perfil</th><th>A quién</th><th>Mensaje y canal (hipótesis)</th></tr>
@@ -65,11 +67,12 @@ img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius
 <p style="font-size:22px;margin-top:6px">7.7 M por nivel (IC95% 6.5-8.9), 3.8 M por brecha de género, 3.5 M por jóvenes; los criterios no se suman. 61 municipios reúnen la mitad del potencial por nivel (Tijuana, Juárez, Mexicali, León, Puebla encabezan); en distritos hacen falta 84 de 300.</p><div class="n">9</div></section>
 
 <section class="s"><h2>Plan para 2027: piloto aleatorizado y medible</h2>
-<div class="two"><div><table style="font-size:20px"><tr><th>Elemento</th><th>Diseño</th></tr>
+<div class="two"><div><table style="font-size:18px"><tr><th>Elemento</th><th>Diseño</th></tr>
 <tr><td>Unidad</td><td>Sección; azar dentro de municipio y perfil</td></tr>
 <tr><td>Brazos</td><td>Control · mensaje práctico neutral · (perfil 3) contacto presencial</td></tr>
 <tr><td>Resultado</td><td>Cambio 2021→2027 de las celdas objetivo, con la CCPC</td></tr>
 <tr><td>Poder</td><td>250 secciones por brazo: 1.4-1.7 pp; 1,000: 0.7-0.8 pp</td></tr></table></div>
 <div><p style="font-size:22px"><b>Quién lo usa:</b> Juntas Distritales (tablero), DECEyEC (mensajes), DERFE (domicilios).</p>
 <p style="font-size:22px"><b>Límites que declaramos:</b> perfiles descriptivos, no causales; estrategias son hipótesis; la lista nominal sobreestima la abstención donde hay emigración; neutralidad total: sin voto por partido.</p></div></div>
-<div class="src">Código y tablero: github.com/gpancardo/ine</div><div class="n">10</div></section>
+<p style="font-size:20px;margin-top:26px"><b>Ruta:</b> nov 2026-feb 2027, estudio cualitativo (perfil 3) y selección de secciones → jun 2027, piloto en la intermedia → CCPC 2027, medición y actualización de la tipología.</p>
+<div class="src">Código y tablero abiertos, se actualizan con cada CCPC: github.com/gpancardo/ine</div><div class="n">10</div></section>

@@ -1,0 +1,29 @@
+hojas= 5: fidelidad por entidad (validación cruzada) = 0.724 (ponderada por lista nominal 0.723)
+hojas= 6: fidelidad por entidad (validación cruzada) = 0.758 (ponderada por lista nominal 0.760)
+hojas= 8: fidelidad por entidad (validación cruzada) = 0.784 (ponderada por lista nominal 0.783)
+hojas=10: fidelidad por entidad (validación cruzada) = 0.812 (ponderada por lista nominal 0.812)
+hojas=12: fidelidad por entidad (validación cruzada) = 0.821 (ponderada por lista nominal 0.823)
+
+Reglas (8 hojas; nivel = participación relativa al nivel nacional promedio 2015-2024, en puntos de proporción; brechas = proporciones; class = número de perfil − 1, p. ej. class: 0 es el perfil 1):
+|--- nivel <= -0.014
+|   |--- brecha_joven <= -0.235
+|   |   |--- class: 1
+|   |--- brecha_joven >  -0.235
+|   |   |--- brecha_genero_18_54 <= 0.155
+|   |   |   |--- class: 0
+|   |   |--- brecha_genero_18_54 >  0.155
+|   |   |   |--- class: 2
+|--- nivel >  -0.014
+|   |--- brecha_genero_18_54 <= 0.141
+|   |   |--- brecha_joven <= -0.148
+|   |   |   |--- brecha_joven <= -0.239
+|   |   |   |   |--- class: 1
+|   |   |   |--- brecha_joven >  -0.239
+|   |   |   |   |--- class: 3
+|   |   |--- brecha_joven >  -0.148
+|   |   |   |--- class: 4
+|   |--- brecha_genero_18_54 >  0.141
+|   |   |--- brecha_joven <= -0.161
+|   |   |   |--- class: 2
+|   |   |--- brecha_joven >  -0.161
+|   |   |   |--- class: 4

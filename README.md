@@ -6,7 +6,8 @@ Datos base: Conteos Censales de Participación Ciudadana 2009-2024 (INE-DECEyEC)
 |---|---|---|
 | `shared/` | Descargas (`download_data.py`, `download_extra.py`), construcción del panel (`build_panel.py`) y biblioteca común (`lib/`) | - |
 | `reto1_perfiles/` | **Reto 1, perfiles ciudadanos de participación**: tipología de secciones por nivel, brecha de género y brecha de jóvenes, validada en el tiempo, con votos recuperables por grupo, municipio y distrito | `reto1_perfiles/README.md`, `reports/INFORME.md` |
-| `reto2_prediccion/` | **Reto 2, predicción y escenarios de riesgo**: modelo, benchmark honesto, 13 familias de datos probadas, bandas de incertidumbre, prototipo web | `reto2_prediccion/README.md`, `reports/RESULTADOS.md` |
+| `reto2_prediccion/` | *(No entregado; exploratorio)* **Reto 2, predicción y escenarios de riesgo**: modelo, benchmark honesto, 13 familias de datos probadas, bandas de incertidumbre, prototipo web | `reto2_prediccion/README.md`, `reports/RESULTADOS.md` |
+| `entrega/` | Entregables del Reto 1 y el paquete .zip; fuentes en `src/` | `entrega/paquete/LEEME.txt` |
 | `data/` | `raw/` (ignorado por git) y `processed/` | - |
 
 ## Orden general (desde la raíz)
@@ -16,7 +17,6 @@ uv run shared/download_data.py ; uv run shared/download_extra.py ; uv run shared
 ```
 Los scripts se ejecutan siempre desde la raíz del repo; las rutas a `data/` y a la biblioteca compartida se resuelven desde la ubicación del script.
 
-## Estado (2026-10-12)
-- Reto 2: cerrado en lo analítico (R² honesto 0.62 en 2021 y 0.71 en 2024; ver conclusión en su README). Falta el semáforo con bandas y los dos escenarios.
-- Reto 1: tipología de 5 perfiles validada con ventanas disjuntas, potencial por municipio con IC, 7 figuras e informe; pendientes y criterios de decisión en `reto1_perfiles/PLAN.md` (comparación sobre el perfil completo, descriptores del INEGI, cohortes, tablero).
-- Registro de equipos: hasta el 15 de octubre de 2026; entrega de proyectos: 31 de octubre, 23:59.
+## Estado (2026-10-30): se entrega el Reto 1
+- **Entrega: Reto 1.** La convocatoria permite un solo eje por equipo; las razones de la elección están en `reto1_perfiles/PLAN.md` §2. Los entregables (documento técnico, fichas, presentación, tablero y paquete .zip) están en `entrega/`, y sus fuentes HTML en `entrega/src/`.
+- **Reto 2: no forma parte de la entrega.** Se conserva como trabajo exploratorio (R² honesto de 0.62 en 2021 y 0.71 en 2024). Parte de sus resultados se aprovechan en el Reto 1: la persistencia de rasgos y la lección de que la intermitencia es nacional.

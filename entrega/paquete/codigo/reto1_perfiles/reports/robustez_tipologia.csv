@@ -1,0 +1,7 @@
+prueba,valor
+silueta real (k=5),0.2312376603990101
+silueta nulo normal multivariante (media de 20),0.2211843325854383
+silueta nulo con columnas permutadas (media de 10),0.22021207327879705
+ARI K-means ponderado vs sin ponderar,0.8448135214468672
+ARI mezcla gaussiana vs K-means,0.4109386309570174
+ARI Ward (submuestra) vs K-means,0.30120503291372897

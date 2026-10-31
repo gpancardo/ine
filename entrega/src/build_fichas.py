@@ -23,7 +23,7 @@ P = [
   quien="La mayor brecha de género: hombres de 25 a 34 años, 37%; mujeres, 64%. Se cierra desde los 65 años.",
   obj="Primero entender, luego actuar: hombres de 25 a 44 años (0.8 M de votos por brecha de género).", msg="Cómo, dónde y cuándo votar, dirigido a hombres jóvenes y sus familias.",
   canal="TV y radio local o comunitaria, contacto presencial; las mujeres que votan, como mensajeras en la familia.", ind="Participación de hombres de 25 a 44 años.",
-  falta="La causa. La hipótesis de emigración se probó y explica solo 10% de la brecha."),
+  falta="La causa: la emigración explica solo 10%. Por probar: trabajo fuera de la comunidad o en domingo, distancia y horario de casilla, y normas locales."),
  dict(n=4, c="#2f6aa3", nombre="Urbano de participación media-alta", lema="«Consolidado, con mujeres jóvenes por debajo»", ic="tower",
   ln="24.6 M (27%)", sec="18,829", part=62, gen=8, jov=-20, h=53, m=62, net=64, esc="11.1", pot="0.54",
   donde="Ciudad de México, Tlaxcala, Campeche, Yucatán. La mayor escolaridad y conectividad.",

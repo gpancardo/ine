@@ -6,6 +6,6 @@ Contenido
 - fichas_perfiles.pdf       Fichas de perfil (5, una por página) y fichas/*.png en alta resolución (2160 x 2700)
 - presentacion.pdf          Presentación ejecutiva (10 diapositivas)
 - tablero_interactivo.html  Tablero con mapa por distrito, municipio y sección (abrir en un navegador)
-- codigo/                   Código reproducible (uv run; orden en codigo/reto1_perfiles/README.md) e informe técnico completo
+- codigo/                   Código reproducible (uv run; ver codigo/README.md), informe técnico completo y tablas con las que se verifican las cifras
 Repositorio: https://github.com/gpancardo/ine
 Cartas de cesión de derechos y de decir verdad: anexas, firmadas por todas las personas integrantes.
