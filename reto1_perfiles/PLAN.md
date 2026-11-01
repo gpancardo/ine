@@ -1,5 +1,7 @@
 # Plan del Reto 1 (actualizado el 2026-10-12, tras leer la convocatoria)
 
+> **Estado al 2026-10-30:** análisis cerrado y entregables producidos en `entrega/`. Por cerrar antes del envío: nombre del equipo en el .zip y cartas firmadas.
+
 Fuente: `convocatoria/Convocatoria_Hackaton.pdf` (texto en `convocatoria/convocatoria.txt`). **Regla de trabajo: no se producen entregables finales (documento técnico, fichas, presentación, .zip) hasta que se confirme la decisión de eje y se cierre el análisis.** Hoy solo hay análisis y plan.
 
 ## 1. Lo que fija la convocatoria

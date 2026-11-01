@@ -7,3 +7,8 @@ data/processed/*.pkl
 data/processed/*.gpkg
 __pycache__/
 catboost_info/
+
+# Cartas firmadas (datos personales): solo en la carpeta local de entrega
+entrega/Anahuacalli/06_cartas/
+entrega/*.pdf
+.DS_Store

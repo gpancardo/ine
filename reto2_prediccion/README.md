@@ -1,5 +1,7 @@
 # Reto 2: predicción de abstención por sección y escenarios 2027
 
+> **No forma parte de la entrega del hackathon.** El equipo entrega el Reto 1 (`reto1_perfiles/`). Esta carpeta se conserva como trabajo exploratorio y no se mantiene; el prototipo `web/` y `_obsoleto/` están desactualizados.
+
 Pronóstico de abstención por sección electoral (≈68 mil) para la intermedia de 2027. Resultados completos y rigor en `reports/RESULTADOS.md`; análisis exploratorio en `reports/EDA.md`.
 
 **Conclusión corta.** Con datos públicos disponibles antes de la elección, el R² honesto (entrenar en elecciones pasadas, predecir la siguiente, sobre abstención relativa al nivel nacional) es 0.62 (2021) y 0.71 (2024); el mejor modelo es Ridge/Lasso sobre rezagos por tipo de elección y apenas supera a repetir la última presidencial. El error es un choque jurisdiccional (municipio y estado) que cambia de causa y signo entre elecciones y no se anticipa. Un R² de ~0.80 solo aparece conociendo ese choque a nivel distrital del propio año. Detalle en `reports/RESULTADOS.md` §6 y §11.
@@ -43,7 +45,7 @@ Cada script de `reto2_prediccion/analysis/` se corre con `uv run reto2_prediccio
 
 ## Otros directorios
 - `data/raw/` (ignorado) y `data/processed/` (compartidos con el Reto 1): fuentes y tablas derivadas, regenerables.
-- `web/`: prototipo web Next.js (`cd reto2_prediccion/web && npm run dev`); `public/benchmark_results.json` es de la primera versión y no refleja `reports/`.
+- `web/` (**desactualizado**): prototipo web Next.js (`cd reto2_prediccion/web && npm run dev`); `public/benchmark_results.json` es de la primera versión y no refleja `reports/`.
 - `_obsoleto/` (en esta carpeta): pipeline inicial con datos sintéticos (`pipeline_reto2.py`), conservado por si la app depende de su formato.
 
 ## Pendiente

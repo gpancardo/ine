@@ -1,7 +1,7 @@
 # /// script
 # dependencies = ["pandas", "pyarrow", "numpy"]
 # ///
-"""Reto 1: del perfil a la acción. Votos por elección que se recuperarían si cada brecha se cerrara al nivel de secciones comparables (mismo tipo U/M/R), con base 2024:
+"""Reto 1: del perfil a la acción. Votos por elección que se recuperarían si cada brecha se cerrara al nivel de secciones comparables (mismo tipo U/M/R), sobre la lista nominal 2024 (nivel: tasa combinada 2015-2024, es decir, una elección promedio; género, jóvenes y 75+: tasas de 2024):
 nivel (hasta el percentil 75 de pares), brecha de género (hombres 18-54 como las mujeres de su sección), jóvenes 18-34 (hasta el p75 de pares) y 75+ (como el grupo 55-74 de su sección).
 Incluye intervalos por remuestreo de municipios (500 réplicas) y sensibilidad al punto de referencia. Los criterios se solapan: no se suman.
 La intermitencia no se usa para focalizar (no persiste entre ventanas de elecciones). Run: uv run reto1_perfiles/analysis/politica_publica.py"""

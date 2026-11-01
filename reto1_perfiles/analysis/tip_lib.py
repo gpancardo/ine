@@ -12,13 +12,14 @@ def load():
     s = pd.read_parquet("data/processed/perfiles_seccion.parquet"); s["gedad"] = s.banda.map(INV); return s
 
 def features(s, years, pres, mid, trend=(None, None), min_n=800, m=None):
-    """years: elecciones de la ventana; pres/mid: subconjuntos para la intermitencia; trend=(a, b): tasa(b) − tasa(a). Solo secciones presentes en todas las elecciones."""
+    """years: elecciones de la ventana; pres/mid: subconjuntos para la intermitencia; trend=(a, b): tasa(b) − tasa(a). Solo secciones presentes en todas las elecciones.
+    Un año sin captura (todo NS) se excluye del promedio de `nivel`; en intermitencia y tendencia (solo descriptivas) ese año cuenta como la tasa nacional."""
     s = s[s.AELEC.isin(years)]; mm = M if m is None else m
     def sub(ys, sex=None, ged=None):
         d = s[s.AELEC.isin(ys)]; d = d if sex is None else d[d.SEXO == sex]; d = d if ged is None else d[d.gedad.isin(ged)]
         g = d.groupby("sid")[["SV", "NV"]].sum(); p0 = g.SV.sum() / (g.SV.sum() + g.NV.sum()); g["r"] = (g.SV + mm * p0) / (g.SV + g.NV + mm); g["n"] = g.SV + g.NV; g["p0"] = p0; return g
     ok = s.groupby("sid").AELEC.nunique(); ok = ok[ok == len(years)].index; F = pd.DataFrame(index=ok); a = sub(years)
-    F["nivel"] = sum(sub([y]).pipe(lambda g: g.r - g.p0).reindex(ok) for y in years) / len(years)   # relativo al nivel nacional de cada elección
+    F["nivel"] = pd.concat([sub([y]).pipe(lambda g: (g.r - g.p0).where(g.n > 0)).reindex(ok) for y in years], axis=1).mean(axis=1)   # relativo al nivel nacional de cada elección; promedia solo los años con captura (SV+NV>0)
     F["nivel_abs"] = a.r.reindex(ok); F["n_total"] = a.n.reindex(ok)
     F["brecha_joven"] = (sub(years, ged=["18-34"]).r - sub(years, ged=["55-74"]).r).reindex(ok)
     F["brecha_genero_18_54"] = (sub(years, 1, ["18-34", "35-54"]).r - sub(years, 0, ["18-34", "35-54"]).r).reindex(ok)

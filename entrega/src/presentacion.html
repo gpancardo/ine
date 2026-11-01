@@ -1,75 +1,182 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><title>Cinco tipos de ciudadanía electoral</title>
 <style>
 @page{size:1280px 720px;margin:0}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,'Liberation Sans',sans-serif;color:#1b1b1b}
-.s{width:1280px;height:720px;padding:56px 72px;position:relative;overflow:hidden;page-break-after:always;background:#fff}
-.s h1{font-size:46px;line-height:1.12;margin:0 0 22px}.s h2{font-size:38px;line-height:1.15;margin:0 0 22px}
-p,li{font-size:26px;line-height:1.38;margin:0 0 12px}ul{padding-left:30px;margin:0}
-.n{position:absolute;right:40px;bottom:24px;font-size:16px;color:#888}
-.src{position:absolute;left:72px;bottom:24px;font-size:16px;color:#777}
-.dark{background:#173a6b;color:#fff}.dark p{color:#dbe6f7}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-table{border-collapse:collapse;width:100%;font-size:21px}th,td{border-bottom:2px solid #e5e5e5;padding:8px 10px;text-align:left;vertical-align:top}th{background:#f1f4f9}
-.big{font-size:84px;font-weight:700;line-height:1;color:#2a6fdb}.lbl{font-size:22px;color:#555}
-img{display:block}.dot{display:inline-block;width:16px;height:16px;border-radius:50%;margin-right:10px}
+:root{--m:rgb(79,40,117);--l:rgb(168,125,209);--t:#f4eefa;--ink:#111;--ink2:#555;--rule:#e6e0ec}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.s{width:1280px;height:720px;padding:64px 80px 70px;position:relative;overflow:hidden;page-break-after:always;background:#fff}
+.s::before{content:"";position:absolute;left:0;top:0;width:100%;height:8px;background:linear-gradient(90deg,var(--m) 0 72%,var(--l) 72% 100%)}
+.k{font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--l);margin:0 0 10px}
+h2{font-size:40px;line-height:1.1;font-weight:700;color:var(--m);margin:0 0 30px;letter-spacing:-.01em}
+p,li{font-size:22px;line-height:1.4;margin:0 0 12px}
+b{font-weight:700}
+.foot{position:absolute;left:80px;right:80px;bottom:26px;display:flex;justify-content:space-between;font-size:13px;color:#8a8494;border-top:1px solid var(--rule);padding-top:10px}
+.foot .pg{color:var(--m);font-weight:700}
+.big{font-size:96px;font-weight:700;line-height:.95;color:var(--m);letter-spacing:-.03em}
+.mid{font-size:52px;font-weight:700;line-height:1;color:var(--m);letter-spacing:-.02em}
+.lbl{font-size:19px;line-height:1.35;color:var(--ink);margin-top:8px}
+.muted{color:var(--ink2)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--t);border-radius:4px;padding:20px 22px}
+.pf{display:flex;flex-direction:column}.pf>b{min-height:74px}.pf>i{min-height:58px;display:block}
+.num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--m);color:#fff;font-size:17px;font-weight:700;flex:none}
+.num.l{background:var(--l)}
+.bar{height:30px;background:var(--l);border-radius:2px}.bar.m{background:var(--m)}
+.src{position:absolute;left:80px;bottom:52px;font-size:12.5px;color:#8a8494}
+/* portada */
+.cover{background:var(--m);color:#fff;padding:0}
+.cover::before{display:none}
+.cover .in{position:absolute;left:96px;top:150px;width:760px}
+.cover h1{font-size:72px;line-height:1.02;font-weight:700;letter-spacing:-.025em;margin:0 0 26px}
+.cover p{font-size:26px;color:#e6dcf2;margin:0}
+.cover .meta{position:absolute;left:96px;bottom:64px;font-size:17px;color:var(--l);letter-spacing:.06em}
+.dots{position:absolute;right:96px;top:150px;display:grid;grid-template-columns:repeat(2,130px);gap:22px}
+.dots div{width:130px;height:130px;border-radius:50%;border:3px solid var(--l);display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700;color:var(--l)}
+.dots div:nth-child(5){grid-column:1/3;justify-self:center;background:var(--l);color:var(--m)}
 </style></head><body>
 
-<section class="s dark"><div style="margin-top:150px"><h1 style="font-size:64px">Cinco tipos de ciudadanía electoral</h1>
-<p style="font-size:32px">Perfiles de participación 2009-2024 y cómo dirigirse a cada uno</p>
-<p style="margin-top:50px;font-size:24px">Hackea la participación: Datos que construyen democracia · Reto 1, Perfiles ciudadanos</p></div><div class="n" style="color:#9fb4d6">1</div></section>
+<!-- 1 · Portada -->
+<section class="s cover">
+<div class="in"><div class="k" style="color:var(--l)">Reto 1 · Perfiles ciudadanos de participación</div>
+<h1>Cinco tipos de ciudadanía electoral</h1>
+<p>Quién vota, quién falta y cómo dirigirse a cada perfil, con la Plataforma CCPC 2009-2024</p></div>
+<div class="dots"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div></div>
+<div class="meta">HACKEA LA PARTICIPACIÓN: DATOS QUE CONSTRUYEN DEMOCRACIA · 2026</div>
+</section>
 
-<section class="s"><h2>Un hueco que se repite en todo el país</h2>
-<div style="display:flex;gap:48px;margin-top:6px"><div><div class="big">27%</div><div class="lbl">de quienes no votan son hombres de 25 a 44 años, que son solo 20% de la lista nominal</div></div>
-<div><div class="big">5</div><div class="lbl">perfiles de ciudadanía; el mismo hueco, con cinco formas distintas</div></div></div>
-<p style="margin-top:36px"><b>Pregunta del reto:</b> ¿qué tipos de ciudadanía existen según su participación? Usamos 64,096 secciones y seis elecciones federales (2009-2024), solo datos agregados de la CCPC, sin voto por partido.</p>
-<p>Nuestro criterio: un perfil debe <b>repetirse en el tiempo</b>, no describir una sola elección.</p><div class="n">2</div></section>
-<section class="s"><h2>Método: tres rasgos que sí persisten</h2>
-<div class="two"><div><p><b>De ocho rasgos candidatos conservamos tres</b>, los que se repiten entre 2009-2015 y 2018-2024:</p>
-<ul><li>Nivel de participación</li><li>Brecha de género (18-54 años)</li><li>Brecha de jóvenes (18-34 frente a 55-74)</li></ul></div>
-<div><p><b>Cinco perfiles</b> con K-means: el más estable en el rango de 4 a 6 que pide la convocatoria.</p>
-<p>La <i>intermitencia</i> (votar solo en presidenciales) no persiste por territorio (r = 0.28 secciones, 0.07 municipios): se usa solo para describir.</p></div></div>
-<div class="src">Fuente: INFORME §2 y §5; confiabilidad_rasgos.csv</div><div class="n">3</div></section>
+<!-- 2 · El problema -->
+<section class="s"><div class="k">El hallazgo</div><h2>Un hueco que se repite en todo el país</h2>
+<div class="grid2" style="grid-template-columns:1.05fr 1fr;align-items:start">
+<div><div class="big">27%</div><div class="lbl" style="font-size:22px">de quienes no votan son <b>hombres de 25 a 44 años</b>, aunque son solo 20% de la lista nominal.</div>
+<div style="margin-top:30px">
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px"><span style="width:170px;font-size:16px" class="muted">Lista nominal</span><div class="bar" style="width:148px"></div><b style="font-size:18px">20%</b></div>
+<div style="display:flex;align-items:center;gap:14px"><span style="width:170px;font-size:16px" class="muted">Quienes no votan</span><div class="bar m" style="width:200px"></div><b style="font-size:18px;color:var(--m)">27%</b></div></div></div>
+<div><p style="font-size:21px"><b>La pregunta del reto:</b> ¿qué tipos de ciudadanía existen según su participación?</p>
+<p style="font-size:21px" class="muted">64,096 secciones, seis elecciones federales (2009-2024), solo datos agregados de la CCPC y sin voto por partido.</p></div></div>
+<div class="grid3" style="margin-top:44px">
+<div class="card"><div class="mid">32%</div><div class="lbl">del nivel de 2024 lo explican perfiles hechos solo con 2009-2018 (al azar: 0%)</div></div>
+<div class="card"><div class="mid">85%</div><div class="lbl">de coincidencia en la asignación de cada sección en réplicas con ruido</div></div>
+<div class="card"><div class="mid" style="font-size:42px">7.7 M</div><div class="lbl">votos recuperables por elección (de 4.1 a 11.9 M según la referencia)</div></div></div>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">02 / 10</span></div></section>
 
-<section class="s"><h2>Los perfiles se sostienen y superan al camino directo</h2>
-<div style="display:flex;gap:40px;margin-top:4px"><div><div class="big">32%</div><div class="lbl">de la varianza del nivel de 2024 la explican perfiles hechos con 2009-2018 (al azar: 0%)</div></div>
-<div><div class="big">27%</div><div class="lbl">de la brecha de género de 2024</div></div></div>
-<table style="margin-top:26px;font-size:22px"><tr><th>Cómo se agrupa (R² medio, validación por entidad)</th><th>R²</th></tr>
-<tr><td>K-means sobre el perfil de 14 celdas de edad y sexo</td><td>0.15</td></tr>
-<tr><td>K-means sobre nuestros tres rasgos persistentes</td><td>0.21</td></tr>
-<tr><td><b>Pertenencia suave a cinco arquetipos</b></td><td><b>0.40</b></td></tr></table>
-<p style="font-size:22px;margin-top:12px">Los datos son un continuo: perfiles para comunicar, rasgos continuos para priorizar.</p>
-<div class="src">Fuente: INFORME §5 y §5.1; comparacion_algoritmos.csv</div><div class="n">4</div></section>
-<section class="s"><h2>Los cinco perfiles</h2>
-<img src="../../reto1_perfiles/reports/fig/fig2_perfil_grupos.png" style="width:1136px;margin-top:-6px"><div class="n">5</div></section>
+<!-- 3 · Método -->
+<section class="s"><div class="k">Método</div><h2>Tres rasgos que sí persisten en el tiempo</h2>
+<p style="font-size:21px;max-width:1000px">De ocho rasgos candidatos conservamos los que se repiten entre <b>2009-2015</b> y <b>2018-2024</b>, ventanas sin elecciones en común.</p>
+<div class="grid3" style="margin-top:22px">
+<div class="card"><div style="display:flex;gap:12px;align-items:center"><span class="num">1</span><b style="font-size:23px">Nivel de participación</b></div><div class="mid" style="margin-top:18px">r 0.70</div><div class="lbl muted">relativo al promedio nacional de cada elección</div></div>
+<div class="card"><div style="display:flex;gap:12px;align-items:center"><span class="num">2</span><b style="font-size:23px">Brecha de género</b></div><div class="mid" style="margin-top:18px">r 0.65</div><div class="lbl muted">mujeres menos hombres, de 18 a 54 años</div></div>
+<div class="card"><div style="display:flex;gap:12px;align-items:center"><span class="num">3</span><b style="font-size:23px">Brecha de jóvenes</b></div><div class="mid" style="margin-top:18px">r 0.49</div><div class="lbl muted">18-34 frente a 55-74 años</div></div></div>
+<div class="grid2" style="margin-top:30px;gap:40px">
+<p style="font-size:19px"><b style="color:var(--m)">Cinco perfiles con K-means:</b> el número más estable y el que mejor predice 2024 en el rango de 4 a 6 que pide la convocatoria. La asignación de cada sección se recalcula con cada CCPC.</p>
+<p style="font-size:19px"><b style="color:var(--m)">Lo que no persiste:</b> la <i>intermitencia</i> (votar solo en presidenciales) es nacional, no territorial (r 0.28 en secciones, 0.07 en municipios). Solo describe.</p></div>
+<div class="src">Fuente: INFORME §2 y §5; confiabilidad_rasgos.csv</div>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">03 / 10</span></div></section>
 
-<section class="s"><h2>Dónde está cada perfil</h2>
-<img src="../../reto1_perfiles/reports/fig/fig3_mapa_perfiles.png" style="width:1000px;margin:0 auto"><div class="n">6</div></section>
+<!-- 4 · Validación -->
+<section class="s"><div class="k">Validación fuera de muestra</div><h2>Los perfiles del pasado anticipan 2024</h2>
+<div class="grid2" style="grid-template-columns:.8fr 1.2fr;gap:56px">
+<div><div style="display:flex;gap:36px"><div><div class="big">32%</div><div class="lbl">del nivel de 2024</div></div><div><div class="big" style="color:var(--l)">27%</div><div class="lbl">de la brecha de género</div></div></div>
+<p style="font-size:18px;margin-top:22px" class="muted">Varianza que explican perfiles construidos solo con 2009-2018. Con grupos al azar: 0%.</p></div>
+<div><p style="font-size:17px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin-bottom:16px">R² medio, validación cruzada por entidad</p>
+<div style="display:grid;grid-template-columns:300px 1fr;row-gap:16px;align-items:center;font-size:18px">
+<span>K-means sobre 14 celdas de edad y sexo</span><div style="display:flex;align-items:center;gap:10px"><div class="bar" style="width:112px;background:#d9cfe5"></div>0.15</div>
+<span>K-means sobre los tres rasgos</span><div style="display:flex;align-items:center;gap:10px"><div class="bar" style="width:157px"></div>0.21</div>
+<span><b>Pertenencia a cinco arquetipos</b></span><div style="display:flex;align-items:center;gap:10px"><div class="bar m" style="width:300px"></div><b>0.40</b></div></div></div></div>
+<div class="grid2" style="margin-top:40px;gap:24px">
+<div class="card" style="border-left:5px solid var(--m)"><p style="font-size:19px;margin:0"><b style="color:var(--m)">Para comunicar: 5 perfiles.</b> Explican 55-61% de la varianza de cada eje; solo 11% de la lista nominal queda cerca de una frontera.</p></div>
+<div class="card" style="border-left:5px solid var(--l)"><p style="font-size:19px;margin:0"><b style="color:var(--m)">Para priorizar: rasgos continuos.</b> Los datos son un continuo; las pertenencias suaves conservan toda la información (R² 0.40).</p></div></div>
+<div class="src">Fuente: INFORME §5 y §5.1; validacion_tipologia.csv, comparacion_algoritmos.csv</div>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">04 / 10</span></div></section>
 
-<section class="s"><h2>Quién falta: lo común y lo distinto</h2>
-<div class="two"><div><p><b>Común a los cinco perfiles:</b> los hombres de 25 a 34 años son el grupo con más personas que no votan. A escala nacional, los hombres de 25 a 44 años son 20% de la lista nominal y 27% de quienes no votan.</p>
-<p><b>La caída en intermedias es nacional</b> (6 a 18 puntos) y no territorial: la movilización de 2027 debe ser nacional.</p></div>
-<div><p><b>Distinto por perfil:</b></p><ul style="font-size:24px">
-<li>Norte urbano: todas las edades</li><li>Rezago juvenil: menores de 45 años</li><li>Rural: hombres de 25 a 44 (los de 25 a 34 votan 37%; las mujeres, 64%)</li><li>Urbano medio-alto: mujeres de 25 a 34 (−8 pp)</li><li>Comunitario: referencia</li></ul></div></div><div class="n">7</div></section>
+<!-- 5 · Los cinco perfiles -->
+<section class="s"><div class="k">Los perfiles</div><h2>Cinco tipos de ciudadanía</h2>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px">
+<div class="card pf" style="padding:18px"><span class="num">1</span><b style="display:block;font-size:20px;line-height:1.2;margin:14px 0 6px">Baja participación del norte urbano</b><i style="font-size:15px" class="muted">«Nadie vota mucho»</i>
+<div class="mid" style="margin-top:12px;font-size:46px">44%</div><div class="lbl" style="font-size:14px">participación media</div>
+<div style="font-size:15px;margin-top:16px;line-height:1.5;border-top:1px solid var(--rule);padding-top:12px">19.3 M electores (21%)<br>Brecha de género 8 pp<br>Jóvenes −20 pp</div></div>
+<div class="card pf" style="padding:18px"><span class="num">2</span><b style="display:block;font-size:20px;line-height:1.2;margin:14px 0 6px">Rezago juvenil urbano</b><i style="font-size:15px" class="muted">«Votan los padres, no los hijos»</i>
+<div class="mid" style="margin-top:12px;font-size:46px">52%</div><div class="lbl" style="font-size:14px">participación media</div>
+<div style="font-size:15px;margin-top:16px;line-height:1.5;border-top:1px solid var(--rule);padding-top:12px">25.7 M electores (28%)<br>Brecha de género 11 pp<br><b style="color:var(--m)">Jóvenes −26 pp</b></div></div>
+<div class="card pf" style="padding:18px"><span class="num">3</span><b style="display:block;font-size:20px;line-height:1.2;margin:14px 0 6px">Rural con brecha masculina</b><i style="font-size:15px" class="muted">«Votan ellas, no ellos»</i>
+<div class="mid" style="margin-top:12px;font-size:46px">60%</div><div class="lbl" style="font-size:14px">participación media</div>
+<div style="font-size:15px;margin-top:16px;line-height:1.5;border-top:1px solid var(--rule);padding-top:12px">10.2 M electores (11%)<br><b style="color:var(--m)">Brecha de género 19 pp</b><br>Jóvenes −22 pp</div></div>
+<div class="card pf" style="padding:18px"><span class="num">4</span><b style="display:block;font-size:20px;line-height:1.2;margin:14px 0 6px">Urbano de participación media-alta</b><i style="font-size:15px" class="muted">«Consolidado, con mujeres jóvenes por debajo»</i>
+<div class="mid" style="margin-top:12px;font-size:46px">62%</div><div class="lbl" style="font-size:14px">participación media</div>
+<div style="font-size:15px;margin-top:16px;line-height:1.5;border-top:1px solid var(--rule);padding-top:12px">25.2 M electores (28%)<br>Brecha de género 8 pp<br>Jóvenes −20 pp</div></div>
+<div class="card pf" style="padding:18px;background:var(--m);color:#fff"><span class="num" style="background:var(--l);color:var(--m)">5</span><b style="display:block;font-size:20px;line-height:1.2;margin:14px 0 6px">Alta participación comunitaria</b><i style="font-size:15px;color:#e6dcf2">«La referencia»</i>
+<div class="mid" style="margin-top:12px;font-size:46px;color:#fff">68%</div><div class="lbl" style="font-size:14px;color:#e6dcf2">participación media</div>
+<div style="font-size:15px;margin-top:16px;line-height:1.5;border-top:1px solid rgba(255,255,255,.25);padding-top:12px">9.8 M electores (11%)<br>Brecha de género 11 pp<br><b style="color:var(--l)">Jóvenes −11 pp</b></div></div></div>
+<p style="font-size:16px;margin-top:20px" class="muted">Participación media 2015-2024. Brechas en puntos porcentuales: mujeres menos hombres (18-54 años) y 18-34 frente a 55-74 años.</p>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">05 / 10</span></div></section>
 
-<section class="s"><h2>Una estrategia, un mensaje y un indicador por perfil</h2>
-<table><tr><th>Perfil</th><th>A quién</th><th>Mensaje y canal (hipótesis)</th></tr>
-<tr><td>1 Norte urbano</td><td>18-34 años</td><td>«Tu voto cuenta donde vives»; actualizar domicilio. Celular, trabajo, universidades.</td></tr>
-<tr><td>2 Rezago juvenil</td><td>Hombres y mujeres de 25-34</td><td>Primer voto y relevancia local. Pares, escuelas; mayores como multiplicadores.</td></tr>
-<tr><td>3 Rural, brecha masculina</td><td>Hombres de 25-44</td><td>Primero estudio cualitativo; luego TV, radio local y contacto presencial.</td></tr>
-<tr><td>4 Urbano medio-alto</td><td>Mujeres de 25-34; 75+</td><td>Horario y tiempos de casilla. Redes y centros de trabajo.</td></tr>
-<tr><td>5 Comunitario</td><td>75+; aprender de sus jóvenes</td><td>Continuidad y accesibilidad; entrevistas comunitarias.</td></tr></table>
-<div class="n">8</div></section>
+<!-- 6 · Dónde -->
+<section class="s"><div class="k">Geografía</div><h2 style="margin-bottom:14px">Dónde está cada perfil</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);column-gap:36px;row-gap:12px"><div><img src="mapa_perfil_1.png" style="display:block;width:270px;margin:0 auto" alt="Perfil 1"><div style="display:flex;gap:10px;align-items:flex-start;margin-top:4px"><span class="num" style="width:26px;height:26px;font-size:13px">1</span><div style="font-size:15px;line-height:1.35"><b>Norte urbano</b><br><span class="muted">Baja California 90%, Chihuahua 70%</span></div></div></div><div><img src="mapa_perfil_2.png" style="display:block;width:270px;margin:0 auto" alt="Perfil 2"><div style="display:flex;gap:10px;align-items:flex-start;margin-top:4px"><span class="num" style="width:26px;height:26px;font-size:13px">2</span><div style="font-size:15px;line-height:1.35"><b>Rezago juvenil</b><br><span class="muted">Edomex 46%, Veracruz 46%</span></div></div></div><div><img src="mapa_perfil_3.png" style="display:block;width:270px;margin:0 auto" alt="Perfil 3"><div style="display:flex;gap:10px;align-items:flex-start;margin-top:4px"><span class="num" style="width:26px;height:26px;font-size:13px">3</span><div style="font-size:15px;line-height:1.35"><b>Rural, brecha masculina</b><br><span class="muted">Zacatecas 28%, SLP 24%</span></div></div></div><div><img src="mapa_perfil_4.png" style="display:block;width:270px;margin:0 auto" alt="Perfil 4"><div style="display:flex;gap:10px;align-items:flex-start;margin-top:4px"><span class="num" style="width:26px;height:26px;font-size:13px">4</span><div style="font-size:15px;line-height:1.35"><b>Urbano medio-alto</b><br><span class="muted">CDMX 60%, Tlaxcala 52%</span></div></div></div><div><img src="mapa_perfil_5.png" style="display:block;width:270px;margin:0 auto" alt="Perfil 5"><div style="display:flex;gap:10px;align-items:flex-start;margin-top:4px"><span class="num" style="width:26px;height:26px;font-size:13px">5</span><div style="font-size:15px;line-height:1.35"><b>Comunitario</b><br><span class="muted">Yucatán 43%, Campeche 37%</span></div></div></div><div style="display:flex;align-items:center"><div class="card" style="border-left:5px solid var(--m)"><p style="font-size:16px;margin:0">Cada punto es una sección electoral (marco 2021). Las cifras son la parte de la lista nominal de la entidad que está en ese perfil.</p><p style="font-size:16px;margin:10px 0 0"><b style="color:var(--m)">Los perfiles no son regiones:</b> cada uno se concentra en algunas entidades, pero aparece en muchas.</p></div></div></div>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">06 / 10</span></div></section>
 
-<section class="s"><h2>Votos que se recuperarían por elección</h2>
-<img src="../../reto1_perfiles/reports/fig/fig4_votos_recuperables.png" style="width:1136px">
-<p style="font-size:22px;margin-top:6px">7.7 M por nivel (IC95% 6.5-8.9), 3.8 M por brecha de género, 3.5 M por jóvenes; los criterios no se suman. 61 municipios reúnen la mitad del potencial por nivel (Tijuana, Juárez, Mexicali, León, Puebla encabezan); en distritos hacen falta 84 de 300.</p><div class="n">9</div></section>
+<!-- 7 · Quién falta -->
+<section class="s"><div class="k">Quién falta</div><h2>Lo común y lo distinto</h2>
+<div class="grid2" style="grid-template-columns:1fr 1.15fr;gap:48px">
+<div style="background:var(--m);color:#fff;border-radius:4px;padding:30px 32px">
+<div class="k" style="color:var(--l)">Común a los cinco</div>
+<p style="font-size:23px;color:#fff">Los <b>hombres de 25 a 34 años</b> son el grupo con más personas que no votan en todos los perfiles.</p>
+<p style="font-size:20px;color:#e6dcf2;margin-top:22px">La caída en las intermedias (15 puntos en 2015 y 10 en 2021) es <b style="color:#fff">nacional, no territorial</b>: la movilización de 2027 debe ser nacional.</p></div>
+<div><div class="k">Distinto por perfil</div>
+<div style="display:grid;row-gap:16px;margin-top:8px">
+<div style="display:flex;gap:16px;align-items:flex-start"><span class="num">1</span><p style="font-size:20px;margin:4px 0 0"><b>Norte urbano:</b> todas las edades votan menos</p></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><span class="num">2</span><p style="font-size:20px;margin:4px 0 0"><b>Rezago juvenil:</b> los menores de 45 años</p></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><span class="num">3</span><p style="font-size:20px;margin:4px 0 0"><b>Rural:</b> hombres de 25 a 44 (37% frente a 64% de las mujeres de 25 a 34); causa abierta</p></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><span class="num">4</span><p style="font-size:20px;margin:4px 0 0"><b>Urbano medio-alto:</b> mujeres de 25 a 34 (−8.6 pp)</p></div>
+<div style="display:flex;gap:16px;align-items:flex-start"><span class="num l">5</span><p style="font-size:20px;margin:4px 0 0"><b>Comunitario:</b> la referencia; los jóvenes votan casi como los adultos</p></div></div></div></div>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">07 / 10</span></div></section>
 
-<section class="s"><h2>Plan para 2027: piloto aleatorizado y medible</h2>
-<div class="two"><div><table style="font-size:20px"><tr><th>Elemento</th><th>Diseño</th></tr>
-<tr><td>Unidad</td><td>Sección; azar dentro de municipio y perfil</td></tr>
-<tr><td>Brazos</td><td>Control · mensaje práctico neutral · (perfil 3) contacto presencial</td></tr>
-<tr><td>Resultado</td><td>Cambio 2021→2027 de las celdas objetivo, con la CCPC</td></tr>
-<tr><td>Poder</td><td>250 secciones por brazo: 1.4-1.7 pp; 1,000: 0.7-0.8 pp</td></tr></table></div>
-<div><p style="font-size:22px"><b>Quién lo usa:</b> Juntas Distritales (tablero), DECEyEC (mensajes), DERFE (domicilios).</p>
-<p style="font-size:22px"><b>Límites que declaramos:</b> perfiles descriptivos, no causales; estrategias son hipótesis; la lista nominal sobreestima la abstención donde hay emigración; neutralidad total: sin voto por partido.</p></div></div>
-<div class="src">Código y tablero: github.com/gpancardo/ine</div><div class="n">10</div></section>
+<!-- 8 · Estrategias -->
+<section class="s"><div class="k">Estrategias diferenciadas</div><h2>Un mensaje, un canal y un indicador por perfil</h2>
+<div style="display:grid;grid-template-columns:56px 250px 270px 1fr;font-size:18px;line-height:1.35">
+<div style="grid-column:1/5;display:grid;grid-template-columns:56px 250px 270px 1fr;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--l);padding-bottom:10px;border-bottom:2px solid var(--m)"><span></span><span>Perfil</span><span>A quién</span><span>Mensaje y canal (hipótesis a probar)</span></div>
+<span class="num" style="margin:14px 0">1</span><b style="padding:18px 0;border-bottom:1px solid var(--rule)">Norte urbano</b><span style="padding:18px 0;border-bottom:1px solid var(--rule)">18-34 años</span><span style="padding:18px 0;border-bottom:1px solid var(--rule)">«Tu voto cuenta donde vives»: dónde votar y cómo actualizar el domicilio. Celular, trabajo, universidades.</span>
+<span class="num" style="margin:14px 0">2</span><b style="padding:18px 0;border-bottom:1px solid var(--rule)">Rezago juvenil</b><span style="padding:18px 0;border-bottom:1px solid var(--rule)">Hombres y mujeres de 25-34</span><span style="padding:18px 0;border-bottom:1px solid var(--rule)">Primer voto y relevancia local. Pares y escuelas; mayores como multiplicadores en casa.</span>
+<span class="num" style="margin:14px 0">3</span><b style="padding:18px 0;border-bottom:1px solid var(--rule)">Rural, brecha masculina</b><span style="padding:18px 0;border-bottom:1px solid var(--rule)">Hombres de 25-44</span><span style="padding:18px 0;border-bottom:1px solid var(--rule)">Primero un estudio cualitativo; después TV, radio local y contacto presencial.</span>
+<span class="num" style="margin:14px 0">4</span><b style="padding:18px 0;border-bottom:1px solid var(--rule)">Urbano medio-alto</b><span style="padding:18px 0;border-bottom:1px solid var(--rule)">Mujeres de 25-34; 75+</span><span style="padding:18px 0;border-bottom:1px solid var(--rule)">Horario y tiempos de espera en casilla. Redes y centros de trabajo.</span>
+<span class="num l" style="margin:14px 0">5</span><b style="padding:18px 0">Comunitario</b><span style="padding:18px 0">75+; aprender de sus jóvenes</span><span style="padding:18px 0">Continuidad y accesibilidad; entrevistas comunitarias.</span></div>
+<p style="font-size:16px;margin-top:14px" class="muted">Indicador común: la participación de las celdas objetivo medida con la CCPC 2027. Los mensajes son neutrales: sin contenido partidista.</p>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">08 / 10</span></div></section>
+
+<!-- 9 · Votos recuperables -->
+<section class="s"><div class="k">Dónde está el potencial</div><h2>Votos que se recuperarían por elección</h2>
+<div class="grid2" style="grid-template-columns:1.25fr .75fr;gap:56px">
+<div><p style="font-size:16px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin-bottom:18px">Por nivel de participación, millones de votos</p>
+<div style="display:grid;grid-template-columns:250px 1fr;row-gap:18px;align-items:center;font-size:18px">
+<span><b>1</b> Norte urbano</span><div style="display:flex;align-items:center;gap:12px"><div class="bar m" style="width:390px"></div><b>3.55</b></div>
+<span><b>2</b> Rezago juvenil</span><div style="display:flex;align-items:center;gap:12px"><div class="bar m" style="width:297px"></div><b>2.70</b></div>
+<span><b>3</b> Rural, brecha masculina</span><div style="display:flex;align-items:center;gap:12px"><div class="bar" style="width:74px"></div>0.67</div>
+<span><b>4</b> Urbano medio-alto</span><div style="display:flex;align-items:center;gap:12px"><div class="bar" style="width:65px"></div>0.59</div>
+<span><b>5</b> Comunitario</span><div style="display:flex;align-items:center;gap:12px"><div class="bar" style="width:24px"></div>0.22</div></div>
+<p style="font-size:16px;margin-top:22px" class="muted">Si cada sección alcanzara al cuarto superior de secciones comparables (mismo tipo urbano, mixto o rural). Los criterios se solapan y no se suman.</p></div>
+<div style="display:grid;row-gap:12px;align-content:start">
+<div><div class="mid" style="font-size:42px">7.7 M</div><div class="lbl">por nivel <span class="muted">(de 4.1 a 11.9 M según la referencia)</span></div></div>
+<div><div class="mid" style="font-size:42px;color:var(--l)">3.8 M</div><div class="lbl">por la brecha de género de los hombres de 18 a 54</div></div>
+<div><div class="mid" style="font-size:42px;color:var(--l)">3.5 M</div><div class="lbl">por los jóvenes de 18 a 34</div></div>
+<div class="card" style="margin-top:6px;padding:14px 18px"><p style="font-size:16px;margin:0"><b style="color:var(--m)">61 municipios</b> reúnen la mitad del potencial por nivel; encabezan Tijuana, Juárez, Mexicali, León y Puebla.</p></div></div></div>
+<div class="src">Fuente: politica_grupos.csv, politica_sensibilidad.csv, politica_municipios.csv</div>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">09 / 10</span></div></section>
+
+<!-- 10 · Plan 2027 -->
+<section class="s"><div class="k">Aplicación institucional</div><h2>Plan para 2027: un piloto aleatorizado y medible</h2>
+<div style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:4px">
+<div style="position:absolute;left:17px;right:calc(33% - 17px);top:17px;height:3px;background:var(--l)"></div>
+<div style="position:relative"><span class="num">1</span><p style="font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--l);margin:14px 0 4px">NOV 2026 - FEB 2027</p><p style="font-size:18px">Estudio cualitativo en el perfil 3 y selección aleatoria de secciones</p></div>
+<div style="position:relative"><span class="num">2</span><p style="font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--l);margin:14px 0 4px">JUNIO 2027</p><p style="font-size:18px">Piloto en la elección intermedia, con brazos de control y de mensaje</p></div>
+<div style="position:relative"><span class="num">3</span><p style="font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--l);margin:14px 0 4px">CCPC 2027</p><p style="font-size:18px">Medición del efecto y actualización de la tipología</p></div></div>
+<div class="grid2" style="grid-template-columns:1.1fr .9fr;gap:40px;margin-top:22px">
+<div class="card"><div style="display:grid;grid-template-columns:120px 1fr;row-gap:9px;font-size:16.5px;line-height:1.35">
+<b style="color:var(--m)">Unidad</b><span>Sección; azar dentro de municipio y perfil</span>
+<b style="color:var(--m)">Brazos</b><span>Control · mensaje práctico neutral · contacto presencial (perfil 3)</span>
+<b style="color:var(--m)">Resultado</b><span>Cambio 2021→2027 de las celdas objetivo, con la CCPC</span>
+<b style="color:var(--m)">Poder</b><span>250 secciones por brazo: efecto mínimo de 1.4-1.7 pp; con 1,000: 0.7-0.8 pp</span></div></div>
+<div><p style="font-size:17px"><b style="color:var(--m)">Quién lo usa:</b> Juntas Distritales (tablero por sección), DECEyEC (mensajes), DERFE (domicilios).</p>
+<p style="font-size:15.5px" class="muted"><b>Límites:</b> perfiles descriptivos, no causales; estrategias como hipótesis; la lista nominal sobreestima la abstención donde hay emigración; sin voto por partido.</p></div></div>
+<div class="src">Código y tablero abiertos; se actualizan con cada CCPC: github.com/gpancardo/ine</div>
+<div class="foot"><span>Cinco tipos de ciudadanía electoral · Reto 1</span><span class="pg">10 / 10</span></div></section>
+</body></html>

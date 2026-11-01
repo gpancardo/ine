@@ -23,8 +23,9 @@ uv run reto1_perfiles/analysis/diferenciacion_perfiles.py # E1b: η² por eje, d
 uv run reto1_perfiles/analysis/cohortes.py                # E6: 18-24 en t vs 25-34 en t+6 (mismo tipo de elección)
 uv run reto1_perfiles/analysis/pertenencias.py            # E2/E3: pertenencias suaves por sección (arquetipos)
 uv run reto1_perfiles/analysis/acciones_perfiles.py       # a quién (celdas sexo×edad) y dónde (distritos) por perfil → reports/NARRATIVA.md
-uv run reto1_perfiles/analysis/rigor_perfiles.py 100    # bootstrap: ruido vs señal, persistencia por jurisdicción, aporte sobre estado/municipio, confianza de asignación, IC de contrastes (~25 min)
+uv run reto1_perfiles/analysis/potencia_piloto.py         # efecto mínimo detectable del piloto 2027 por tamaño de brazo
+uv run reto1_perfiles/analysis/rigor_perfiles.py 100    # bootstrap: ruido vs señal, persistencia por jurisdicción, aporte sobre estado/municipio, confianza de asignación, IC de contrastes (~2.5 h en una laptop)
 uv run reto1_perfiles/analysis/figuras.py                 # figuras 1 a 7
 uv run reto1_perfiles/analysis/tablero.py                 # E8: reports/tablero.html (autocontenido; requiere politica_publica.py y rigor_perfiles.py)
 ```
-`tip_lib.py` define los rasgos y los nombres de los perfiles; reutiliza la biblioteca de `shared/lib/`. `comparar_algoritmos.py` usa `numpy<2` (dependencia de `py_pcha`), declarado en su encabezado.
+`tip_lib.py` define los rasgos y los nombres de los perfiles; reutiliza la biblioteca de `shared/lib/`. `comparar_algoritmos.py` y `pertenencias.py` fijan `numpy<2` y `pyarrow<17` (por `py_pcha`): córrelos con `uv run --python 3.12`, porque con Python 3.14 esas versiones no instalan. `figuras.py` y `tablero.py` necesitan `data/processed/secciones.gpkg` (de `shared/download_data.py` + `shared/build_panel.py`).
