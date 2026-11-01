@@ -18,7 +18,7 @@ Requisitos: [uv](https://docs.astral.sh/uv/). Cada script declara sus dependenci
 uv run shared/download_data.py ; uv run shared/download_extra.py ; uv run shared/build_panel.py
 # después, el pipeline de reto1_perfiles/README.md
 ```
-El paso más lento es `rigor_perfiles.py` (bootstrap de unos 25 minutos).
+El paso más lento es `rigor_perfiles.py` (bootstrap de unas 2.5 horas en una laptop). Los scripts que fijan `numpy<2` se corren con `uv run --python 3.12`.
 
 ## Fuentes y fecha de descarga
 Todas son públicas y agregadas; no se usan datos personales. Se descargaron en octubre de 2026.

@@ -7,7 +7,7 @@ Datos base: Conteos Censales de Participación Ciudadana 2009-2024 (INE-DECEyEC)
 | `shared/` | Descargas (`download_data.py`, `download_extra.py`), construcción del panel (`build_panel.py`) y biblioteca común (`lib/`) | - |
 | `reto1_perfiles/` | **Reto 1, perfiles ciudadanos de participación**: tipología de secciones por nivel, brecha de género y brecha de jóvenes, validada en el tiempo, con votos recuperables por grupo, municipio y distrito | `reto1_perfiles/README.md`, `reports/INFORME.md` |
 | `reto2_prediccion/` | *(No entregado; exploratorio)* **Reto 2, predicción y escenarios de riesgo**: modelo, benchmark honesto, 13 familias de datos probadas, bandas de incertidumbre, prototipo web | `reto2_prediccion/README.md`, `reports/RESULTADOS.md` |
-| `entrega/` | Entregables del Reto 1 y el paquete .zip; fuentes en `src/` | `entrega/paquete/LEEME.txt` |
+| `entrega/` | `Anahuacalli/`: carpeta final de entrega del Reto 1; `src/`: fuentes HTML de los entregables; `archivo/`: versiones previas | `entrega/Anahuacalli/00_LEEME.txt` |
 | `data/` | `raw/` (ignorado por git) y `processed/` | - |
 
 ## Orden general (desde la raíz)

@@ -1,0 +1,15 @@
+Equipo Anahuacalli · Hackea la participación: Datos que construyen democracia (INE, 2026)
+Eje: Reto 1. Perfiles ciudadanos de participación
+Título: Cinco tipos de ciudadanía electoral
+
+Contenido
+01_presentacion_ejecutiva.pdf   Presentación ejecutiva (10 diapositivas)
+02_documento_tecnico.pdf        Documento técnico (9 cuartillas, Arial 11, interlineado 1.5): perfiles, metodología y estrategias
+03_fichas_de_perfil/            Fichas de perfil: PDF con las 5 fichas y una PNG de alta resolución (2160 x 2700) por perfil
+04_tablero_interactivo.html     Tablero con mapa por distrito, municipio y sección (abrir en un navegador; no requiere internet)
+05_codigo/                      Código reproducible, informe técnico completo y tablas con las que se verifica cada cifra
+                                (empezar por 05_codigo/README.md)
+06_cartas/                      Carta de cesión de derechos y carta declaratoria de decir verdad, firmadas por las personas integrantes
+
+Repositorio: https://github.com/gpancardo/ine
+Datos: Plataforma CCPC 2009-2024 (INE-DECEyEC), agregados por sección, sexo y edad; descriptores del Censo 2020 (ECEG). Sin datos personales.
